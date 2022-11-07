@@ -1,0 +1,32 @@
+..
+0x7fff95aa45b0:*0x0000000000000000*	0x00007ffff74644!aa! I / A
+0x7fff95aa45f0:	0x000000000053f3af	0x00000000004740*E2* I / A
+0x7fff95aa4640:	0x000000000053f3af	0x00000000004acb*4D* I / U
+					0x00007ffff74c6f*4D* I / A
+0x7fff95aa4590:	0x0000000000000000	0x00007ffff745ae*B0* I / A
+0x7fff95aa45b0:	0x0000000000000c80	0x00007ffff745be*6B* E / A => internal ..
+0x7fff95aa45c0:	0x00007fffd8000c30	0x00007ffff74500*55* I / U
+					0x00007ffff74c6f*4B* I / A // syscall
+0x7fff95aa4590:	0x0000000000000000	0x00007ffff745ae*B0* I / A
+0x7fff95aa45b0:	0x0000000000000c80	0x00007ffff745be*6B* E / A => internal ..
+0x7fff95aa45c0:>0x00007fffd8000c30<	0x00007ffff74500*95* I / A
+0x7fff95aa4590:	0x0000000000000000	0x00007ffff745ae*B0* I / A
+0x7fff95aa45b0:	0x0000000000000c80	0x00007ffff745be*6B* E / A => internal ..
+0x7fff95aa45c0:	0x00007fffd8000c30	0x00007ffff74500*55* I / U
+					0x00007ffff74c6f*5C* I / A
+0x7fff957805e0:	0x0000000000000000	0x00007ffff745ae*B0* I / A
+0x7fff95780600:*0x0000000000000000*	0x00007ffff745be*6B* E / A => internal ..
+0x7fff95780610:>0x00007fffe8000950<	0x00007ffff74500*95* I / A
+					0x00007ffff74c6f*5C* I / A
+0x7fff95780680:	0x0000000000000000	0x00007ffff745ae*B0* I / A
+0x7fff957806a0:	0x00000000001b1f20	0x00007ffff745be*07* E / A .. rdx <= rax ..
+0x7fff957806d0:	0x0000000000000000	0x00007ffff745ae*B0* I / A
+0x7fff957806f0:	0x000000000022ded0	0x00007ffff745be*6B* E / A => internal ..
+0x7fff95780700:	0x00007fffe0000920	0x00007ffff74500*40* I / A
+					0x00007ffff74c6f*2E* I / A (\x4B kan ook)
+
+25 gadgets   | unique = 12
+3 unaligned  | unique = 2 | to set rdi and rsi
+6 external   | unique = 2 | 1 can be made internal | single gadget external to set RDX
+
+2/25 gadgets from exe

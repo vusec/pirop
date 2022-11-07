@@ -1,0 +1,14 @@
+gdb-peda$ disas 0x00007ffff745bece
+Dump of assembler code for function _IO_default_uflow:
+   0x00007ffff745bec0 <+0>:	mov    rax,QWORD PTR [rdi+0xd8]
+   0x00007ffff745bec7 <+7>:	push   rbx
+   0x00007ffff745bec8 <+8>:	mov    rbx,rdi
+   0x00007ffff745becb <+11>:	call   QWORD PTR [rax+0x20]
+=> 0x00007ffff745bece <+14>:	cmp    eax,0xffffffff
+   0x00007ffff745bed1 <+17>:	je     0x7ffff745bee2 <_IO_default_uflow+34>
+   0x00007ffff745bed3 <+19>:	mov    rdx,QWORD PTR [rbx+0x8]
+   0x00007ffff745bed7 <+23>:	movzx  eax,BYTE PTR [rdx]
+   0x00007ffff745beda <+26>:	add    rdx,0x1
+   0x00007ffff745bede <+30>:	mov    QWORD PTR [rbx+0x8],rdx
+   0x00007ffff745bee2 <+34>:	pop    rbx
+   0x00007ffff745bee3 <+35>:	ret  

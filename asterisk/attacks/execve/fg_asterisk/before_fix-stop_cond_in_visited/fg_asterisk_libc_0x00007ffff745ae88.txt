@@ -1,0 +1,1458 @@
+Searching for gadgets in the range [0x7ffff745ae00 - 0x7ffff745aeff]
+Looking for gadgets at 0x7ffff745ae00
+Looking for gadgets at 0x7ffff745ae01
+Looking for gadgets at 0x7ffff745ae02
+Looking for gadgets at 0x7ffff745ae03
+Looking for gadgets at 0x7ffff745ae04
+Looking for gadgets at 0x7ffff745ae05
+Looking for gadgets at 0x7ffff745ae06
+Looking for gadgets at 0x7ffff745ae07
+Looking for gadgets at 0x7ffff745ae08
+Looking for gadgets at 0x7ffff745ae09
+Looking for gadgets at 0x7ffff745ae0a
+Looking for gadgets at 0x7ffff745ae0b
+Looking for gadgets at 0x7ffff745ae0c
+Looking for gadgets at 0x7ffff745ae0d
+Looking for gadgets at 0x7ffff745ae0e
+Looking for gadgets at 0x7ffff745ae0f
+Looking for gadgets at 0x7ffff745ae10
+Looking for gadgets at 0x7ffff745ae11
+Looking for gadgets at 0x7ffff745ae12
+Looking for gadgets at 0x7ffff745ae13
+Looking for gadgets at 0x7ffff745ae14
+Looking for gadgets at 0x7ffff745ae15
+Looking for gadgets at 0x7ffff745ae16
+Looking for gadgets at 0x7ffff745ae17
+Looking for gadgets at 0x7ffff745ae18
+Looking for gadgets at 0x7ffff745ae19
+Looking for gadgets at 0x7ffff745ae1a
+Looking for gadgets at 0x7ffff745ae1b
+Looking for gadgets at 0x7ffff745ae1c
+Looking for gadgets at 0x7ffff745ae1d
+Looking for gadgets at 0x7ffff745ae1e
+Looking for gadgets at 0x7ffff745ae1f
+Looking for gadgets at 0x7ffff745ae20
+Looking for gadgets at 0x7ffff745ae21
+Looking for gadgets at 0x7ffff745ae22
+Looking for gadgets at 0x7ffff745ae23
+Looking for gadgets at 0x7ffff745ae24
+Looking for gadgets at 0x7ffff745ae25
+Looking for gadgets at 0x7ffff745ae26
+Looking for gadgets at 0x7ffff745ae27
+Looking for gadgets at 0x7ffff745ae28
+Looking for gadgets at 0x7ffff745ae29
+Looking for gadgets at 0x7ffff745ae2a
+Looking for gadgets at 0x7ffff745ae2b
+Looking for gadgets at 0x7ffff745ae2c
+Looking for gadgets at 0x7ffff745ae2d
+Looking for gadgets at 0x7ffff745ae2e
+Looking for gadgets at 0x7ffff745ae2f
+Looking for gadgets at 0x7ffff745ae30
+Looking for gadgets at 0x7ffff745ae31
+Looking for gadgets at 0x7ffff745ae32
+Looking for gadgets at 0x7ffff745ae33
+Looking for gadgets at 0x7ffff745ae34
+Looking for gadgets at 0x7ffff745ae35
+Looking for gadgets at 0x7ffff745ae36
+Looking for gadgets at 0x7ffff745ae37
+Looking for gadgets at 0x7ffff745ae38
+Looking for gadgets at 0x7ffff745ae39
+Looking for gadgets at 0x7ffff745ae3a
+Looking for gadgets at 0x7ffff745ae3b
+Looking for gadgets at 0x7ffff745ae3c
+Looking for gadgets at 0x7ffff745ae3d
+Looking for gadgets at 0x7ffff745ae3e
+Looking for gadgets at 0x7ffff745ae3f
+20|r|
+0x7ffff745ae3f	or     cl,BYTE PTR [rdi]
+0x7ffff745ae41	test   DWORD PTR [rsi-0x14fffffb],ecx
+0x7ffff745ae47	or     bh,bh
+0x7ffff745ae49	or     cl,BYTE PTR [rdi]
+0x7ffff745ae4b	test   DWORD PTR [rbp+rax*1-0x76b80000],eax
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae40
+Looking for gadgets at 0x7ffff745ae41
+19|r|
+0x7ffff745ae41	test   DWORD PTR [rsi-0x14fffffb],ecx
+0x7ffff745ae47	or     bh,bh
+0x7ffff745ae49	or     cl,BYTE PTR [rdi]
+0x7ffff745ae4b	test   DWORD PTR [rbp+rax*1-0x76b80000],eax
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae42
+Looking for gadgets at 0x7ffff745ae43
+Looking for gadgets at 0x7ffff745ae44
+Looking for gadgets at 0x7ffff745ae45
+19|r|
+0x7ffff745ae45	add    bl,ch
+0x7ffff745ae47	or     bh,bh
+0x7ffff745ae49	or     cl,BYTE PTR [rdi]
+0x7ffff745ae4b	test   DWORD PTR [rbp+rax*1-0x76b80000],eax
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae46
+Looking for gadgets at 0x7ffff745ae47
+18|r|
+0x7ffff745ae47	or     bh,bh
+0x7ffff745ae49	or     cl,BYTE PTR [rdi]
+0x7ffff745ae4b	test   DWORD PTR [rbp+rax*1-0x76b80000],eax
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae48
+Looking for gadgets at 0x7ffff745ae49
+17|r|
+0x7ffff745ae49	or     cl,BYTE PTR [rdi]
+0x7ffff745ae4b	test   DWORD PTR [rbp+rax*1-0x76b80000],eax
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae4a
+Looking for gadgets at 0x7ffff745ae4b
+16|r|
+0x7ffff745ae4b	test   DWORD PTR [rbp+rax*1-0x76b80000],eax
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae4c
+16|r|
+0x7ffff745ae4c	test   BYTE PTR [rip+0xffffffff89480000],al        # 0x7fff808dae52
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae4d
+16|r|
+0x7ffff745ae4d	add    eax,0x89480000
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae4e
+Looking for gadgets at 0x7ffff745ae4f
+16|r|
+0x7ffff745ae4f	add    BYTE PTR [rax-0x77],cl
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae50
+Looking for gadgets at 0x7ffff745ae51
+Looking for gadgets at 0x7ffff745ae52
+15|r|
+0x7ffff745ae52	fucomip st,st(0)
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae53
+Looking for gadgets at 0x7ffff745ae54
+14|r|
+0x7ffff745ae54	sbb    BYTE PTR [rip+0xffffffff8b480000],cl        # 0x7fff828dae5a
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae55
+14|r|
+0x7ffff745ae55	or     eax,0x8b480000
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae56
+Looking for gadgets at 0x7ffff745ae57
+14|r|
+0x7ffff745ae57	add    BYTE PTR [rax-0x75],cl
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae58
+Looking for gadgets at 0x7ffff745ae59
+Looking for gadgets at 0x7ffff745ae5a
+13|r|
+0x7ffff745ae5a	jae    0x7ffff745ae94 <_IO_file_underflow+308>
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae5b
+Looking for gadgets at 0x7ffff745ae5c
+Looking for gadgets at 0x7ffff745ae5d
+Looking for gadgets at 0x7ffff745ae5e
+Looking for gadgets at 0x7ffff745ae5f
+Looking for gadgets at 0x7ffff745ae60
+Looking for gadgets at 0x7ffff745ae61
+Looking for gadgets at 0x7ffff745ae62
+Looking for gadgets at 0x7ffff745ae63
+Looking for gadgets at 0x7ffff745ae64
+Looking for gadgets at 0x7ffff745ae65
+Looking for gadgets at 0x7ffff745ae66
+Looking for gadgets at 0x7ffff745ae67
+Looking for gadgets at 0x7ffff745ae68
+Looking for gadgets at 0x7ffff745ae69
+Looking for gadgets at 0x7ffff745ae6a
+Looking for gadgets at 0x7ffff745ae6b
+Looking for gadgets at 0x7ffff745ae6c
+Looking for gadgets at 0x7ffff745ae6d
+Looking for gadgets at 0x7ffff745ae6e
+Looking for gadgets at 0x7ffff745ae6f
+Looking for gadgets at 0x7ffff745ae70
+15|r|
+0x7ffff745ae70	or     BYTE PTR [rax-0x77],cl
+0x7ffff745ae73	jae    0x7ffff745ae8d <_IO_file_underflow+301>
+0x7ffff745ae8d	rex.X
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae71
+Looking for gadgets at 0x7ffff745ae72
+Looking for gadgets at 0x7ffff745ae73
+14|r|
+0x7ffff745ae73	jae    0x7ffff745ae8d <_IO_file_underflow+301>
+0x7ffff745ae8d	rex.X
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae74
+16|r|
+0x7ffff745ae74	sbb    BYTE PTR [rax-0x77],cl
+0x7ffff745ae77	jae    0x7ffff745ae89 <_IO_file_underflow+297>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+13|r|
+0x7ffff745ae74	sbb    BYTE PTR [rax-0x77],cl
+0x7ffff745ae77	jae    0x7ffff745ae89 <_IO_file_underflow+297>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745ae75
+Looking for gadgets at 0x7ffff745ae76
+Looking for gadgets at 0x7ffff745ae77
+15|r|
+0x7ffff745ae77	jae    0x7ffff745ae89 <_IO_file_underflow+297>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+12|r|
+0x7ffff745ae77	jae    0x7ffff745ae89 <_IO_file_underflow+297>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745ae78
+7|r|
+0x7ffff745ae78	adc    BYTE PTR [rax-0x77],cl
+0x7ffff745ae7b	jae    0x7ffff745aead <_IO_file_underflow+333>
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae79
+Looking for gadgets at 0x7ffff745ae7a
+Looking for gadgets at 0x7ffff745ae7b
+6|r|
+0x7ffff745ae7b	jae    0x7ffff745aead <_IO_file_underflow+333>
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae7c
+8|r|
+0x7ffff745ae7c	xor    BYTE PTR [rax-0x77],cl
+0x7ffff745ae7f	jae    0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae7d
+Looking for gadgets at 0x7ffff745ae7e
+Looking for gadgets at 0x7ffff745ae7f
+7|r|
+0x7ffff745ae7f	jae    0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae80
+11|r|
+0x7ffff745ae80	sub    BYTE PTR [rax-0x77],cl
+0x7ffff745ae83	jae    0x7ffff745aea5 <_IO_file_underflow+325>
+0x7ffff745aea5	nop
+0x7ffff745aea6	add    BYTE PTR [rax],al
+0x7ffff745aea8	add    BYTE PTR [rax-0x75],cl
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae81
+Looking for gadgets at 0x7ffff745ae82
+Looking for gadgets at 0x7ffff745ae83
+10|r|
+0x7ffff745ae83	jae    0x7ffff745aea5 <_IO_file_underflow+325>
+0x7ffff745aea5	nop
+0x7ffff745aea6	add    BYTE PTR [rax],al
+0x7ffff745aea8	add    BYTE PTR [rax-0x75],cl
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae84
+17|r|
+0x7ffff745ae84	and    bh,bh
+0x7ffff745ae86	push   rax
+0x7ffff745ae87	jo     0x7ffff745aed1 <_IO_file_underflow+369>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+14|r|
+0x7ffff745ae84	and    bh,bh
+0x7ffff745ae86	push   rax
+0x7ffff745ae87	jo     0x7ffff745aed1 <_IO_file_underflow+369>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745ae85
+Looking for gadgets at 0x7ffff745ae86
+16|r|
+0x7ffff745ae86	push   rax
+0x7ffff745ae87	jo     0x7ffff745aed1 <_IO_file_underflow+369>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+13|r|
+0x7ffff745ae86	push   rax
+0x7ffff745ae87	jo     0x7ffff745aed1 <_IO_file_underflow+369>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745ae87
+15|r|
+0x7ffff745ae87	jo     0x7ffff745aed1 <_IO_file_underflow+369>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+12|r|
+0x7ffff745ae87	jo     0x7ffff745aed1 <_IO_file_underflow+369>
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745ae88
+14|r|
+0x7ffff745ae88	cmp    rax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+11|r|
+0x7ffff745ae88	cmp    rax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745ae89
+14|r|
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+11|r|
+0x7ffff745ae89	cmp    eax,0x0
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745ae8a
+14|r|
+0x7ffff745ae8a	clc
+0x7ffff745ae8b	add    BYTE PTR [rsi+0x42],bh
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae8b
+13|r|
+0x7ffff745ae8b	add    BYTE PTR [rsi+0x42],bh
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae8c
+13|r|
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+10|r|
+0x7ffff745ae8c	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745ae8d
+13|r|
+0x7ffff745ae8d	rex.X
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae8e
+12|r|
+0x7ffff745ae8e	mov    rdx,QWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae8f
+12|r|
+0x7ffff745ae8f	mov    edx,DWORD PTR [rbx+0x90]
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae90
+15|r|
+0x7ffff745ae90	xchg   ebx,eax
+0x7ffff745ae91	nop
+0x7ffff745ae92	add    BYTE PTR [rax],al
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae91
+14|r|
+0x7ffff745ae91	nop
+0x7ffff745ae92	add    BYTE PTR [rax],al
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae92
+13|r|
+0x7ffff745ae92	add    BYTE PTR [rax],al
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae93
+12|r|
+0x7ffff745ae93	add    BYTE PTR [rax],al
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae94
+12|r|
+0x7ffff745ae94	add    BYTE PTR [rax+0x1],cl
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae95
+11|r|
+0x7ffff745ae95	add    QWORD PTR [rbx+0x10],rax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae96
+11|r|
+0x7ffff745ae96	add    DWORD PTR [rbx+0x10],eax
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae97
+11|r|
+0x7ffff745ae97	rex.XB adc BYTE PTR [r8-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae98
+11|r|
+0x7ffff745ae98	adc    BYTE PTR [rax-0x7d],cl
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae99
+10|r|
+0x7ffff745ae99	cmp    rdx,0xffffffffffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae9a
+10|r|
+0x7ffff745ae9a	cmp    edx,0xffffffff
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae9b
+10|r|
+0x7ffff745ae9b	cli
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae9c
+9|r|
+0x7ffff745ae9c	push   QWORD PTR [rdx+rcx*1+0x48]
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae9d
+9|r|
+0x7ffff745ae9d	je     0x7ffff745aea9 <_IO_file_underflow+329>
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae9e
+9|r|
+0x7ffff745ae9e	or     cl,BYTE PTR [rax+0x1]
+0x7ffff745aea1	ror    BYTE PTR [rax-0x77],1
+0x7ffff745aea4	adc    DWORD PTR [rax+0x48000000],0xffffff8b
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745ae9f
+8|r|
+0x7ffff745ae9f	add    rax,rdx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea0
+8|r|
+0x7ffff745aea0	add    eax,edx
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea1
+8|r|
+0x7ffff745aea1	ror    BYTE PTR [rax-0x77],1
+0x7ffff745aea4	adc    DWORD PTR [rax+0x48000000],0xffffff8b
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea2
+7|r|
+0x7ffff745aea2	mov    QWORD PTR [rbx+0x90],rax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea3
+7|r|
+0x7ffff745aea3	mov    DWORD PTR [rbx+0x90],eax
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea4
+7|r|
+0x7ffff745aea4	adc    DWORD PTR [rax+0x48000000],0xffffff8b
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea5
+9|r|
+0x7ffff745aea5	nop
+0x7ffff745aea6	add    BYTE PTR [rax],al
+0x7ffff745aea8	add    BYTE PTR [rax-0x75],cl
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea6
+8|r|
+0x7ffff745aea6	add    BYTE PTR [rax],al
+0x7ffff745aea8	add    BYTE PTR [rax-0x75],cl
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea7
+7|r|
+0x7ffff745aea7	add    BYTE PTR [rax],al
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea8
+7|r|
+0x7ffff745aea8	add    BYTE PTR [rax-0x75],cl
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aea9
+6|r|
+0x7ffff745aea9	mov    rax,QWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeaa
+6|r|
+0x7ffff745aeaa	mov    eax,DWORD PTR [rbx+0x8]
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeab
+6|r|
+0x7ffff745aeab	rex.XB or BYTE PTR [r15],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeac
+6|r|
+0x7ffff745aeac	or     BYTE PTR [rdi],cl
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aead
+5|r|
+0x7ffff745aead	movzx  eax,BYTE PTR [rax]
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeae
+5|r|
+0x7ffff745aeae	mov    dh,0x0
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeaf
+Looking for gadgets at 0x7ffff745aeb0
+4|r|
+0x7ffff745aeb0	add    rsp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeb1
+4|r|
+0x7ffff745aeb1	add    esp,0x8
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeb2
+Looking for gadgets at 0x7ffff745aeb3
+2|r|
+0x7ffff745aeb3	or     BYTE PTR [rbx+0x5d],bl
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeb4
+3|r|
+0x7ffff745aeb4	pop    rbx
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeb5
+2|r|
+0x7ffff745aeb5	pop    rbp
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeb6
+1|r|
+0x7ffff745aeb6	ret
+Looking for gadgets at 0x7ffff745aeb7
+6|r|
+0x7ffff745aeb7	nop    WORD PTR [rax+rax*1+0x0]
+0x7ffff745aec0	movzx  eax,BYTE PTR [rdx]
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aeb8
+6|r|
+0x7ffff745aeb8	nop    DWORD PTR [rax+rax*1+0x0]
+0x7ffff745aec0	movzx  eax,BYTE PTR [rdx]
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aeb9
+Looking for gadgets at 0x7ffff745aeba
+8|r|
+0x7ffff745aeba	test   BYTE PTR [rax],al
+0x7ffff745aebc	add    BYTE PTR [rax],al
+0x7ffff745aebe	add    BYTE PTR [rax],al
+0x7ffff745aec0	movzx  eax,BYTE PTR [rdx]
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aebb
+8|r|
+0x7ffff745aebb	add    BYTE PTR [rax],al
+0x7ffff745aebd	add    BYTE PTR [rax],al
+0x7ffff745aebf	add    BYTE PTR [rdi],cl
+0x7ffff745aec1	mov    dh,0x2
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aebc
+7|r|
+0x7ffff745aebc	add    BYTE PTR [rax],al
+0x7ffff745aebe	add    BYTE PTR [rax],al
+0x7ffff745aec0	movzx  eax,BYTE PTR [rdx]
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aebd
+7|r|
+0x7ffff745aebd	add    BYTE PTR [rax],al
+0x7ffff745aebf	add    BYTE PTR [rdi],cl
+0x7ffff745aec1	mov    dh,0x2
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aebe
+6|r|
+0x7ffff745aebe	add    BYTE PTR [rax],al
+0x7ffff745aec0	movzx  eax,BYTE PTR [rdx]
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aebf
+6|r|
+0x7ffff745aebf	add    BYTE PTR [rdi],cl
+0x7ffff745aec1	mov    dh,0x2
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aec0
+5|r|
+0x7ffff745aec0	movzx  eax,BYTE PTR [rdx]
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aec1
+5|r|
+0x7ffff745aec1	mov    dh,0x2
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aec2
+Looking for gadgets at 0x7ffff745aec3
+4|r|
+0x7ffff745aec3	add    rsp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aec4
+4|r|
+0x7ffff745aec4	add    esp,0x8
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aec5
+Looking for gadgets at 0x7ffff745aec6
+2|r|
+0x7ffff745aec6	or     BYTE PTR [rbx+0x5d],bl
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aec7
+3|r|
+0x7ffff745aec7	pop    rbx
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aec8
+2|r|
+0x7ffff745aec8	pop    rbp
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aec9
+1|r|
+0x7ffff745aec9	ret
+Looking for gadgets at 0x7ffff745aeca
+10|r|
+0x7ffff745aeca	nop    WORD PTR [rax+rax*1+0x0]
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aecb
+10|r|
+0x7ffff745aecb	nop    DWORD PTR [rax+rax*1+0x0]
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aecc
+Looking for gadgets at 0x7ffff745aecd
+10|r|
+0x7ffff745aecd	add    BYTE PTR [rax],r8b
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aece
+10|r|
+0x7ffff745aece	add    BYTE PTR [rax],al
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aecf
+7|r|
+0x7ffff745aecf	add    BYTE PTR [rbx-0x7cc38afd],cl
+0x7ffff745aed5	enter  0x8910,0x3
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed0
+9|r|
+0x7ffff745aed0	mov    eax,DWORD PTR [rbx]
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed1
+8|r|
+0x7ffff745aed1	add    esi,DWORD PTR [rbp+0x3c]
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed2
+8|r|
+0x7ffff745aed2	jne    0x7ffff745af10 <_IO_file_underflow+432>
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed3
+7|r|
+0x7ffff745aed3	cmp    al,0x83
+0x7ffff745aed5	enter  0x8910,0x3
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed4
+7|r|
+0x7ffff745aed4	or     eax,0x10
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed5
+6|r|
+0x7ffff745aed5	enter  0x8910,0x3
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed6
+5|r|
+0x7ffff745aed6	adc    BYTE PTR [rcx-0x3b7cb7fd],cl
+0x7ffff745aedc	or     BYTE PTR [rax-0x1],bh
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed7
+6|r|
+0x7ffff745aed7	mov    DWORD PTR [rbx],eax
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aed8
+Looking for gadgets at 0x7ffff745aed9
+5|r|
+0x7ffff745aed9	add    rsp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aeda
+5|r|
+0x7ffff745aeda	add    esp,0x8
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aedb
+Looking for gadgets at 0x7ffff745aedc
+4|r|
+0x7ffff745aedc	or     BYTE PTR [rax-0x1],bh
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aedd
+4|r|
+0x7ffff745aedd	mov    eax,0xffffffff
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aede
+Looking for gadgets at 0x7ffff745aedf
+Looking for gadgets at 0x7ffff745aee0
+Looking for gadgets at 0x7ffff745aee1
+Looking for gadgets at 0x7ffff745aee2
+3|r|
+0x7ffff745aee2	pop    rbx
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aee3
+2|r|
+0x7ffff745aee3	pop    rbp
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aee4
+1|r|
+0x7ffff745aee4	ret
+Looking for gadgets at 0x7ffff745aee5
+Looking for gadgets at 0x7ffff745aee6
+Looking for gadgets at 0x7ffff745aee7
+Looking for gadgets at 0x7ffff745aee8
+Looking for gadgets at 0x7ffff745aee9
+Looking for gadgets at 0x7ffff745aeea
+Looking for gadgets at 0x7ffff745aeeb
+Looking for gadgets at 0x7ffff745aeec
+Looking for gadgets at 0x7ffff745aeed
+Looking for gadgets at 0x7ffff745aeee
+Looking for gadgets at 0x7ffff745aeef
+Looking for gadgets at 0x7ffff745aef0
+Looking for gadgets at 0x7ffff745aef1
+Looking for gadgets at 0x7ffff745aef2
+Looking for gadgets at 0x7ffff745aef3
+Looking for gadgets at 0x7ffff745aef4
+Looking for gadgets at 0x7ffff745aef5
+Looking for gadgets at 0x7ffff745aef6
+Looking for gadgets at 0x7ffff745aef7
+Looking for gadgets at 0x7ffff745aef8
+Looking for gadgets at 0x7ffff745aef9
+Looking for gadgets at 0x7ffff745aefa
+Looking for gadgets at 0x7ffff745aefb
+Looking for gadgets at 0x7ffff745aefc
+Looking for gadgets at 0x7ffff745aefd
+Looking for gadgets at 0x7ffff745aefe
+Looking for gadgets at 0x7ffff745aeff

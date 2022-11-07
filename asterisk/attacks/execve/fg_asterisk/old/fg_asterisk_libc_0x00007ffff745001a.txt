@@ -1,0 +1,1688 @@
+Searching for gadgets in the range [0x7ffff7450000 - 0x7ffff74500ff]
+Looking for gadgets at 0x7ffff7450000
+11|r|
+0x7ffff7450000	je     0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450001
+Looking for gadgets at 0x7ffff7450002
+Looking for gadgets at 0x7ffff7450003
+Looking for gadgets at 0x7ffff7450004
+Looking for gadgets at 0x7ffff7450005
+Looking for gadgets at 0x7ffff7450006
+Looking for gadgets at 0x7ffff7450007
+Looking for gadgets at 0x7ffff7450008
+Looking for gadgets at 0x7ffff7450009
+Looking for gadgets at 0x7ffff745000a
+Looking for gadgets at 0x7ffff745000b
+Looking for gadgets at 0x7ffff745000c
+Looking for gadgets at 0x7ffff745000d
+Looking for gadgets at 0x7ffff745000e
+Looking for gadgets at 0x7ffff745000f
+Looking for gadgets at 0x7ffff7450010
+Looking for gadgets at 0x7ffff7450011
+Looking for gadgets at 0x7ffff7450012
+Looking for gadgets at 0x7ffff7450013
+Looking for gadgets at 0x7ffff7450014
+Looking for gadgets at 0x7ffff7450015
+Looking for gadgets at 0x7ffff7450016
+20|r|
+0x7ffff7450016	idiv   BYTE PTR [rax+rax*1-0x77d00]
+0x7ffff745001d	je     0x7ffff74500b1 <_IO_getline_info+321>
+0x7ffff7450023	cmp    eax,r12d
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450017
+Looking for gadgets at 0x7ffff7450018
+Looking for gadgets at 0x7ffff7450019
+Looking for gadgets at 0x7ffff745001a
+20|r|
+0x7ffff745001a	cmp    eax,0xffffffff
+0x7ffff745001d	je     0x7ffff74500b1 <_IO_getline_info+321>
+0x7ffff7450023	cmp    eax,r12d
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745001b
+Looking for gadgets at 0x7ffff745001c
+20|r|
+0x7ffff745001c	dec    DWORD PTR [rdi]
+0x7ffff745001e	test   BYTE PTR [rsi+0x44000000],cl
+0x7ffff7450024	cmp    eax,esp
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745001d
+19|r|
+0x7ffff745001d	je     0x7ffff74500b1 <_IO_getline_info+321>
+0x7ffff7450023	cmp    eax,r12d
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745001e
+19|r|
+0x7ffff745001e	test   BYTE PTR [rsi+0x44000000],cl
+0x7ffff7450024	cmp    eax,esp
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745001f
+20|r|
+0x7ffff745001f	mov    es,WORD PTR [rax]
+0x7ffff7450021	add    BYTE PTR [rax],al
+0x7ffff7450023	cmp    eax,r12d
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450020
+19|r|
+0x7ffff7450020	add    BYTE PTR [rax],al
+0x7ffff7450022	add    BYTE PTR [rcx+rdi*1-0x20],al
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450021
+19|r|
+0x7ffff7450021	add    BYTE PTR [rax],al
+0x7ffff7450023	cmp    eax,r12d
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450022
+18|r|
+0x7ffff7450022	add    BYTE PTR [rcx+rdi*1-0x20],al
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450023
+18|r|
+0x7ffff7450023	cmp    eax,r12d
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450024
+18|r|
+0x7ffff7450024	cmp    eax,esp
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450025
+18|r|
+0x7ffff7450025	loopne 0x7ffff7450036 <_IO_getline_info+198>
+0x7ffff7450027	test   BYTE PTR [rcx+0x48000000],ah
+0x7ffff745002d	sub    ebp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450026
+17|r|
+0x7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450027
+17|r|
+0x7ffff7450027	test   BYTE PTR [rcx+0x48000000],ah
+0x7ffff745002d	sub    ebp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450028
+16|r|
+0x7ffff7450028	movabs eax,ds:0x4101ed8348000000
+0x7ffff7450031	mov    BYTE PTR [rdi],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450029
+Looking for gadgets at 0x7ffff745002a
+17|r|
+0x7ffff745002a	add    BYTE PTR [rax],al
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745002b
+Looking for gadgets at 0x7ffff745002c
+16|r|
+0x7ffff745002c	sub    rbp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745002d
+16|r|
+0x7ffff745002d	sub    ebp,0x1
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745002e
+Looking for gadgets at 0x7ffff745002f
+Looking for gadgets at 0x7ffff7450030
+15|r|
+0x7ffff7450030	mov    BYTE PTR [r15],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450031
+15|r|
+0x7ffff7450031	mov    BYTE PTR [rdi],al
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450032
+Looking for gadgets at 0x7ffff7450033
+14|r|
+0x7ffff7450033	add    r15,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450034
+14|r|
+0x7ffff7450034	add    edi,0x1
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450035
+Looking for gadgets at 0x7ffff7450036
+14|r|
+0x7ffff7450036	add    DWORD PTR [rax-0x7b],ecx
+0x7ffff7450039	in     eax,dx
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450037
+13|r|
+0x7ffff7450037	test   rbp,rbp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450038
+13|r|
+0x7ffff7450038	test   ebp,ebp
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450039
+13|r|
+0x7ffff7450039	in     eax,dx
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745003a
+12|r|
+0x7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745003b
+Looking for gadgets at 0x7ffff745003c
+11|r|
+0x7ffff745003c	nop    DWORD PTR [rax+0x0]
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745003d
+Looking for gadgets at 0x7ffff745003e
+10|r|
+0x7ffff745003e	add    BYTE PTR [rcx+rcx*4-0x8],cl
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745003f
+10|r|
+0x7ffff745003f	add    BYTE PTR [rcx+rcx*4-0x8],cl
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450040
+10|r|
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450041
+10|r|
+0x7ffff7450041	mov    eax,edi
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450042
+10|r|
+0x7ffff7450042	clc
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450043
+9|r|
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450044
+9|r|
+0x7ffff7450044	sub    eax,DWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450045
+9|r|
+0x7ffff7450045	rex.R and al,0x8
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450046
+9|r|
+0x7ffff7450046	and    al,0x8
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450047
+Looking for gadgets at 0x7ffff7450048
+8|r|
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450049
+8|r|
+0x7ffff7450049	add    esp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745004a
+Looking for gadgets at 0x7ffff745004b
+6|r|
+0x7ffff745004b	sub    BYTE PTR [rbx+0x5d],bl
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745004c
+7|r|
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745004d
+6|r|
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745004e
+5|r|
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff745004f
+5|r|
+0x7ffff745004f	pop    rsp
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450050
+4|r|
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450051
+4|r|
+0x7ffff7450051	pop    rbp
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450052
+3|r|
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450053
+3|r|
+0x7ffff7450053	pop    rsi
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450054
+2|r|
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450055
+2|r|
+0x7ffff7450055	pop    rdi
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450056
+1|r|
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff7450057
+Looking for gadgets at 0x7ffff7450058
+Looking for gadgets at 0x7ffff7450059
+Looking for gadgets at 0x7ffff745005a
+Looking for gadgets at 0x7ffff745005b
+Looking for gadgets at 0x7ffff745005c
+Looking for gadgets at 0x7ffff745005d
+Looking for gadgets at 0x7ffff745005e
+Looking for gadgets at 0x7ffff745005f
+Looking for gadgets at 0x7ffff7450060
+Looking for gadgets at 0x7ffff7450061
+Looking for gadgets at 0x7ffff7450062
+Looking for gadgets at 0x7ffff7450063
+Looking for gadgets at 0x7ffff7450064
+Looking for gadgets at 0x7ffff7450065
+Looking for gadgets at 0x7ffff7450066
+Looking for gadgets at 0x7ffff7450067
+Looking for gadgets at 0x7ffff7450068
+Looking for gadgets at 0x7ffff7450069
+Looking for gadgets at 0x7ffff745006a
+Looking for gadgets at 0x7ffff745006b
+Looking for gadgets at 0x7ffff745006c
+Looking for gadgets at 0x7ffff745006d
+Looking for gadgets at 0x7ffff745006e
+Looking for gadgets at 0x7ffff745006f
+Looking for gadgets at 0x7ffff7450070
+Looking for gadgets at 0x7ffff7450071
+Looking for gadgets at 0x7ffff7450072
+Looking for gadgets at 0x7ffff7450073
+Looking for gadgets at 0x7ffff7450074
+Looking for gadgets at 0x7ffff7450075
+Looking for gadgets at 0x7ffff7450076
+Looking for gadgets at 0x7ffff7450077
+Looking for gadgets at 0x7ffff7450078
+Looking for gadgets at 0x7ffff7450079
+Looking for gadgets at 0x7ffff745007a
+Looking for gadgets at 0x7ffff745007b
+Looking for gadgets at 0x7ffff745007c
+Looking for gadgets at 0x7ffff745007d
+Looking for gadgets at 0x7ffff745007e
+Looking for gadgets at 0x7ffff745007f
+Looking for gadgets at 0x7ffff7450080
+Looking for gadgets at 0x7ffff7450081
+Looking for gadgets at 0x7ffff7450082
+Looking for gadgets at 0x7ffff7450083
+Looking for gadgets at 0x7ffff7450084
+Looking for gadgets at 0x7ffff7450085
+Looking for gadgets at 0x7ffff7450086
+Looking for gadgets at 0x7ffff7450087
+Looking for gadgets at 0x7ffff7450088
+Looking for gadgets at 0x7ffff7450089
+Looking for gadgets at 0x7ffff745008a
+Looking for gadgets at 0x7ffff745008b
+Looking for gadgets at 0x7ffff745008c
+Looking for gadgets at 0x7ffff745008d
+Looking for gadgets at 0x7ffff745008e
+Looking for gadgets at 0x7ffff745008f
+Looking for gadgets at 0x7ffff7450090
+Looking for gadgets at 0x7ffff7450091
+Looking for gadgets at 0x7ffff7450092
+Looking for gadgets at 0x7ffff7450093
+12|r|
+0x7ffff7450093	add    al,BYTE PTR [rax]
+0x7ffff7450095	mov    rcx,QWORD PTR [rsp]
+0x7ffff7450099	lea    rax,[rbp+r12*1+0x0]
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff7450094
+12|r|
+0x7ffff7450094	add    BYTE PTR [rax-0x75],cl
+0x7ffff7450097	or     al,0x24
+0x7ffff7450099	lea    rax,[rbp+r12*1+0x0]
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff7450095
+11|r|
+0x7ffff7450095	mov    rcx,QWORD PTR [rsp]
+0x7ffff7450099	lea    rax,[rbp+r12*1+0x0]
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff7450096
+11|r|
+0x7ffff7450096	mov    ecx,DWORD PTR [rsp]
+0x7ffff7450099	lea    rax,[rbp+r12*1+0x0]
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff7450097
+11|r|
+0x7ffff7450097	or     al,0x24
+0x7ffff7450099	lea    rax,[rbp+r12*1+0x0]
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff7450098
+11|r|
+0x7ffff7450098	and    al,0x4a
+0x7ffff745009a	lea    eax,[rbp+riz*1+0x0]
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff7450099
+10|r|
+0x7ffff7450099	lea    rax,[rbp+r12*1+0x0]
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff745009a
+10|r|
+0x7ffff745009a	lea    eax,[rbp+riz*1+0x0]
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff745009b
+Looking for gadgets at 0x7ffff745009c
+Looking for gadgets at 0x7ffff745009d
+Looking for gadgets at 0x7ffff745009e
+9|r|
+0x7ffff745009e	mov    QWORD PTR [rbx+0x8],rcx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff745009f
+9|r|
+0x7ffff745009f	mov    DWORD PTR [rbx+0x8],ecx
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500a0
+Looking for gadgets at 0x7ffff74500a1
+Looking for gadgets at 0x7ffff74500a2
+8|r|
+0x7ffff74500a2	add    rsp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500a3
+8|r|
+0x7ffff74500a3	add    esp,0x28
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500a4
+Looking for gadgets at 0x7ffff74500a5
+6|r|
+0x7ffff74500a5	sub    BYTE PTR [rbx+0x5d],bl
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500a6
+7|r|
+0x7ffff74500a6	pop    rbx
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500a7
+6|r|
+0x7ffff74500a7	pop    rbp
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500a8
+5|r|
+0x7ffff74500a8	pop    r12
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500a9
+5|r|
+0x7ffff74500a9	pop    rsp
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500aa
+4|r|
+0x7ffff74500aa	pop    r13
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500ab
+4|r|
+0x7ffff74500ab	pop    rbp
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500ac
+3|r|
+0x7ffff74500ac	pop    r14
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500ad
+3|r|
+0x7ffff74500ad	pop    rsi
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500ae
+2|r|
+0x7ffff74500ae	pop    r15
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500af
+2|r|
+0x7ffff74500af	pop    rdi
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500b0
+1|r|
+0x7ffff74500b0	ret
+Looking for gadgets at 0x7ffff74500b1
+15|r|
+0x7ffff74500b1	cmp    QWORD PTR [rsp+0x10],0x0
+0x7ffff74500b7	je     0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff74500b9	mov    rdx,QWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500b2
+15|r|
+0x7ffff74500b2	cmp    DWORD PTR [rsp+0x10],0x0
+0x7ffff74500b7	je     0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff74500b9	mov    rdx,QWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500b3
+16|r|
+0x7ffff74500b3	jl     0x7ffff74500d9 <_IO_getline_info+361>
+0x7ffff74500b5	adc    BYTE PTR [rax],al
+0x7ffff74500b7	je     0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff74500b9	mov    rdx,QWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500b4
+15|r|
+0x7ffff74500b4	and    al,0x10
+0x7ffff74500b6	add    BYTE PTR [rdi+rax*4+0x48],dh
+0x7ffff74500ba	mov    edx,DWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500b5
+15|r|
+0x7ffff74500b5	adc    BYTE PTR [rax],al
+0x7ffff74500b7	je     0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff74500b9	mov    rdx,QWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500b6
+14|r|
+0x7ffff74500b6	add    BYTE PTR [rdi+rax*4+0x48],dh
+0x7ffff74500ba	mov    edx,DWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500b7
+14|r|
+0x7ffff74500b7	je     0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff74500b9	mov    rdx,QWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500b8
+15|r|
+0x7ffff74500b8	xchg   DWORD PTR [rax-0x75],ecx
+0x7ffff74500bb	push   rsp
+0x7ffff74500bc	and    al,0x10
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500b9
+13|r|
+0x7ffff74500b9	mov    rdx,QWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500ba
+13|r|
+0x7ffff74500ba	mov    edx,DWORD PTR [rsp+0x10]
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500bb
+14|r|
+0x7ffff74500bb	push   rsp
+0x7ffff74500bc	and    al,0x10
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500bc
+13|r|
+0x7ffff74500bc	and    al,0x10
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500bd
+11|r|
+0x7ffff74500bd	adc    BYTE PTR [rcx-0x776b3fe],cl
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500be
+12|r|
+0x7ffff74500be	mov    DWORD PTR [rdx],eax
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500bf
+11|r|
+0x7ffff74500bf	add    cl,BYTE PTR [rcx+rcx*4-0x8]
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c0
+11|r|
+0x7ffff74500c0	mov    rax,r15
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c1
+11|r|
+0x7ffff74500c1	mov    eax,edi
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c2
+11|r|
+0x7ffff74500c2	clc
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c3
+10|r|
+0x7ffff74500c3	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c4
+10|r|
+0x7ffff74500c4	sub    eax,DWORD PTR [rsp+0x8]
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c5
+10|r|
+0x7ffff74500c5	rex.R and al,0x8
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c6
+10|r|
+0x7ffff74500c6	and    al,0x8
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c7
+Looking for gadgets at 0x7ffff74500c8
+9|r|
+0x7ffff74500c8	jmp    0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500c9
+Looking for gadgets at 0x7ffff74500ca
+Looking for gadgets at 0x7ffff74500cb
+Looking for gadgets at 0x7ffff74500cc
+15|r|
+0x7ffff74500cc	inc    DWORD PTR [rbx+0x1c247c]
+0x7ffff74500d2	jle    0x7ffff74500e0 <_IO_getline_info+368>
+0x7ffff74500d4	mov    BYTE PTR [r15],r12b
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500cd
+15|r|
+0x7ffff74500cd	cmp    DWORD PTR [rsp+0x1c],0x0
+0x7ffff74500d2	jle    0x7ffff74500e0 <_IO_getline_info+368>
+0x7ffff74500d4	mov    BYTE PTR [r15],r12b
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500ce
+16|r|
+0x7ffff74500ce	jl     0x7ffff74500f4 <_IO_getline_info+388>
+0x7ffff74500d0	sbb    al,0x0
+0x7ffff74500d2	jle    0x7ffff74500e0 <_IO_getline_info+368>
+0x7ffff74500d4	mov    BYTE PTR [r15],r12b
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500cf
+15|r|
+0x7ffff74500cf	and    al,0x1c
+0x7ffff74500d1	add    BYTE PTR [rsi+0xc],bh
+0x7ffff74500d4	mov    BYTE PTR [r15],r12b
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d0
+15|r|
+0x7ffff74500d0	sbb    al,0x0
+0x7ffff74500d2	jle    0x7ffff74500e0 <_IO_getline_info+368>
+0x7ffff74500d4	mov    BYTE PTR [r15],r12b
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d1
+14|r|
+0x7ffff74500d1	add    BYTE PTR [rsi+0xc],bh
+0x7ffff74500d4	mov    BYTE PTR [r15],r12b
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d2
+14|r|
+0x7ffff74500d2	jle    0x7ffff74500e0 <_IO_getline_info+368>
+0x7ffff74500d4	mov    BYTE PTR [r15],r12b
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d3
+14|r|
+0x7ffff74500d3	or     al,0x45
+0x7ffff74500d5	mov    BYTE PTR [rdi],ah
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d4
+13|r|
+0x7ffff74500d4	mov    BYTE PTR [r15],r12b
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d5
+13|r|
+0x7ffff74500d5	mov    BYTE PTR [rdi],ah
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d6
+Looking for gadgets at 0x7ffff74500d7
+12|r|
+0x7ffff74500d7	add    r15,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d8
+12|r|
+0x7ffff74500d8	add    edi,0x1
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500d9
+Looking for gadgets at 0x7ffff74500da
+Looking for gadgets at 0x7ffff74500db
+11|r|
+0x7ffff74500db	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500dc
+Looking for gadgets at 0x7ffff74500dd
+Looking for gadgets at 0x7ffff74500de
+Looking for gadgets at 0x7ffff74500df
+Looking for gadgets at 0x7ffff74500e0
+11|r|
+0x7ffff74500e0	je     0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500e1
+Looking for gadgets at 0x7ffff74500e2
+Looking for gadgets at 0x7ffff74500e3
+Looking for gadgets at 0x7ffff74500e4
+Looking for gadgets at 0x7ffff74500e5
+Looking for gadgets at 0x7ffff74500e6
+Looking for gadgets at 0x7ffff74500e7
+Looking for gadgets at 0x7ffff74500e8
+Looking for gadgets at 0x7ffff74500e9
+Looking for gadgets at 0x7ffff74500ea
+Looking for gadgets at 0x7ffff74500eb
+3|r|
+0x7ffff74500eb	fucomip st,st(0)
+0x7ffff74500ed	iret
+0x7ffff74500ee	ret
+Looking for gadgets at 0x7ffff74500ec
+Looking for gadgets at 0x7ffff74500ed
+2|r|
+0x7ffff74500ed	iret
+0x7ffff74500ee	ret
+Looking for gadgets at 0x7ffff74500ee
+1|r|
+0x7ffff74500ee	ret
+Looking for gadgets at 0x7ffff74500ef
+12|r|
+0x7ffff74500ef	add    BYTE PTR [rax],al
+0x7ffff74500f1	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500f0
+Looking for gadgets at 0x7ffff74500f1
+11|r|
+0x7ffff74500f1	jmp    0x7ffff7450040 <_IO_getline_info+208>
+0x7ffff7450040	mov    rax,r15
+0x7ffff7450043	sub    rax,QWORD PTR [rsp+0x8]
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500f2
+Looking for gadgets at 0x7ffff74500f3
+Looking for gadgets at 0x7ffff74500f4
+Looking for gadgets at 0x7ffff74500f5
+Looking for gadgets at 0x7ffff74500f6
+13|r|
+0x7ffff74500f6	mov    DWORD PTR [rbx+0xc0],0xffffffff
+0x7ffff7450100	jmp    0x7ffff744ffb0 <_IO_getline_info+64>
+0x7ffff744ffb0	xor    eax,eax
+0x7ffff744ffb2	test   rbp,rbp
+0x7ffff744ffb5	je     0x7ffff7450048 <_IO_getline_info+216>
+0x7ffff7450048	add    rsp,0x28
+0x7ffff745004c	pop    rbx
+0x7ffff745004d	pop    rbp
+0x7ffff745004e	pop    r12
+0x7ffff7450050	pop    r13
+0x7ffff7450052	pop    r14
+0x7ffff7450054	pop    r15
+0x7ffff7450056	ret
+Looking for gadgets at 0x7ffff74500f7
+Looking for gadgets at 0x7ffff74500f8
+Looking for gadgets at 0x7ffff74500f9
+Looking for gadgets at 0x7ffff74500fa
+Looking for gadgets at 0x7ffff74500fb
+Looking for gadgets at 0x7ffff74500fc
+Looking for gadgets at 0x7ffff74500fd
+Looking for gadgets at 0x7ffff74500fe
+Looking for gadgets at 0x7ffff74500ff

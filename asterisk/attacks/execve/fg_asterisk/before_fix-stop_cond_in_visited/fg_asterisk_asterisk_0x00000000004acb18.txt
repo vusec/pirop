@@ -1,0 +1,1803 @@
+Searching for gadgets in the range [0x4acb00 - 0x4acbff]
+Looking for gadgets at 0x4acb00
+Looking for gadgets at 0x4acb01
+Looking for gadgets at 0x4acb02
+Looking for gadgets at 0x4acb03
+Looking for gadgets at 0x4acb04
+Looking for gadgets at 0x4acb05
+Looking for gadgets at 0x4acb06
+Looking for gadgets at 0x4acb07
+Looking for gadgets at 0x4acb08
+Looking for gadgets at 0x4acb09
+Looking for gadgets at 0x4acb0a
+Looking for gadgets at 0x4acb0b
+Looking for gadgets at 0x4acb0c
+Looking for gadgets at 0x4acb0d
+Looking for gadgets at 0x4acb0e
+Looking for gadgets at 0x4acb0f
+Looking for gadgets at 0x4acb10
+Looking for gadgets at 0x4acb11
+Looking for gadgets at 0x4acb12
+Looking for gadgets at 0x4acb13
+Looking for gadgets at 0x4acb14
+Looking for gadgets at 0x4acb15
+Looking for gadgets at 0x4acb16
+Looking for gadgets at 0x4acb17
+Looking for gadgets at 0x4acb18
+Looking for gadgets at 0x4acb19
+Looking for gadgets at 0x4acb1a
+Looking for gadgets at 0x4acb1b
+20|r|
+0x4acb1b	je     0x4acb29 <ast_http_get_post_vars+329>
+0x4acb1d	test   r14,r14
+0x4acb20	je     0x4acb60 <ast_http_get_post_vars+384>
+0x4acb22	mov    QWORD PTR [r13+0x10],rax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb1c
+20|r|
+0x4acb1c	or     al,0x4d
+0x4acb1e	test   esi,esi
+0x4acb20	je     0x4acb60 <ast_http_get_post_vars+384>
+0x4acb22	mov    QWORD PTR [r13+0x10],rax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb1d
+19|r|
+0x4acb1d	test   r14,r14
+0x4acb20	je     0x4acb60 <ast_http_get_post_vars+384>
+0x4acb22	mov    QWORD PTR [r13+0x10],rax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb1e
+19|r|
+0x4acb1e	test   esi,esi
+0x4acb20	je     0x4acb60 <ast_http_get_post_vars+384>
+0x4acb22	mov    QWORD PTR [r13+0x10],rax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb1f
+18|r|
+0x4acb1f	div    BYTE PTR [rsi+rdi*1+0x49]
+0x4acb23	mov    DWORD PTR [rbp+0x10],eax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb20
+18|r|
+0x4acb20	je     0x4acb60 <ast_http_get_post_vars+384>
+0x4acb22	mov    QWORD PTR [r13+0x10],rax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb21
+17|r|
+0x4acb21	mov    QWORD PTR ds:[r13+0x10],rax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb22
+17|r|
+0x4acb22	mov    QWORD PTR [r13+0x10],rax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb23
+17|r|
+0x4acb23	mov    DWORD PTR [rbp+0x10],eax
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb24
+Looking for gadgets at 0x4acb25
+Looking for gadgets at 0x4acb26
+16|r|
+0x4acb26	mov    r13,rax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb27
+16|r|
+0x4acb27	mov    ebp,eax
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb28
+Looking for gadgets at 0x4acb29
+15|r|
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb2a
+15|r|
+0x4acb2a	mov    ebx,esp
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb2b
+15|r|
+0x4acb2b	jrcxz  0x4acb75
+0x4acb2d	test   ebx,ebx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb2c
+14|r|
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb2d
+14|r|
+0x4acb2d	test   ebx,ebx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb2e
+Looking for gadgets at 0x4acb2f
+13|r|
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb30
+Looking for gadgets at 0x4acb31
+12|r|
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb32
+12|r|
+0x4acb32	mov    edx,DWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb33
+15|r|
+0x4acb33	push   rbp
+0x4acb34	enter  0x4864,0x33
+0x4acb38	adc    al,0x25
+0x4acb3a	sub    BYTE PTR [rax],al
+0x4acb3c	add    BYTE PTR [rax],al
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb34
+14|r|
+0x4acb34	enter  0x4864,0x33
+0x4acb38	adc    al,0x25
+0x4acb3a	sub    BYTE PTR [rax],al
+0x4acb3c	add    BYTE PTR [rax],al
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb35
+11|r|
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb36
+11|r|
+0x4acb36	xor    rdx,QWORD PTR ds:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb37
+11|r|
+0x4acb37	xor    edx,DWORD PTR ds:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb38
+13|r|
+0x4acb38	adc    al,0x25
+0x4acb3a	sub    BYTE PTR [rax],al
+0x4acb3c	add    BYTE PTR [rax],al
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb39
+11|r|
+0x4acb39	and    eax,0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb3a
+12|r|
+0x4acb3a	sub    BYTE PTR [rax],al
+0x4acb3c	add    BYTE PTR [rax],al
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb3b
+11|r|
+0x4acb3b	add    BYTE PTR [rax],al
+0x4acb3d	add    BYTE PTR [rcx+rcx*4-0x10],cl
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb3c
+11|r|
+0x4acb3c	add    BYTE PTR [rax],al
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb3d
+10|r|
+0x4acb3d	add    BYTE PTR [rcx+rcx*4-0x10],cl
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb3e
+10|r|
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb3f
+10|r|
+0x4acb3f	mov    eax,esi
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb40
+9|r|
+0x4acb40	lock jne 0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb41
+9|r|
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb42
+8|r|
+0x4acb42	sub    cl,BYTE PTR [rax-0x73]
+0x4acb45	fcomp  DWORD PTR gs:[rbx+0x41]
+0x4acb49	pop    rsp
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb43
+8|r|
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb44
+8|r|
+0x4acb44	lea    esp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb45
+7|r|
+0x4acb45	fcomp  DWORD PTR gs:[rbx+0x41]
+0x4acb49	pop    rsp
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb46
+7|r|
+0x4acb46	fcomp  DWORD PTR [rbx+0x41]
+0x4acb49	pop    rsp
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb47
+7|r|
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb48
+6|r|
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb49
+6|r|
+0x4acb49	pop    rsp
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb4a
+5|r|
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb4b
+5|r|
+0x4acb4b	pop    rbp
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb4c
+4|r|
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb4d
+4|r|
+0x4acb4d	pop    rsi
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb4e
+3|r|
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb4f
+3|r|
+0x4acb4f	pop    rdi
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb50
+2|r|
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb51
+1|r|
+0x4acb51	ret
+Looking for gadgets at 0x4acb52
+Looking for gadgets at 0x4acb53
+Looking for gadgets at 0x4acb54
+Looking for gadgets at 0x4acb55
+Looking for gadgets at 0x4acb56
+Looking for gadgets at 0x4acb57
+19|r|
+0x4acb57	add    BYTE PTR [rcx-0x41],al
+0x4acb5a	scas   eax,DWORD PTR es:[rdi]
+0x4acb5b	repz push rbx
+0x4acb5d	add    bl,ch
+0x4acb5f	movabs al,ds:0xc1ebc68949c58949
+0x4acb68	xor    r14d,r14d
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb58
+Looking for gadgets at 0x4acb59
+Looking for gadgets at 0x4acb5a
+18|r|
+0x4acb5a	scas   eax,DWORD PTR es:[rdi]
+0x4acb5b	repz push rbx
+0x4acb5d	add    bl,ch
+0x4acb5f	movabs al,ds:0xc1ebc68949c58949
+0x4acb68	xor    r14d,r14d
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb5b
+17|r|
+0x4acb5b	repz push rbx
+0x4acb5d	add    bl,ch
+0x4acb5f	movabs al,ds:0xc1ebc68949c58949
+0x4acb68	xor    r14d,r14d
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb5c
+17|r|
+0x4acb5c	push   rbx
+0x4acb5d	add    bl,ch
+0x4acb5f	movabs al,ds:0xc1ebc68949c58949
+0x4acb68	xor    r14d,r14d
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb5d
+16|r|
+0x4acb5d	add    bl,ch
+0x4acb5f	movabs al,ds:0xc1ebc68949c58949
+0x4acb68	xor    r14d,r14d
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb5e
+Looking for gadgets at 0x4acb5f
+15|r|
+0x4acb5f	movabs al,ds:0xc1ebc68949c58949
+0x4acb68	xor    r14d,r14d
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb60
+18|r|
+0x4acb60	mov    r13,rax
+0x4acb63	mov    r14,rax
+0x4acb66	jmp    0x4acb29 <ast_http_get_post_vars+329>
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb61
+18|r|
+0x4acb61	mov    ebp,eax
+0x4acb63	mov    r14,rax
+0x4acb66	jmp    0x4acb29 <ast_http_get_post_vars+329>
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb62
+Looking for gadgets at 0x4acb63
+17|r|
+0x4acb63	mov    r14,rax
+0x4acb66	jmp    0x4acb29 <ast_http_get_post_vars+329>
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb64
+17|r|
+0x4acb64	mov    esi,eax
+0x4acb66	jmp    0x4acb29 <ast_http_get_post_vars+329>
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb65
+Looking for gadgets at 0x4acb66
+16|r|
+0x4acb66	jmp    0x4acb29 <ast_http_get_post_vars+329>
+0x4acb29	mov    rbx,r12
+0x4acb2c	test   rbx,rbx
+0x4acb2f	jne    0x4acac0 <ast_http_get_post_vars+224>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb67
+14|r|
+0x4acb67	rol    DWORD PTR [rbp+0x31],0xf6
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb68
+14|r|
+0x4acb68	xor    r14d,r14d
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb69
+14|r|
+0x4acb69	xor    esi,esi
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb6a
+Looking for gadgets at 0x4acb6b
+13|r|
+0x4acb6b	jmp    0x4acb31 <ast_http_get_post_vars+337>
+0x4acb31	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acb35	xor    rdx,QWORD PTR fs:0x28
+0x4acb3e	mov    rax,r14
+0x4acb41	jne    0x4acb6d <ast_http_get_post_vars+397>
+0x4acb43	lea    rsp,[rbp-0x28]
+0x4acb47	pop    rbx
+0x4acb48	pop    r12
+0x4acb4a	pop    r13
+0x4acb4c	pop    r14
+0x4acb4e	pop    r15
+0x4acb50	pop    rbp
+0x4acb51	ret
+Looking for gadgets at 0x4acb6c
+Looking for gadgets at 0x4acb6d
+Looking for gadgets at 0x4acb6e
+Looking for gadgets at 0x4acb6f
+Looking for gadgets at 0x4acb70
+Looking for gadgets at 0x4acb71
+1|j|
+0x4acb71	jmp    QWORD PTR [rsi+0x66]
+Looking for gadgets at 0x4acb72
+Looking for gadgets at 0x4acb73
+Looking for gadgets at 0x4acb74
+Looking for gadgets at 0x4acb75
+Looking for gadgets at 0x4acb76
+Looking for gadgets at 0x4acb77
+Looking for gadgets at 0x4acb78
+Looking for gadgets at 0x4acb79
+Looking for gadgets at 0x4acb7a
+Looking for gadgets at 0x4acb7b
+Looking for gadgets at 0x4acb7c
+Looking for gadgets at 0x4acb7d
+Looking for gadgets at 0x4acb7e
+Looking for gadgets at 0x4acb7f
+Looking for gadgets at 0x4acb80
+Looking for gadgets at 0x4acb81
+Looking for gadgets at 0x4acb82
+Looking for gadgets at 0x4acb83
+Looking for gadgets at 0x4acb84
+Looking for gadgets at 0x4acb85
+Looking for gadgets at 0x4acb86
+Looking for gadgets at 0x4acb87
+Looking for gadgets at 0x4acb88
+Looking for gadgets at 0x4acb89
+Looking for gadgets at 0x4acb8a
+Looking for gadgets at 0x4acb8b
+Looking for gadgets at 0x4acb8c
+Looking for gadgets at 0x4acb8d
+20|r|
+0x4acb8d	push   r12
+0x4acb8f	push   rbx
+0x4acb90	sub    rsp,0x28
+0x4acb94	mov    rax,QWORD PTR fs:0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb8e
+20|r|
+0x4acb8e	push   rsp
+0x4acb8f	push   rbx
+0x4acb90	sub    rsp,0x28
+0x4acb94	mov    rax,QWORD PTR fs:0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb8f
+19|r|
+0x4acb8f	push   rbx
+0x4acb90	sub    rsp,0x28
+0x4acb94	mov    rax,QWORD PTR fs:0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb90
+18|r|
+0x4acb90	sub    rsp,0x28
+0x4acb94	mov    rax,QWORD PTR fs:0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb91
+18|r|
+0x4acb91	sub    esp,0x28
+0x4acb94	mov    rax,QWORD PTR fs:0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb92
+Looking for gadgets at 0x4acb93
+20|r|
+0x4acb93	sub    BYTE PTR [rax+rcx*2-0x75],ah
+0x4acb97	add    al,0x25
+0x4acb99	sub    BYTE PTR [rax],al
+0x4acb9b	add    BYTE PTR [rax],al
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb94
+17|r|
+0x4acb94	mov    rax,QWORD PTR fs:0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb95
+17|r|
+0x4acb95	mov    rax,QWORD PTR ds:0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb96
+17|r|
+0x4acb96	mov    eax,DWORD PTR ds:0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb97
+19|r|
+0x4acb97	add    al,0x25
+0x4acb99	sub    BYTE PTR [rax],al
+0x4acb9b	add    BYTE PTR [rax],al
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb98
+17|r|
+0x4acb98	and    eax,0x28
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb99
+18|r|
+0x4acb99	sub    BYTE PTR [rax],al
+0x4acb9b	add    BYTE PTR [rax],al
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb9a
+17|r|
+0x4acb9a	add    BYTE PTR [rax],al
+0x4acb9c	add    BYTE PTR [rax-0x77],cl
+0x4acb9f	rex.RB enter 0xc031,0x48
+0x4acba4	test   edi,edi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb9b
+17|r|
+0x4acb9b	add    BYTE PTR [rax],al
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb9c
+16|r|
+0x4acb9c	add    BYTE PTR [rax-0x77],cl
+0x4acb9f	rex.RB enter 0xc031,0x48
+0x4acba4	test   edi,edi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb9d
+16|r|
+0x4acb9d	mov    QWORD PTR [rbp-0x38],rax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb9e
+16|r|
+0x4acb9e	mov    DWORD PTR [rbp-0x38],eax
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acb9f
+15|r|
+0x4acb9f	rex.RB enter 0xc031,0x48
+0x4acba4	test   edi,edi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acba0
+15|r|
+0x4acba0	enter  0xc031,0x48
+0x4acba4	test   edi,edi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acba1
+15|r|
+0x4acba1	xor    eax,eax
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acba2
+14|r|
+0x4acba2	ror    BYTE PTR [rax-0x7b],0xff
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acba3
+14|r|
+0x4acba3	test   rdi,rdi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acba4
+14|r|
+0x4acba4	test   edi,edi
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acba5
+Looking for gadgets at 0x4acba6
+13|r|
+0x4acba6	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acba7
+Looking for gadgets at 0x4acba8
+Looking for gadgets at 0x4acba9
+Looking for gadgets at 0x4acbaa
+Looking for gadgets at 0x4acbab
+Looking for gadgets at 0x4acbac
+Looking for gadgets at 0x4acbad
+Looking for gadgets at 0x4acbae
+Looking for gadgets at 0x4acbaf
+Looking for gadgets at 0x4acbb0
+Looking for gadgets at 0x4acbb1
+16|r|
+0x4acbb1	nop    DWORD PTR [rax+0x0]
+0x4acbb8	mov    r14,QWORD PTR [r14+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbb2
+Looking for gadgets at 0x4acbb3
+17|r|
+0x4acbb3	add    BYTE PTR [rax],0x0
+0x4acbb6	add    BYTE PTR [rax],al
+0x4acbb8	mov    r14,QWORD PTR [r14+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbb4
+17|r|
+0x4acbb4	add    BYTE PTR [rax],al
+0x4acbb6	add    BYTE PTR [rax],al
+0x4acbb8	mov    r14,QWORD PTR [r14+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbb5
+17|r|
+0x4acbb5	add    BYTE PTR [rax],al
+0x4acbb7	add    BYTE PTR [rbp-0x75],cl
+0x4acbba	jbe    0x4acbcc <ast_http_get_cookies+76>
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbb6
+16|r|
+0x4acbb6	add    BYTE PTR [rax],al
+0x4acbb8	mov    r14,QWORD PTR [r14+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbb7
+16|r|
+0x4acbb7	add    BYTE PTR [rbp-0x75],cl
+0x4acbba	jbe    0x4acbcc <ast_http_get_cookies+76>
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbb8
+15|r|
+0x4acbb8	mov    r14,QWORD PTR [r14+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbb9
+15|r|
+0x4acbb9	mov    esi,DWORD PTR [rsi+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbba
+15|r|
+0x4acbba	jbe    0x4acbcc <ast_http_get_cookies+76>
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbbb
+Looking for gadgets at 0x4acbbc
+14|r|
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbbd
+14|r|
+0x4acbbd	test   esi,esi
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbbe
+Looking for gadgets at 0x4acbbf
+13|r|
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbc0
+Looking for gadgets at 0x4acbc1
+Looking for gadgets at 0x4acbc2
+Looking for gadgets at 0x4acbc3
+Looking for gadgets at 0x4acbc4
+Looking for gadgets at 0x4acbc5
+Looking for gadgets at 0x4acbc6
+Looking for gadgets at 0x4acbc7
+Looking for gadgets at 0x4acbc8
+Looking for gadgets at 0x4acbc9
+Looking for gadgets at 0x4acbca
+Looking for gadgets at 0x4acbcb
+Looking for gadgets at 0x4acbcc
+Looking for gadgets at 0x4acbcd
+Looking for gadgets at 0x4acbce
+Looking for gadgets at 0x4acbcf
+Looking for gadgets at 0x4acbd0
+Looking for gadgets at 0x4acbd1
+Looking for gadgets at 0x4acbd2
+Looking for gadgets at 0x4acbd3
+Looking for gadgets at 0x4acbd4
+Looking for gadgets at 0x4acbd5
+18|r|
+0x4acbd5	idiv   edi
+0x4acbd7	test   eax,eax
+0x4acbd9	jne    0x4acbb8 <ast_http_get_cookies+56>
+0x4acbb8	mov    r14,QWORD PTR [r14+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbd6
+Looking for gadgets at 0x4acbd7
+17|r|
+0x4acbd7	test   eax,eax
+0x4acbd9	jne    0x4acbb8 <ast_http_get_cookies+56>
+0x4acbb8	mov    r14,QWORD PTR [r14+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbd8
+Looking for gadgets at 0x4acbd9
+16|r|
+0x4acbd9	jne    0x4acbb8 <ast_http_get_cookies+56>
+0x4acbb8	mov    r14,QWORD PTR [r14+0x10]
+0x4acbbc	test   r14,r14
+0x4acbbf	je     0x4acd58 <ast_http_get_cookies+472>
+0x4acd58	mov    rdx,QWORD PTR [rbp-0x38]
+0x4acd5c	xor    rdx,QWORD PTR fs:0x28
+0x4acd65	mov    rax,r15
+0x4acd68	jne    0x4acd79 <ast_http_get_cookies+505>
+0x4acd6a	lea    rsp,[rbp-0x28]
+0x4acd6e	pop    rbx
+0x4acd6f	pop    r12
+0x4acd71	pop    r13
+0x4acd73	pop    r14
+0x4acd75	pop    r15
+0x4acd77	pop    rbp
+0x4acd78	ret
+Looking for gadgets at 0x4acbda
+Looking for gadgets at 0x4acbdb
+Looking for gadgets at 0x4acbdc
+Looking for gadgets at 0x4acbdd
+Looking for gadgets at 0x4acbde
+Looking for gadgets at 0x4acbdf
+Looking for gadgets at 0x4acbe0
+Looking for gadgets at 0x4acbe1
+Looking for gadgets at 0x4acbe2
+Looking for gadgets at 0x4acbe3
+Looking for gadgets at 0x4acbe4
+Looking for gadgets at 0x4acbe5
+Looking for gadgets at 0x4acbe6
+Looking for gadgets at 0x4acbe7
+Looking for gadgets at 0x4acbe8
+Looking for gadgets at 0x4acbe9
+Looking for gadgets at 0x4acbea
+Looking for gadgets at 0x4acbeb
+Looking for gadgets at 0x4acbec
+Looking for gadgets at 0x4acbed
+Looking for gadgets at 0x4acbee
+Looking for gadgets at 0x4acbef
+Looking for gadgets at 0x4acbf0
+Looking for gadgets at 0x4acbf1
+Looking for gadgets at 0x4acbf2
+Looking for gadgets at 0x4acbf3
+Looking for gadgets at 0x4acbf4
+Looking for gadgets at 0x4acbf5
+Looking for gadgets at 0x4acbf6
+Looking for gadgets at 0x4acbf7
+Looking for gadgets at 0x4acbf8
+Looking for gadgets at 0x4acbf9
+Looking for gadgets at 0x4acbfa
+Looking for gadgets at 0x4acbfb
+Looking for gadgets at 0x4acbfc
+Looking for gadgets at 0x4acbfd
+Looking for gadgets at 0x4acbfe
+Looking for gadgets at 0x4acbff

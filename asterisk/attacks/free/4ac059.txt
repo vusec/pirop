@@ -1,0 +1,504 @@
+gdb-peda$ disas 0x4ac059 (just sent "POST ..")
+Dump of assembler code for function httpd_helper_thread:
+   0x00000000004abed0 <+0>:	push   r15
+   0x00000000004abed2 <+2>:	push   r14
+   0x00000000004abed4 <+4>:	push   r13
+   0x00000000004abed6 <+6>:	push   r12
+   0x00000000004abed8 <+8>:	push   rbp
+   0x00000000004abed9 <+9>:	mov    rbp,rdi
+   0x00000000004abedc <+12>:	push   rbx
+   0x00000000004abedd <+13>:	sub    rsp,0x2058
+   0x00000000004abee4 <+20>:	mov    rax,QWORD PTR fs:0x28
+   0x00000000004abeed <+29>:	mov    QWORD PTR [rsp+0x2048],rax
+   0x00000000004abef5 <+37>:	xor    eax,eax
+   0x00000000004abef7 <+39>:	mov    al,0x1
+   0x00000000004abef9 <+41>:	lock xadd DWORD PTR [rip+0x31ca63],eax        # 0x7c8964 <session_count>
+   0x00000000004abf01 <+49>:	cmp    DWORD PTR [rip+0x304051],eax        # 0x7aff58 <session_limit>
+   0x00000000004abf07 <+55>:	jg     0x4abf58 <httpd_helper_thread+136>
+   0x00000000004abf09 <+57>:	lock dec DWORD PTR [rip+0x31ca54]        # 0x7c8964 <session_count>
+   0x00000000004abf10 <+64>:	mov    rdi,QWORD PTR [rbp+0x0]
+   0x00000000004abf14 <+68>:	test   rdi,rdi
+   0x00000000004abf17 <+71>:	je     0x4abf1e <httpd_helper_thread+78>
+   0x00000000004abf19 <+73>:	call   0x41d830 <fclose@plt>
+   0x00000000004abf1e <+78>:	mov    esi,0xffffffff
+   0x00000000004abf23 <+83>:	mov    rdi,rbp
+   0x00000000004abf26 <+86>:	call   0x43cc10 <__ao2_ref>
+   0x00000000004abf2b <+91>:	xor    eax,eax
+   0x00000000004abf2d <+93>:	mov    rdx,QWORD PTR [rsp+0x2048]
+   0x00000000004abf35 <+101>:	xor    rdx,QWORD PTR fs:0x28
+   0x00000000004abf3e <+110>:	jne    0x4ac69e <httpd_helper_thread+1998>
+   0x00000000004abf44 <+116>:	add    rsp,0x2058
+   0x00000000004abf4b <+123>:	pop    rbx
+   0x00000000004abf4c <+124>:	pop    rbp
+   0x00000000004abf4d <+125>:	pop    r12
+   0x00000000004abf4f <+127>:	pop    r13
+   0x00000000004abf51 <+129>:	pop    r14
+   0x00000000004abf53 <+131>:	pop    r15
+   0x00000000004abf55 <+133>:	ret    
+   0x00000000004abf56 <+134>:	xchg   ax,ax
+   0x00000000004abf58 <+136>:	mov    rdx,QWORD PTR [rdi]
+   0x00000000004abf5b <+139>:	lea    rdi,[rsp+0x40]
+   0x00000000004abf60 <+144>:	mov    esi,0x1000
+   0x00000000004abf65 <+149>:	call   0x41e050 <fgets@plt>
+   0x00000000004abf6a <+154>:	test   rax,rax
+   0x00000000004abf6d <+157>:	je     0x4abf09 <httpd_helper_thread+57>
+   0x00000000004abf6f <+159>:	movzx  eax,BYTE PTR [rsp+0x40]
+   0x00000000004abf74 <+164>:	lea    r12,[rsp+0x40]
+   0x00000000004abf79 <+169>:	lea    edx,[rax-0x1]
+   0x00000000004abf7c <+172>:	cmp    dl,0x1f
+   0x00000000004abf7f <+175>:	ja     0x4abf98 <httpd_helper_thread+200>
+   0x00000000004abf81 <+177>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004abf88 <+184>:	inc    r12
+   0x00000000004abf8b <+187>:	movzx  eax,BYTE PTR [r12]
+   0x00000000004abf90 <+192>:	lea    edx,[rax-0x1]
+   0x00000000004abf93 <+195>:	cmp    dl,0x1f
+   0x00000000004abf96 <+198>:	jbe    0x4abf88 <httpd_helper_thread+184>
+   0x00000000004abf98 <+200>:	cmp    al,0x20
+   0x00000000004abf9a <+202>:	mov    rbx,r12
+   0x00000000004abf9d <+205>:	jbe    0x4abfaa <httpd_helper_thread+218>
+   0x00000000004abf9f <+207>:	nop
+   0x00000000004abfa0 <+208>:	inc    rbx
+   0x00000000004abfa3 <+211>:	movzx  eax,BYTE PTR [rbx]
+   0x00000000004abfa6 <+214>:	cmp    al,0x20
+   0x00000000004abfa8 <+216>:	ja     0x4abfa0 <httpd_helper_thread+208>
+   0x00000000004abfaa <+218>:	test   al,al
+   0x00000000004abfac <+220>:	je     0x4abfb4 <httpd_helper_thread+228>
+   0x00000000004abfae <+222>:	mov    BYTE PTR [rbx],0x0
+   0x00000000004abfb1 <+225>:	inc    rbx
+   0x00000000004abfb4 <+228>:	mov    esi,0x55e935
+   0x00000000004abfb9 <+233>:	mov    rdi,r12
+   0x00000000004abfbc <+236>:	call   0x41d950 <strcasecmp@plt>
+   0x00000000004abfc1 <+241>:	test   eax,eax
+   0x00000000004abfc3 <+243>:	mov    DWORD PTR [rsp+0x2c],0x0
+   0x00000000004abfcb <+251>:	je     0x4ac023 <httpd_helper_thread+339>
+   0x00000000004abfcd <+253>:	mov    esi,0x55e939
+   0x00000000004abfd2 <+258>:	mov    rdi,r12
+   0x00000000004abfd5 <+261>:	call   0x41d950 <strcasecmp@plt>
+   0x00000000004abfda <+266>:	test   eax,eax
+   0x00000000004abfdc <+268>:	mov    DWORD PTR [rsp+0x2c],0x1
+   0x00000000004abfe4 <+276>:	je     0x4ac023 <httpd_helper_thread+339>
+   0x00000000004abfe6 <+278>:	mov    esi,0x55e93e
+   0x00000000004abfeb <+283>:	mov    rdi,r12
+   0x00000000004abfee <+286>:	call   0x41d950 <strcasecmp@plt>
+   0x00000000004abff3 <+291>:	test   eax,eax
+   0x00000000004abff5 <+293>:	mov    DWORD PTR [rsp+0x2c],0x2
+   0x00000000004abffd <+301>:	je     0x4ac023 <httpd_helper_thread+339>
+   0x00000000004abfff <+303>:	mov    esi,0x5570c2
+   0x00000000004ac004 <+308>:	mov    rdi,r12
+   0x00000000004ac007 <+311>:	call   0x41d950 <strcasecmp@plt>
+   0x00000000004ac00c <+316>:	cmp    eax,0x1
+   0x00000000004ac00f <+319>:	sbb    edx,edx
+   0x00000000004ac011 <+321>:	and    edx,0x4
+   0x00000000004ac014 <+324>:	dec    edx
+   0x00000000004ac016 <+326>:	mov    DWORD PTR [rsp+0x2c],edx
+   0x00000000004ac01a <+330>:	jmp    0x4ac023 <httpd_helper_thread+339>
+   0x00000000004ac01c <+332>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004ac020 <+336>:	inc    rbx
+   0x00000000004ac023 <+339>:	movzx  eax,BYTE PTR [rbx]
+   0x00000000004ac026 <+342>:	lea    edx,[rax-0x1]
+   0x00000000004ac029 <+345>:	cmp    dl,0x1f
+   0x00000000004ac02c <+348>:	jbe    0x4ac020 <httpd_helper_thread+336>
+   0x00000000004ac02e <+350>:	test   al,al
+   0x00000000004ac030 <+352>:	jne    0x4ac2c6 <httpd_helper_thread+1014>
+   0x00000000004ac036 <+358>:	lea    r12,[rsp+0x1040]
+   0x00000000004ac03e <+366>:	xor    r14d,r14d
+   0x00000000004ac041 <+369>:	xor    r13d,r13d
+   0x00000000004ac044 <+372>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004ac048 <+376>:	mov    rdx,QWORD PTR [rbp+0x0]
+   0x00000000004ac04c <+380>:	mov    esi,0x1000
+   0x00000000004ac051 <+385>:	mov    rdi,r12
+   0x00000000004ac054 <+388>:	call   0x41e050 <fgets@plt>
+   0x00000000004ac059 <+393>:	test   rax,rax
+   0x00000000004ac05c <+396>:	je     0x4ac0ca <httpd_helper_thread+506>
+   0x00000000004ac05e <+398>:	mov    rdx,r12
+   0x00000000004ac061 <+401>:	mov    ecx,DWORD PTR [rdx]
+   0x00000000004ac063 <+403>:	add    rdx,0x4
+   0x00000000004ac067 <+407>:	lea    eax,[rcx-0x1010101]
+   0x00000000004ac06d <+413>:	not    ecx
+   0x00000000004ac06f <+415>:	and    eax,ecx
+   0x00000000004ac071 <+417>:	and    eax,0x80808080
+   0x00000000004ac076 <+422>:	je     0x4ac061 <httpd_helper_thread+401>
+   0x00000000004ac078 <+424>:	mov    ecx,eax
+   0x00000000004ac07a <+426>:	shr    ecx,0x10
+   0x00000000004ac07d <+429>:	test   eax,0x8080
+   0x00000000004ac082 <+434>:	cmove  eax,ecx
+   0x00000000004ac085 <+437>:	lea    rcx,[rdx+0x2]
+   0x00000000004ac089 <+441>:	cmove  rdx,rcx
+   0x00000000004ac08d <+445>:	add    al,al
+   0x00000000004ac08f <+447>:	mov    rax,r12
+   0x00000000004ac092 <+450>:	sbb    rdx,0x3
+   0x00000000004ac096 <+454>:	sub    rdx,r12
+   0x00000000004ac099 <+457>:	dec    rdx
+   0x00000000004ac09c <+460>:	add    rax,rdx
+   0x00000000004ac09f <+463>:	jb     0x4ac0c0 <httpd_helper_thread+496>
+   0x00000000004ac0a1 <+465>:	cmp    BYTE PTR [rsp+rdx*1+0x1040],0x20
+   0x00000000004ac0a9 <+473>:	jbe    0x4ac0b5 <httpd_helper_thread+485>
+   0x00000000004ac0ab <+475>:	jmp    0x4ac0c0 <httpd_helper_thread+496>
+   0x00000000004ac0ad <+477>:	nop    DWORD PTR [rax]
+   0x00000000004ac0b0 <+480>:	cmp    BYTE PTR [rax],0x20
+   0x00000000004ac0b3 <+483>:	ja     0x4ac0c0 <httpd_helper_thread+496>
+   0x00000000004ac0b5 <+485>:	mov    BYTE PTR [rax],0x0
+   0x00000000004ac0b8 <+488>:	dec    rax
+   0x00000000004ac0bb <+491>:	cmp    rax,r12
+   0x00000000004ac0be <+494>:	jae    0x4ac0b0 <httpd_helper_thread+480>
+   0x00000000004ac0c0 <+496>:	cmp    BYTE PTR [rsp+0x1040],0x0
+   0x00000000004ac0c8 <+504>:	jne    0x4ac108 <httpd_helper_thread+568>
+   0x00000000004ac0ca <+506>:	cmp    BYTE PTR [rbx],0x0
+   0x00000000004ac0cd <+509>:	jne    0x4ac1e2 <httpd_helper_thread+786>
+   0x00000000004ac0d3 <+515>:	mov    ecx,0x55e943
+   0x00000000004ac0d8 <+520>:	mov    edx,0x55e953
+   0x00000000004ac0dd <+525>:	mov    esi,0x190
+   0x00000000004ac0e2 <+530>:	mov    rdi,rbp
+   0x00000000004ac0e5 <+533>:	call   0x4abcf0 <ast_http_error>
+   0x00000000004ac0ea <+538>:	lock dec DWORD PTR [rip+0x31c873]        # 0x7c8964 <session_count>
+   0x00000000004ac0f1 <+545>:	test   r13,r13
+   0x00000000004ac0f4 <+548>:	je     0x4abf10 <httpd_helper_thread+64>
+   0x00000000004ac0fa <+554>:	mov    rdi,r13
+   0x00000000004ac0fd <+557>:	call   0x474870 <ast_variables_destroy>
+   0x00000000004ac102 <+562>:	jmp    0x4abf10 <httpd_helper_thread+64>
+   0x00000000004ac107 <+567>:	nop
+   0x00000000004ac108 <+568>:	mov    esi,0x3a
+   0x00000000004ac10d <+573>:	mov    rdi,r12
+   0x00000000004ac110 <+576>:	call   0x41d0b0 <strchr@plt>
+   0x00000000004ac115 <+581>:	test   rax,rax
+   0x00000000004ac118 <+584>:	je     0x4ac048 <httpd_helper_thread+376>
+   0x00000000004ac11e <+590>:	mov    rsi,rax
+   0x00000000004ac121 <+593>:	mov    BYTE PTR [rax],0x0
+   0x00000000004ac124 <+596>:	inc    rsi
+   0x00000000004ac127 <+599>:	je     0x4ac048 <httpd_helper_thread+376>
+   0x00000000004ac12d <+605>:	movzx  eax,BYTE PTR [rax+0x1]
+   0x00000000004ac131 <+609>:	lea    edx,[rax-0x1]
+   0x00000000004ac134 <+612>:	cmp    dl,0x1f
+   0x00000000004ac137 <+615>:	ja     0x4ac14e <httpd_helper_thread+638>
+   0x00000000004ac139 <+617>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004ac140 <+624>:	inc    rsi
+   0x00000000004ac143 <+627>:	movzx  eax,BYTE PTR [rsi]
+   0x00000000004ac146 <+630>:	lea    edx,[rax-0x1]
+   0x00000000004ac149 <+633>:	cmp    dl,0x1f
+   0x00000000004ac14c <+636>:	jbe    0x4ac140 <httpd_helper_thread+624>
+   0x00000000004ac14e <+638>:	test   al,al
+   0x00000000004ac150 <+640>:	je     0x4ac048 <httpd_helper_thread+376>
+   0x00000000004ac156 <+646>:	cmp    BYTE PTR [r12],0x0
+   0x00000000004ac15b <+651>:	je     0x4ac048 <httpd_helper_thread+376>
+   0x00000000004ac161 <+657>:	mov    rdx,r12
+   0x00000000004ac164 <+660>:	mov    ecx,DWORD PTR [rdx]
+   0x00000000004ac166 <+662>:	add    rdx,0x4
+   0x00000000004ac16a <+666>:	lea    eax,[rcx-0x1010101]
+   0x00000000004ac170 <+672>:	not    ecx
+   0x00000000004ac172 <+674>:	and    eax,ecx
+   0x00000000004ac174 <+676>:	and    eax,0x80808080
+   0x00000000004ac179 <+681>:	je     0x4ac164 <httpd_helper_thread+660>
+   0x00000000004ac17b <+683>:	mov    ecx,eax
+   0x00000000004ac17d <+685>:	shr    ecx,0x10
+   0x00000000004ac180 <+688>:	test   eax,0x8080
+   0x00000000004ac185 <+693>:	cmove  eax,ecx
+   0x00000000004ac188 <+696>:	lea    rcx,[rdx+0x2]
+   0x00000000004ac18c <+700>:	cmove  rdx,rcx
+   0x00000000004ac190 <+704>:	add    al,al
+   0x00000000004ac192 <+706>:	mov    rax,r12
+   0x00000000004ac195 <+709>:	sbb    rdx,0x3
+   0x00000000004ac199 <+713>:	sub    rdx,r12
+   0x00000000004ac19c <+716>:	dec    rdx
+   0x00000000004ac19f <+719>:	add    rax,rdx
+   0x00000000004ac1a2 <+722>:	jb     0x4ac1c0 <httpd_helper_thread+752>
+   0x00000000004ac1a4 <+724>:	cmp    BYTE PTR [rsp+rdx*1+0x1040],0x20
+   0x00000000004ac1ac <+732>:	jbe    0x4ac1b5 <httpd_helper_thread+741>
+   0x00000000004ac1ae <+734>:	jmp    0x4ac1c0 <httpd_helper_thread+752>
+   0x00000000004ac1b0 <+736>:	cmp    BYTE PTR [rax],0x20
+   0x00000000004ac1b3 <+739>:	ja     0x4ac1c0 <httpd_helper_thread+752>
+   0x00000000004ac1b5 <+741>:	mov    BYTE PTR [rax],0x0
+   0x00000000004ac1b8 <+744>:	dec    rax
+   0x00000000004ac1bb <+747>:	cmp    rax,r12
+   0x00000000004ac1be <+750>:	jae    0x4ac1b0 <httpd_helper_thread+736>
+   0x00000000004ac1c0 <+752>:	test   r13,r13
+   0x00000000004ac1c3 <+755>:	mov    edx,0x55e7af
+   0x00000000004ac1c8 <+760>:	mov    rdi,r12
+   0x00000000004ac1cb <+763>:	je     0x4ac406 <httpd_helper_thread+1334>
+   0x00000000004ac1d1 <+769>:	call   0x474030 <ast_variable_new>
+   0x00000000004ac1d6 <+774>:	mov    QWORD PTR [r14+0x10],rax
+   0x00000000004ac1da <+778>:	mov    r14,rax
+   0x00000000004ac1dd <+781>:	jmp    0x4ac048 <httpd_helper_thread+376>
+   0x00000000004ac1e2 <+786>:	cmp    DWORD PTR [rip+0x338313],0x1        # 0x7e44fc <option_debug>
+   0x00000000004ac1e9 <+793>:	jg     0x4ac429 <httpd_helper_thread+1369>
+   0x00000000004ac1ef <+799>:	test   BYTE PTR [rip+0x2fcf8c],0x80        # 0x7a9182 <ast_options+2>
+   0x00000000004ac1f6 <+806>:	jne    0x4ac416 <httpd_helper_thread+1350>
+   0x00000000004ac1fc <+812>:	mov    esi,0x3f
+   0x00000000004ac201 <+817>:	mov    rdi,rbx
+   0x00000000004ac204 <+820>:	xor    r14d,r14d
+   0x00000000004ac207 <+823>:	call   0x41d0b0 <strchr@plt>
+   0x00000000004ac20c <+828>:	test   rax,rax
+   0x00000000004ac20f <+831>:	je     0x4ac304 <httpd_helper_thread+1076>
+   0x00000000004ac215 <+837>:	mov    r15,rax
+   0x00000000004ac218 <+840>:	mov    BYTE PTR [rax],0x0
+   0x00000000004ac21b <+843>:	inc    r15
+   0x00000000004ac21e <+846>:	je     0x4ac304 <httpd_helper_thread+1076>
+   0x00000000004ac224 <+852>:	mov    QWORD PTR [rsp+0x20],0x0
+   0x00000000004ac22d <+861>:	jmp    0x4ac27a <httpd_helper_thread+938>
+   0x00000000004ac22f <+863>:	nop
+   0x00000000004ac230 <+864>:	mov    rdi,rax
+   0x00000000004ac233 <+867>:	call   0x4aaa50 <http_decode>
+   0x00000000004ac238 <+872>:	mov    rdi,r15
+   0x00000000004ac23b <+875>:	call   0x4aaa50 <http_decode>
+   0x00000000004ac240 <+880>:	mov    rsi,QWORD PTR [rsp+0x18]
+   0x00000000004ac245 <+885>:	mov    edx,0x53f3af
+   0x00000000004ac24a <+890>:	mov    rdi,r15
+   0x00000000004ac24d <+893>:	call   0x474030 <ast_variable_new>
+   0x00000000004ac252 <+898>:	test   rax,rax
+   0x00000000004ac255 <+901>:	je     0x4ac26e <httpd_helper_thread+926>
+   0x00000000004ac257 <+903>:	test   r14,r14
+   0x00000000004ac25a <+906>:	je     0x4ac2f3 <httpd_helper_thread+1059>
+   0x00000000004ac260 <+912>:	mov    rdx,QWORD PTR [rsp+0x20]
+   0x00000000004ac265 <+917>:	mov    QWORD PTR [rsp+0x20],rax
+   0x00000000004ac26a <+922>:	mov    QWORD PTR [rdx+0x10],rax
+   0x00000000004ac26e <+926>:	test   r12,r12
+   0x00000000004ac271 <+929>:	je     0x4ac304 <httpd_helper_thread+1076>
+   0x00000000004ac277 <+935>:	mov    r15,r12
+   0x00000000004ac27a <+938>:	mov    esi,0x26
+   0x00000000004ac27f <+943>:	mov    rdi,r15
+   0x00000000004ac282 <+946>:	call   0x41d0b0 <strchr@plt>
+   0x00000000004ac287 <+951>:	test   rax,rax
+   0x00000000004ac28a <+954>:	mov    r12,rax
+   0x00000000004ac28d <+957>:	je     0x4ac295 <httpd_helper_thread+965>
+   0x00000000004ac28f <+959>:	mov    BYTE PTR [rax],0x0
+   0x00000000004ac292 <+962>:	inc    r12
+   0x00000000004ac295 <+965>:	mov    esi,0x3d
+   0x00000000004ac29a <+970>:	mov    rdi,r15
+   0x00000000004ac29d <+973>:	call   0x41d0b0 <strchr@plt>
+   0x00000000004ac2a2 <+978>:	test   rax,rax
+   0x00000000004ac2a5 <+981>:	je     0x4ac2b8 <httpd_helper_thread+1000>
+   0x00000000004ac2a7 <+983>:	mov    BYTE PTR [rax],0x0
+   0x00000000004ac2aa <+986>:	inc    rax
+   0x00000000004ac2ad <+989>:	mov    QWORD PTR [rsp+0x18],rax
+   0x00000000004ac2b2 <+994>:	jne    0x4ac230 <httpd_helper_thread+864>
+   0x00000000004ac2b8 <+1000>:	mov    QWORD PTR [rsp+0x18],0x53f3af
+   0x00000000004ac2c1 <+1009>:	jmp    0x4ac238 <httpd_helper_thread+872>
+   0x00000000004ac2c6 <+1014>:	movzx  edx,BYTE PTR [rbx]
+   0x00000000004ac2c9 <+1017>:	mov    rax,rbx
+   0x00000000004ac2cc <+1020>:	cmp    dl,0x20
+   0x00000000004ac2cf <+1023>:	jbe    0x4ac2e3 <httpd_helper_thread+1043>
+   0x00000000004ac2d1 <+1025>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004ac2d8 <+1032>:	inc    rax
+   0x00000000004ac2db <+1035>:	movzx  edx,BYTE PTR [rax]
+   0x00000000004ac2de <+1038>:	cmp    dl,0x20
+   0x00000000004ac2e1 <+1041>:	ja     0x4ac2d8 <httpd_helper_thread+1032>
+   0x00000000004ac2e3 <+1043>:	test   dl,dl
+   0x00000000004ac2e5 <+1045>:	je     0x4ac036 <httpd_helper_thread+358>
+   0x00000000004ac2eb <+1051>:	mov    BYTE PTR [rax],0x0
+   0x00000000004ac2ee <+1054>:	jmp    0x4ac036 <httpd_helper_thread+358>
+   0x00000000004ac2f3 <+1059>:	test   r12,r12
+   0x00000000004ac2f6 <+1062>:	mov    QWORD PTR [rsp+0x20],rax
+   0x00000000004ac2fb <+1067>:	mov    r14,rax
+   0x00000000004ac2fe <+1070>:	jne    0x4ac277 <httpd_helper_thread+935>
+   0x00000000004ac304 <+1076>:	mov    rdi,rbx
+   0x00000000004ac307 <+1079>:	call   0x4aaa50 <http_decode>
+   0x00000000004ac30c <+1084>:	mov    r8d,0x55e7b6
+   0x00000000004ac312 <+1090>:	mov    ecx,0x7aff10
+   0x00000000004ac317 <+1095>:	mov    edx,0x55f5ac
+   0x00000000004ac31c <+1100>:	mov    esi,0x2c4
+   0x00000000004ac321 <+1105>:	mov    edi,0x55e7af
+   0x00000000004ac326 <+1110>:	call   0x4b4cf0 <__ast_rwlock_rdlock>
+   0x00000000004ac32b <+1115>:	mov    r12,QWORD PTR [rip+0x303bce]        # 0x7aff00 <uri_redirects>
+   0x00000000004ac332 <+1122>:	test   r12,r12
+   0x00000000004ac335 <+1125>:	jne    0x4ac34d <httpd_helper_thread+1149>
+   0x00000000004ac337 <+1127>:	jmp    0x4ac44f <httpd_helper_thread+1407>
+   0x00000000004ac33c <+1132>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004ac340 <+1136>:	mov    r12,QWORD PTR [r12]
+   0x00000000004ac344 <+1140>:	test   r12,r12
+   0x00000000004ac347 <+1143>:	je     0x4ac44f <httpd_helper_thread+1407>
+   0x00000000004ac34d <+1149>:	lea    rsi,[r12+0x10]
+   0x00000000004ac352 <+1154>:	mov    rdi,rbx
+   0x00000000004ac355 <+1157>:	call   0x41d950 <strcasecmp@plt>
+   0x00000000004ac35a <+1162>:	test   eax,eax
+   0x00000000004ac35c <+1164>:	jne    0x4ac340 <httpd_helper_thread+1136>
+   0x00000000004ac35e <+1166>:	mov    esi,0x98
+   0x00000000004ac363 <+1171>:	mov    edi,0x1
+   0x00000000004ac368 <+1176>:	call   0x41d4c0 <calloc@plt>
+   0x00000000004ac36d <+1181>:	test   rax,rax
+   0x00000000004ac370 <+1184>:	mov    rbx,rax
+   0x00000000004ac373 <+1187>:	je     0x4ac662 <httpd_helper_thread+1938>
+   0x00000000004ac379 <+1193>:	mov    QWORD PTR [rax],0x80
+   0x00000000004ac380 <+1200>:	mov    QWORD PTR [rax+0x8],0x0
+   0x00000000004ac388 <+1208>:	mov    QWORD PTR [rax+0x10],0x1
+   0x00000000004ac390 <+1216>:	mov    rcx,QWORD PTR [r12+0x8]
+   0x00000000004ac395 <+1221>:	lea    rdi,[rsp+0x38]
+   0x00000000004ac39a <+1226>:	mov    edx,0x55e978
+   0x00000000004ac39f <+1231>:	xor    esi,esi
+   0x00000000004ac3a1 <+1233>:	xor    eax,eax
+   0x00000000004ac3a3 <+1235>:	mov    QWORD PTR [rsp+0x38],rbx
+   0x00000000004ac3a8 <+1240>:	call   0x517740 <ast_str_set>
+   0x00000000004ac3ad <+1245>:	mov    r8,QWORD PTR [rsp+0x38]
+   0x00000000004ac3b2 <+1250>:	mov    esi,DWORD PTR [rsp+0x2c]
+   0x00000000004ac3b6 <+1254>:	mov    ecx,0x55e987
+   0x00000000004ac3bb <+1259>:	mov    edx,0x12e
+   0x00000000004ac3c0 <+1264>:	mov    rdi,rbp
+   0x00000000004ac3c3 <+1267>:	xor    r9d,r9d
+   0x00000000004ac3c6 <+1270>:	mov    DWORD PTR [rsp+0x8],0x0
+   0x00000000004ac3ce <+1278>:	mov    DWORD PTR [rsp],0x0
+   0x00000000004ac3d5 <+1285>:	call   0x4ab820 <ast_http_send>
+   0x00000000004ac3da <+1290>:	mov    r8d,0x55e7b6
+   0x00000000004ac3e0 <+1296>:	mov    ecx,0x7aff10
+   0x00000000004ac3e5 <+1301>:	mov    edx,0x55f5ac
+   0x00000000004ac3ea <+1306>:	mov    esi,0x2ce
+   0x00000000004ac3ef <+1311>:	mov    edi,0x55e7af
+   0x00000000004ac3f4 <+1316>:	call   0x4b4ce0 <__ast_rwlock_unlock>
+   0x00000000004ac3f9 <+1321>:	mov    rdi,r14
+   0x00000000004ac3fc <+1324>:	call   0x474870 <ast_variables_destroy>
+   0x00000000004ac401 <+1329>:	jmp    0x4ac0ea <httpd_helper_thread+538>
+   0x00000000004ac406 <+1334>:	call   0x474030 <ast_variable_new>
+   0x00000000004ac40b <+1339>:	mov    r13,rax
+   0x00000000004ac40e <+1342>:	mov    r14,rax
+   0x00000000004ac411 <+1345>:	jmp    0x4ac048 <httpd_helper_thread+376>
+   0x00000000004ac416 <+1350>:	mov    edi,0x5475d7
+   0x00000000004ac41b <+1355>:	call   0x470400 <ast_debug_get_by_module>
+   0x00000000004ac420 <+1360>:	cmp    eax,0x1
+   0x00000000004ac423 <+1363>:	jbe    0x4ac1fc <httpd_helper_thread+812>
+   0x00000000004ac429 <+1369>:	mov    r9,rbx
+   0x00000000004ac42c <+1372>:	mov    r8d,0x55e95f
+   0x00000000004ac432 <+1378>:	mov    ecx,0x55f5ac
+   0x00000000004ac437 <+1383>:	mov    edx,0x2a9
+   0x00000000004ac43c <+1388>:	mov    esi,0x55e7af
+   0x00000000004ac441 <+1393>:	xor    edi,edi
+   0x00000000004ac443 <+1395>:	xor    eax,eax
+   0x00000000004ac445 <+1397>:	call   0x4b5bf0 <ast_log>
+   0x00000000004ac44a <+1402>:	jmp    0x4ac1fc <httpd_helper_thread+812>
+   0x00000000004ac44f <+1407>:	mov    r8d,0x55e7b6
+   0x00000000004ac455 <+1413>:	mov    ecx,0x7aff10
+   0x00000000004ac45a <+1418>:	mov    edx,0x55f5ac
+   0x00000000004ac45f <+1423>:	mov    esi,0x2ce
+   0x00000000004ac464 <+1428>:	mov    edi,0x55e7af
+   0x00000000004ac469 <+1433>:	mov    r12d,0x7c88c0
+   0x00000000004ac46f <+1439>:	call   0x4b4ce0 <__ast_rwlock_unlock>
+   0x00000000004ac474 <+1444>:	mov    edx,DWORD PTR [r12]
+   0x00000000004ac478 <+1448>:	add    r12,0x4
+   0x00000000004ac47c <+1452>:	lea    eax,[rdx-0x1010101]
+   0x00000000004ac482 <+1458>:	not    edx
+   0x00000000004ac484 <+1460>:	and    eax,edx
+   0x00000000004ac486 <+1462>:	and    eax,0x80808080
+   0x00000000004ac48b <+1467>:	je     0x4ac474 <httpd_helper_thread+1444>
+   0x00000000004ac48d <+1469>:	mov    edx,eax
+   0x00000000004ac48f <+1471>:	mov    esi,0x7c88c0
+   0x00000000004ac494 <+1476>:	mov    rdi,rbx
+   0x00000000004ac497 <+1479>:	shr    edx,0x10
+   0x00000000004ac49a <+1482>:	test   eax,0x8080
+   0x00000000004ac49f <+1487>:	cmove  eax,edx
+   0x00000000004ac4a2 <+1490>:	lea    rdx,[r12+0x2]
+   0x00000000004ac4a7 <+1495>:	cmove  r12,rdx
+   0x00000000004ac4ab <+1499>:	add    al,al
+   0x00000000004ac4ad <+1501>:	sbb    r12,0x3
+   0x00000000004ac4b1 <+1505>:	sub    r12,0x7c88c0
+   0x00000000004ac4b8 <+1512>:	movsxd r15,r12d
+   0x00000000004ac4bb <+1515>:	mov    rdx,r15
+   0x00000000004ac4be <+1518>:	call   0x41dc20 <strncasecmp@plt>
+   0x00000000004ac4c3 <+1523>:	test   eax,eax
+   0x00000000004ac4c5 <+1525>:	je     0x4ac4e8 <httpd_helper_thread+1560>
+   0x00000000004ac4c7 <+1527>:	mov    ecx,0x55ef60
+   0x00000000004ac4cc <+1532>:	mov    edx,0x55e999
+   0x00000000004ac4d1 <+1537>:	mov    esi,0x194
+   0x00000000004ac4d6 <+1542>:	mov    rdi,rbp
+   0x00000000004ac4d9 <+1545>:	call   0x4abcf0 <ast_http_error>
+   0x00000000004ac4de <+1550>:	jmp    0x4ac3f9 <httpd_helper_thread+1321>
+   0x00000000004ac4e3 <+1555>:	nop    DWORD PTR [rax+rax*1+0x0]
+   0x00000000004ac4e8 <+1560>:	cmp    BYTE PTR [rbx+r15*1],0x2f
+   0x00000000004ac4ed <+1565>:	jne    0x4ac4c7 <httpd_helper_thread+1527>
+   0x00000000004ac4ef <+1567>:	lea    r15,[rbx+r15*1+0x1]
+   0x00000000004ac4f4 <+1572>:	mov    r8d,0x55e827
+   0x00000000004ac4fa <+1578>:	mov    ecx,0x7afa70
+   0x00000000004ac4ff <+1583>:	mov    edx,0x55f5ac
+   0x00000000004ac504 <+1588>:	mov    esi,0x2d8
+   0x00000000004ac509 <+1593>:	mov    edi,0x55e7af
+   0x00000000004ac50e <+1598>:	mov    QWORD PTR [rsp+0x18],r15
+   0x00000000004ac513 <+1603>:	call   0x4b4cf0 <__ast_rwlock_rdlock>
+   0x00000000004ac518 <+1608>:	mov    rbx,QWORD PTR [rip+0x303541]        # 0x7afa60 <uris>
+   0x00000000004ac51f <+1615>:	test   rbx,rbx
+   0x00000000004ac522 <+1618>:	jne    0x4ac59f <httpd_helper_thread+1743>
+   0x00000000004ac524 <+1620>:	jmp    0x4ac5fb <httpd_helper_thread+1835>
+   0x00000000004ac529 <+1625>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004ac530 <+1632>:	test   BYTE PTR [rip+0x2fcc4b],0x80        # 0x7a9182 <ast_options+2>
+   0x00000000004ac537 <+1639>:	jne    0x4ac5dd <httpd_helper_thread+1805>
+   0x00000000004ac53d <+1645>:	mov    r15,QWORD PTR [rbx+0x10]
+   0x00000000004ac541 <+1649>:	mov    rdi,r15
+   0x00000000004ac544 <+1652>:	call   0x41d120 <strlen@plt>
+   0x00000000004ac549 <+1657>:	mov    rsi,QWORD PTR [rsp+0x18]
+   0x00000000004ac54e <+1662>:	movsxd rcx,eax
+   0x00000000004ac551 <+1665>:	mov    rdi,r15
+   0x00000000004ac554 <+1668>:	mov    rdx,rcx
+   0x00000000004ac557 <+1671>:	mov    QWORD PTR [rsp+0x10],rcx
+   0x00000000004ac55c <+1676>:	mov    r12d,eax
+   0x00000000004ac55f <+1679>:	call   0x41dc20 <strncasecmp@plt>
+   0x00000000004ac564 <+1684>:	test   eax,eax
+   0x00000000004ac566 <+1686>:	mov    rcx,QWORD PTR [rsp+0x10]
+   0x00000000004ac56b <+1691>:	jne    0x4ac597 <httpd_helper_thread+1735>
+   0x00000000004ac56d <+1693>:	mov    r15,QWORD PTR [rsp+0x18]
+   0x00000000004ac572 <+1698>:	add    r15,rcx
+   0x00000000004ac575 <+1701>:	movzx  eax,BYTE PTR [r15]
+   0x00000000004ac579 <+1705>:	cmp    al,0x2f
+   0x00000000004ac57b <+1707>:	je     0x4ac581 <httpd_helper_thread+1713>
+   0x00000000004ac57d <+1709>:	test   al,al
+   0x00000000004ac57f <+1711>:	jne    0x4ac597 <httpd_helper_thread+1735>
+   0x00000000004ac581 <+1713>:	cmp    al,0x2f
+   0x00000000004ac583 <+1715>:	je     0x4ac5f1 <httpd_helper_thread+1825>
+   0x00000000004ac585 <+1717>:	test   al,al
+   0x00000000004ac587 <+1719>:	je     0x4ac61f <httpd_helper_thread+1871>
+   0x00000000004ac58d <+1725>:	test   BYTE PTR [rbx+0x20],0x1
+   0x00000000004ac591 <+1729>:	jne    0x4ac61f <httpd_helper_thread+1871>
+   0x00000000004ac597 <+1735>:	mov    rbx,QWORD PTR [rbx]
+   0x00000000004ac59a <+1738>:	test   rbx,rbx
+   0x00000000004ac59d <+1741>:	je     0x4ac5fb <httpd_helper_thread+1835>
+   0x00000000004ac59f <+1743>:	cmp    DWORD PTR [rip+0x337f56],0x1        # 0x7e44fc <option_debug>
+   0x00000000004ac5a6 <+1750>:	jle    0x4ac530 <httpd_helper_thread+1632>
+   0x00000000004ac5a8 <+1752>:	mov    DWORD PTR [rsp+0x8],r12d
+   0x00000000004ac5ad <+1757>:	mov    rax,QWORD PTR [rbx+0x10]
+   0x00000000004ac5b1 <+1761>:	mov    r8d,0x55ef30
+   0x00000000004ac5b7 <+1767>:	mov    r9,QWORD PTR [rsp+0x18]
+   0x00000000004ac5bc <+1772>:	mov    ecx,0x55f5ac
+   0x00000000004ac5c1 <+1777>:	mov    edx,0x2da
+   0x00000000004ac5c6 <+1782>:	mov    esi,0x55e7af
+   0x00000000004ac5cb <+1787>:	xor    edi,edi
+   0x00000000004ac5cd <+1789>:	mov    QWORD PTR [rsp],rax
+   0x00000000004ac5d1 <+1793>:	xor    eax,eax
+   0x00000000004ac5d3 <+1795>:	call   0x4b5bf0 <ast_log>
+   0x00000000004ac5d8 <+1800>:	jmp    0x4ac53d <httpd_helper_thread+1645>
+   0x00000000004ac5dd <+1805>:	mov    edi,0x5475d7
+   0x00000000004ac5e2 <+1810>:	call   0x470400 <ast_debug_get_by_module>
+   0x00000000004ac5e7 <+1815>:	cmp    eax,0x1
+   0x00000000004ac5ea <+1818>:	ja     0x4ac5a8 <httpd_helper_thread+1752>
+   0x00000000004ac5ec <+1820>:	jmp    0x4ac53d <httpd_helper_thread+1645>
+   0x00000000004ac5f1 <+1825>:	movzx  eax,BYTE PTR [r15+0x1]
+   0x00000000004ac5f6 <+1830>:	inc    r15
+   0x00000000004ac5f9 <+1833>:	jmp    0x4ac585 <httpd_helper_thread+1717>
+   0x00000000004ac5fb <+1835>:	mov    r8d,0x55e827
+   0x00000000004ac601 <+1841>:	mov    ecx,0x7afa70
+   0x00000000004ac606 <+1846>:	mov    edx,0x55f5ac
+   0x00000000004ac60b <+1851>:	mov    esi,0x2e9
+   0x00000000004ac610 <+1856>:	mov    edi,0x55e7af
+   0x00000000004ac615 <+1861>:	call   0x4b4ce0 <__ast_rwlock_unlock>
+   0x00000000004ac61a <+1866>:	jmp    0x4ac4c7 <httpd_helper_thread+1527>
+   0x00000000004ac61f <+1871>:	mov    r8d,0x55e827
+   0x00000000004ac625 <+1877>:	mov    ecx,0x7afa70
+   0x00000000004ac62a <+1882>:	mov    edx,0x55f5ac
+   0x00000000004ac62f <+1887>:	mov    esi,0x2e9
+   0x00000000004ac634 <+1892>:	mov    edi,0x55e7af
+   0x00000000004ac639 <+1897>:	call   0x4b4ce0 <__ast_rwlock_unlock>
+   0x00000000004ac63e <+1902>:	test   rbx,rbx
+   0x00000000004ac641 <+1905>:	je     0x4ac4c7 <httpd_helper_thread+1527>
+   0x00000000004ac647 <+1911>:	mov    r9,r13
+   0x00000000004ac64a <+1914>:	mov    r8,r14
+   0x00000000004ac64d <+1917>:	mov    ecx,DWORD PTR [rsp+0x2c]
+   0x00000000004ac651 <+1921>:	mov    rdx,r15
+   0x00000000004ac654 <+1924>:	mov    rsi,rbx
+   0x00000000004ac657 <+1927>:	mov    rdi,rbp
+   0x00000000004ac65a <+1930>:	call   QWORD PTR [rbx+0x18]
+   0x00000000004ac65d <+1933>:	jmp    0x4ac3f9 <httpd_helper_thread+1321>
+   0x00000000004ac662 <+1938>:	mov    r9d,0x55f50a
+   0x00000000004ac668 <+1944>:	mov    r8d,0x53acd0
+   0x00000000004ac66e <+1950>:	mov    ecx,0x55f4fe
+   0x00000000004ac673 <+1955>:	mov    edx,0x1ea
+   0x00000000004ac678 <+1960>:	mov    esi,0x53ad10
+   0x00000000004ac67d <+1965>:	mov    edi,0x4
+   0x00000000004ac682 <+1970>:	xor    eax,eax
+   0x00000000004ac684 <+1972>:	mov    QWORD PTR [rsp+0x8],0x53b718
+   0x00000000004ac68d <+1981>:	mov    DWORD PTR [rsp],0x1a4
+   0x00000000004ac694 <+1988>:	call   0x4b5bf0 <ast_log>
+   0x00000000004ac699 <+1993>:	jmp    0x4ac390 <httpd_helper_thread+1216>
+   0x00000000004ac69e <+1998>:	call   0x41d9c0 <__stack_chk_fail@plt>
+

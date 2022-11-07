@@ -1,0 +1,1647 @@
+Searching for gadgets in the range [0x7ffff74c6f00 - 0x7ffff74c6fff]
+Looking for gadgets at 0x7ffff74c6f00
+3|r|
+0x7ffff74c6f00	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f06	jae    0x7ffff74c6f09 <close+73>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f01
+3|r|
+0x7ffff74c6f01	cmp    eax,0xfffff001
+0x7ffff74c6f06	jae    0x7ffff74c6f09 <close+73>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f02
+Looking for gadgets at 0x7ffff74c6f03
+Looking for gadgets at 0x7ffff74c6f04
+Looking for gadgets at 0x7ffff74c6f05
+2|r|
+0x7ffff74c6f05	push   QWORD PTR [rbx+0x1]
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f06
+2|r|
+0x7ffff74c6f06	jae    0x7ffff74c6f09 <close+73>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f07
+8|r|
+0x7ffff74c6f07	add    ebx,eax
+0x7ffff74c6f09	mov    rcx,QWORD PTR [rip+0x2d0f10]        # 0x7ffff7797e20
+0x7ffff74c6f10	xor    edx,edx
+0x7ffff74c6f12	sub    rdx,rax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f08
+1|r|
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f09
+7|r|
+0x7ffff74c6f09	mov    rcx,QWORD PTR [rip+0x2d0f10]        # 0x7ffff7797e20
+0x7ffff74c6f10	xor    edx,edx
+0x7ffff74c6f12	sub    rdx,rax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f0a
+7|r|
+0x7ffff74c6f0a	mov    ecx,DWORD PTR [rip+0x2d0f10]        # 0x7ffff7797e20
+0x7ffff74c6f10	xor    edx,edx
+0x7ffff74c6f12	sub    rdx,rax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f0b
+7|r|
+0x7ffff74c6f0b	or     eax,0x2d0f10
+0x7ffff74c6f10	xor    edx,edx
+0x7ffff74c6f12	sub    rdx,rax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f0c
+7|r|
+0x7ffff74c6f0c	adc    BYTE PTR [rdi],cl
+0x7ffff74c6f0e	sub    eax,0x48d23100
+0x7ffff74c6f13	sub    edx,eax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f0d
+7|r|
+0x7ffff74c6f0d	cvtps2pi mm0,QWORD PTR [rax]
+0x7ffff74c6f10	xor    edx,edx
+0x7ffff74c6f12	sub    rdx,rax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f0e
+6|r|
+0x7ffff74c6f0e	sub    eax,0x48d23100
+0x7ffff74c6f13	sub    edx,eax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f0f
+3|r|
+0x7ffff74c6f0f	add    BYTE PTR [rcx],dh
+0x7ffff74c6f11	ror    BYTE PTR [rax+0x29],cl
+0x7ffff74c6f14	ret    0x8964
+Looking for gadgets at 0x7ffff74c6f10
+6|r|
+0x7ffff74c6f10	xor    edx,edx
+0x7ffff74c6f12	sub    rdx,rax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f11
+2|r|
+0x7ffff74c6f11	ror    BYTE PTR [rax+0x29],cl
+0x7ffff74c6f14	ret    0x8964
+Looking for gadgets at 0x7ffff74c6f12
+5|r|
+0x7ffff74c6f12	sub    rdx,rax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f13
+5|r|
+0x7ffff74c6f13	sub    edx,eax
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f14
+1|r|
+0x7ffff74c6f14	ret    0x8964
+Looking for gadgets at 0x7ffff74c6f15
+4|r|
+0x7ffff74c6f15	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f16
+4|r|
+0x7ffff74c6f16	mov    DWORD PTR [rcx],edx
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f17
+11|r|
+0x7ffff74c6f17	adc    DWORD PTR [rax-0x7d],ecx
+0x7ffff74c6f1a	enter  0xebff,0xea
+0x7ffff74c6f1e	nop
+0x7ffff74c6f1f	nop
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+17|r|
+0x7ffff74c6f17	adc    DWORD PTR [rax-0x7d],ecx
+0x7ffff74c6f1a	enter  0xebff,0xea
+0x7ffff74c6f1e	nop
+0x7ffff74c6f1f	nop
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f18
+3|r|
+0x7ffff74c6f18	or     rax,0xffffffffffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f19
+3|r|
+0x7ffff74c6f19	or     eax,0xffffffff
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f1a
+10|r|
+0x7ffff74c6f1a	enter  0xebff,0xea
+0x7ffff74c6f1e	nop
+0x7ffff74c6f1f	nop
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+16|r|
+0x7ffff74c6f1a	enter  0xebff,0xea
+0x7ffff74c6f1e	nop
+0x7ffff74c6f1f	nop
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f1b
+Looking for gadgets at 0x7ffff74c6f1c
+2|r|
+0x7ffff74c6f1c	jmp    0x7ffff74c6f08 <close+72>
+0x7ffff74c6f08	ret
+Looking for gadgets at 0x7ffff74c6f1d
+Looking for gadgets at 0x7ffff74c6f1e
+9|r|
+0x7ffff74c6f1e	nop
+0x7ffff74c6f1f	nop
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+15|r|
+0x7ffff74c6f1e	nop
+0x7ffff74c6f1f	nop
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f1f
+8|r|
+0x7ffff74c6f1f	nop
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+14|r|
+0x7ffff74c6f1f	nop
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f20
+7|r|
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+13|r|
+0x7ffff74c6f20	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f21
+7|r|
+0x7ffff74c6f21	cmp    eax,0x2d728d
+0x7ffff74c6f26	add    BYTE PTR [rbp+0x10],dh
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+13|r|
+0x7ffff74c6f21	cmp    eax,0x2d728d
+0x7ffff74c6f26	add    BYTE PTR [rbp+0x10],dh
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f22
+8|r|
+0x7ffff74c6f22	lea    esi,[rdx+0x2d]
+0x7ffff74c6f25	add    BYTE PTR [rax],al
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+14|r|
+0x7ffff74c6f22	lea    esi,[rdx+0x2d]
+0x7ffff74c6f25	add    BYTE PTR [rax],al
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f23
+8|r|
+0x7ffff74c6f23	jb     0x7ffff74c6f52 <read+50>
+0x7ffff74c6f25	add    BYTE PTR [rax],al
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+14|r|
+0x7ffff74c6f23	jb     0x7ffff74c6f52 <read+50>
+0x7ffff74c6f25	add    BYTE PTR [rax],al
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f24
+6|r|
+0x7ffff74c6f24	sub    eax,0x10750000
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+12|r|
+0x7ffff74c6f24	sub    eax,0x10750000
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f25
+7|r|
+0x7ffff74c6f25	add    BYTE PTR [rax],al
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+13|r|
+0x7ffff74c6f25	add    BYTE PTR [rax],al
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f26
+6|r|
+0x7ffff74c6f26	add    BYTE PTR [rbp+0x10],dh
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+12|r|
+0x7ffff74c6f26	add    BYTE PTR [rbp+0x10],dh
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f27
+6|r|
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+12|r|
+0x7ffff74c6f27	jne    0x7ffff74c6f39 <read+25>
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f28
+5|r|
+0x7ffff74c6f28	adc    BYTE PTR [rax+0x0],bh
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+11|r|
+0x7ffff74c6f28	adc    BYTE PTR [rax+0x0],bh
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f29
+5|r|
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+11|r|
+0x7ffff74c6f29	mov    eax,0x0
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f2a
+6|r|
+0x7ffff74c6f2a	add    BYTE PTR [rax],al
+0x7ffff74c6f2c	add    BYTE PTR [rax],al
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+12|r|
+0x7ffff74c6f2a	add    BYTE PTR [rax],al
+0x7ffff74c6f2c	add    BYTE PTR [rax],al
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f2b
+Looking for gadgets at 0x7ffff74c6f2c
+5|r|
+0x7ffff74c6f2c	add    BYTE PTR [rax],al
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+11|r|
+0x7ffff74c6f2c	add    BYTE PTR [rax],al
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f2d
+Looking for gadgets at 0x7ffff74c6f2e
+4|r|
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+10|r|
+0x7ffff74c6f2e	syscall
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f2f
+Looking for gadgets at 0x7ffff74c6f30
+3|r|
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+9|r|
+0x7ffff74c6f30	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f31
+3|r|
+0x7ffff74c6f31	cmp    eax,0xfffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+9|r|
+0x7ffff74c6f31	cmp    eax,0xfffff001
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f32
+Looking for gadgets at 0x7ffff74c6f33
+Looking for gadgets at 0x7ffff74c6f34
+Looking for gadgets at 0x7ffff74c6f35
+2|r|
+0x7ffff74c6f35	push   QWORD PTR [rbx+0x31]
+0x7ffff74c6f38	ret
+Looking for gadgets at 0x7ffff74c6f36
+2|r|
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f38	ret
+8|r|
+0x7ffff74c6f36	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f37
+Looking for gadgets at 0x7ffff74c6f38
+1|r|
+0x7ffff74c6f38	ret
+Looking for gadgets at 0x7ffff74c6f39
+Looking for gadgets at 0x7ffff74c6f3a
+Looking for gadgets at 0x7ffff74c6f3b
+Looking for gadgets at 0x7ffff74c6f3c
+Looking for gadgets at 0x7ffff74c6f3d
+Looking for gadgets at 0x7ffff74c6f3e
+Looking for gadgets at 0x7ffff74c6f3f
+Looking for gadgets at 0x7ffff74c6f40
+Looking for gadgets at 0x7ffff74c6f41
+Looking for gadgets at 0x7ffff74c6f42
+Looking for gadgets at 0x7ffff74c6f43
+Looking for gadgets at 0x7ffff74c6f44
+Looking for gadgets at 0x7ffff74c6f45
+Looking for gadgets at 0x7ffff74c6f46
+Looking for gadgets at 0x7ffff74c6f47
+Looking for gadgets at 0x7ffff74c6f48
+Looking for gadgets at 0x7ffff74c6f49
+Looking for gadgets at 0x7ffff74c6f4a
+Looking for gadgets at 0x7ffff74c6f4b
+Looking for gadgets at 0x7ffff74c6f4c
+Looking for gadgets at 0x7ffff74c6f4d
+Looking for gadgets at 0x7ffff74c6f4e
+Looking for gadgets at 0x7ffff74c6f4f
+Looking for gadgets at 0x7ffff74c6f50
+Looking for gadgets at 0x7ffff74c6f51
+Looking for gadgets at 0x7ffff74c6f52
+Looking for gadgets at 0x7ffff74c6f53
+1|r|
+0x7ffff74c6f53	ret    0xa7e8
+Looking for gadgets at 0x7ffff74c6f54
+Looking for gadgets at 0x7ffff74c6f55
+Looking for gadgets at 0x7ffff74c6f56
+Looking for gadgets at 0x7ffff74c6f57
+6|r|
+0x7ffff74c6f57	add    DWORD PTR [rax],eax
+0x7ffff74c6f59	mov    rax,rdx
+0x7ffff74c6f5c	add    rsp,0x8
+0x7ffff74c6f60	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f66	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f58
+Looking for gadgets at 0x7ffff74c6f59
+5|r|
+0x7ffff74c6f59	mov    rax,rdx
+0x7ffff74c6f5c	add    rsp,0x8
+0x7ffff74c6f60	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f66	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f5a
+5|r|
+0x7ffff74c6f5a	mov    eax,edx
+0x7ffff74c6f5c	add    rsp,0x8
+0x7ffff74c6f60	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f66	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f5b
+Looking for gadgets at 0x7ffff74c6f5c
+4|r|
+0x7ffff74c6f5c	add    rsp,0x8
+0x7ffff74c6f60	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f66	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f5d
+4|r|
+0x7ffff74c6f5d	add    esp,0x8
+0x7ffff74c6f60	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f66	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f5e
+Looking for gadgets at 0x7ffff74c6f5f
+Looking for gadgets at 0x7ffff74c6f60
+3|r|
+0x7ffff74c6f60	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f66	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f61
+3|r|
+0x7ffff74c6f61	cmp    eax,0xfffff001
+0x7ffff74c6f66	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f62
+Looking for gadgets at 0x7ffff74c6f63
+Looking for gadgets at 0x7ffff74c6f64
+Looking for gadgets at 0x7ffff74c6f65
+2|r|
+0x7ffff74c6f65	push   QWORD PTR [rbx+0x1]
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f66
+2|r|
+0x7ffff74c6f66	jae    0x7ffff74c6f69 <read+73>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f67
+8|r|
+0x7ffff74c6f67	add    ebx,eax
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f68
+1|r|
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f69
+7|r|
+0x7ffff74c6f69	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f6a
+7|r|
+0x7ffff74c6f6a	mov    ecx,DWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f6b
+7|r|
+0x7ffff74c6f6b	or     eax,0x2d0eb0
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f6c
+7|r|
+0x7ffff74c6f6c	mov    al,0xe
+0x7ffff74c6f6e	sub    eax,0x48d23100
+0x7ffff74c6f73	sub    edx,eax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f6d
+Looking for gadgets at 0x7ffff74c6f6e
+6|r|
+0x7ffff74c6f6e	sub    eax,0x48d23100
+0x7ffff74c6f73	sub    edx,eax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f6f
+3|r|
+0x7ffff74c6f6f	add    BYTE PTR [rcx],dh
+0x7ffff74c6f71	ror    BYTE PTR [rax+0x29],cl
+0x7ffff74c6f74	ret    0x8964
+Looking for gadgets at 0x7ffff74c6f70
+6|r|
+0x7ffff74c6f70	xor    edx,edx
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f71
+2|r|
+0x7ffff74c6f71	ror    BYTE PTR [rax+0x29],cl
+0x7ffff74c6f74	ret    0x8964
+Looking for gadgets at 0x7ffff74c6f72
+5|r|
+0x7ffff74c6f72	sub    rdx,rax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f73
+5|r|
+0x7ffff74c6f73	sub    edx,eax
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f74
+1|r|
+0x7ffff74c6f74	ret    0x8964
+Looking for gadgets at 0x7ffff74c6f75
+4|r|
+0x7ffff74c6f75	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f76
+4|r|
+0x7ffff74c6f76	mov    DWORD PTR [rcx],edx
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f77
+11|r|
+0x7ffff74c6f77	adc    DWORD PTR [rax-0x7d],ecx
+0x7ffff74c6f7a	enter  0xebff,0xea
+0x7ffff74c6f7e	nop
+0x7ffff74c6f7f	nop
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+17|r|
+0x7ffff74c6f77	adc    DWORD PTR [rax-0x7d],ecx
+0x7ffff74c6f7a	enter  0xebff,0xea
+0x7ffff74c6f7e	nop
+0x7ffff74c6f7f	nop
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f78
+3|r|
+0x7ffff74c6f78	or     rax,0xffffffffffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f79
+3|r|
+0x7ffff74c6f79	or     eax,0xffffffff
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f7a
+10|r|
+0x7ffff74c6f7a	enter  0xebff,0xea
+0x7ffff74c6f7e	nop
+0x7ffff74c6f7f	nop
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+16|r|
+0x7ffff74c6f7a	enter  0xebff,0xea
+0x7ffff74c6f7e	nop
+0x7ffff74c6f7f	nop
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f7b
+Looking for gadgets at 0x7ffff74c6f7c
+2|r|
+0x7ffff74c6f7c	jmp    0x7ffff74c6f68 <read+72>
+0x7ffff74c6f68	ret
+Looking for gadgets at 0x7ffff74c6f7d
+Looking for gadgets at 0x7ffff74c6f7e
+9|r|
+0x7ffff74c6f7e	nop
+0x7ffff74c6f7f	nop
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+15|r|
+0x7ffff74c6f7e	nop
+0x7ffff74c6f7f	nop
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f7f
+8|r|
+0x7ffff74c6f7f	nop
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+14|r|
+0x7ffff74c6f7f	nop
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f80
+7|r|
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+13|r|
+0x7ffff74c6f80	cmp    DWORD PTR [rip+0x2d722d],0x0        # 0x7ffff779e1b4
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f81
+7|r|
+0x7ffff74c6f81	cmp    eax,0x2d722d
+0x7ffff74c6f86	add    BYTE PTR [rbp+0x10],dh
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+13|r|
+0x7ffff74c6f81	cmp    eax,0x2d722d
+0x7ffff74c6f86	add    BYTE PTR [rbp+0x10],dh
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f82
+7|r|
+0x7ffff74c6f82	sub    eax,0x2d72
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+13|r|
+0x7ffff74c6f82	sub    eax,0x2d72
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f83
+8|r|
+0x7ffff74c6f83	jb     0x7ffff74c6fb2 <write+50>
+0x7ffff74c6f85	add    BYTE PTR [rax],al
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+14|r|
+0x7ffff74c6f83	jb     0x7ffff74c6fb2 <write+50>
+0x7ffff74c6f85	add    BYTE PTR [rax],al
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f84
+6|r|
+0x7ffff74c6f84	sub    eax,0x10750000
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+12|r|
+0x7ffff74c6f84	sub    eax,0x10750000
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f85
+7|r|
+0x7ffff74c6f85	add    BYTE PTR [rax],al
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+13|r|
+0x7ffff74c6f85	add    BYTE PTR [rax],al
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f86
+6|r|
+0x7ffff74c6f86	add    BYTE PTR [rbp+0x10],dh
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+12|r|
+0x7ffff74c6f86	add    BYTE PTR [rbp+0x10],dh
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f87
+6|r|
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+12|r|
+0x7ffff74c6f87	jne    0x7ffff74c6f99 <write+25>
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f88
+5|r|
+0x7ffff74c6f88	adc    BYTE PTR [rax+0x1],bh
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+11|r|
+0x7ffff74c6f88	adc    BYTE PTR [rax+0x1],bh
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f89
+5|r|
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+11|r|
+0x7ffff74c6f89	mov    eax,0x1
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f8a
+6|r|
+0x7ffff74c6f8a	add    DWORD PTR [rax],eax
+0x7ffff74c6f8c	add    BYTE PTR [rax],al
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+12|r|
+0x7ffff74c6f8a	add    DWORD PTR [rax],eax
+0x7ffff74c6f8c	add    BYTE PTR [rax],al
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f8b
+Looking for gadgets at 0x7ffff74c6f8c
+5|r|
+0x7ffff74c6f8c	add    BYTE PTR [rax],al
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+11|r|
+0x7ffff74c6f8c	add    BYTE PTR [rax],al
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f8d
+Looking for gadgets at 0x7ffff74c6f8e
+4|r|
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+10|r|
+0x7ffff74c6f8e	syscall
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f8f
+Looking for gadgets at 0x7ffff74c6f90
+3|r|
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+9|r|
+0x7ffff74c6f90	cmp    rax,0xfffffffffffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f91
+3|r|
+0x7ffff74c6f91	cmp    eax,0xfffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+9|r|
+0x7ffff74c6f91	cmp    eax,0xfffff001
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f92
+Looking for gadgets at 0x7ffff74c6f93
+Looking for gadgets at 0x7ffff74c6f94
+Looking for gadgets at 0x7ffff74c6f95
+2|r|
+0x7ffff74c6f95	push   QWORD PTR [rbx+0x31]
+0x7ffff74c6f98	ret
+Looking for gadgets at 0x7ffff74c6f96
+2|r|
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6f98	ret
+8|r|
+0x7ffff74c6f96	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6f97
+Looking for gadgets at 0x7ffff74c6f98
+1|r|
+0x7ffff74c6f98	ret
+Looking for gadgets at 0x7ffff74c6f99
+Looking for gadgets at 0x7ffff74c6f9a
+Looking for gadgets at 0x7ffff74c6f9b
+Looking for gadgets at 0x7ffff74c6f9c
+Looking for gadgets at 0x7ffff74c6f9d
+Looking for gadgets at 0x7ffff74c6f9e
+Looking for gadgets at 0x7ffff74c6f9f
+Looking for gadgets at 0x7ffff74c6fa0
+Looking for gadgets at 0x7ffff74c6fa1
+Looking for gadgets at 0x7ffff74c6fa2
+Looking for gadgets at 0x7ffff74c6fa3
+Looking for gadgets at 0x7ffff74c6fa4
+Looking for gadgets at 0x7ffff74c6fa5
+Looking for gadgets at 0x7ffff74c6fa6
+Looking for gadgets at 0x7ffff74c6fa7
+Looking for gadgets at 0x7ffff74c6fa8
+Looking for gadgets at 0x7ffff74c6fa9
+Looking for gadgets at 0x7ffff74c6faa
+Looking for gadgets at 0x7ffff74c6fab
+Looking for gadgets at 0x7ffff74c6fac
+Looking for gadgets at 0x7ffff74c6fad
+Looking for gadgets at 0x7ffff74c6fae
+Looking for gadgets at 0x7ffff74c6faf
+Looking for gadgets at 0x7ffff74c6fb0
+Looking for gadgets at 0x7ffff74c6fb1
+Looking for gadgets at 0x7ffff74c6fb2
+Looking for gadgets at 0x7ffff74c6fb3
+1|r|
+0x7ffff74c6fb3	ret    0x47e8
+Looking for gadgets at 0x7ffff74c6fb4
+Looking for gadgets at 0x7ffff74c6fb5
+Looking for gadgets at 0x7ffff74c6fb6
+Looking for gadgets at 0x7ffff74c6fb7
+6|r|
+0x7ffff74c6fb7	add    DWORD PTR [rax],eax
+0x7ffff74c6fb9	mov    rax,rdx
+0x7ffff74c6fbc	add    rsp,0x8
+0x7ffff74c6fc0	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fc6	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fb8
+Looking for gadgets at 0x7ffff74c6fb9
+5|r|
+0x7ffff74c6fb9	mov    rax,rdx
+0x7ffff74c6fbc	add    rsp,0x8
+0x7ffff74c6fc0	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fc6	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fba
+5|r|
+0x7ffff74c6fba	mov    eax,edx
+0x7ffff74c6fbc	add    rsp,0x8
+0x7ffff74c6fc0	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fc6	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fbb
+Looking for gadgets at 0x7ffff74c6fbc
+4|r|
+0x7ffff74c6fbc	add    rsp,0x8
+0x7ffff74c6fc0	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fc6	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fbd
+4|r|
+0x7ffff74c6fbd	add    esp,0x8
+0x7ffff74c6fc0	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fc6	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fbe
+Looking for gadgets at 0x7ffff74c6fbf
+Looking for gadgets at 0x7ffff74c6fc0
+3|r|
+0x7ffff74c6fc0	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fc6	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fc1
+3|r|
+0x7ffff74c6fc1	cmp    eax,0xfffff001
+0x7ffff74c6fc6	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fc2
+Looking for gadgets at 0x7ffff74c6fc3
+Looking for gadgets at 0x7ffff74c6fc4
+Looking for gadgets at 0x7ffff74c6fc5
+2|r|
+0x7ffff74c6fc5	push   QWORD PTR [rbx+0x1]
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fc6
+2|r|
+0x7ffff74c6fc6	jae    0x7ffff74c6fc9 <write+73>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fc7
+8|r|
+0x7ffff74c6fc7	add    ebx,eax
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fc8
+1|r|
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fc9
+7|r|
+0x7ffff74c6fc9	mov    rcx,QWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fca
+7|r|
+0x7ffff74c6fca	mov    ecx,DWORD PTR [rip+0x2d0e50]        # 0x7ffff7797e20
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fcb
+7|r|
+0x7ffff74c6fcb	or     eax,0x2d0e50
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fcc
+Looking for gadgets at 0x7ffff74c6fcd
+Looking for gadgets at 0x7ffff74c6fce
+6|r|
+0x7ffff74c6fce	sub    eax,0x48d23100
+0x7ffff74c6fd3	sub    edx,eax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fcf
+3|r|
+0x7ffff74c6fcf	add    BYTE PTR [rcx],dh
+0x7ffff74c6fd1	ror    BYTE PTR [rax+0x29],cl
+0x7ffff74c6fd4	ret    0x8964
+Looking for gadgets at 0x7ffff74c6fd0
+6|r|
+0x7ffff74c6fd0	xor    edx,edx
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fd1
+2|r|
+0x7ffff74c6fd1	ror    BYTE PTR [rax+0x29],cl
+0x7ffff74c6fd4	ret    0x8964
+Looking for gadgets at 0x7ffff74c6fd2
+5|r|
+0x7ffff74c6fd2	sub    rdx,rax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fd3
+5|r|
+0x7ffff74c6fd3	sub    edx,eax
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fd4
+1|r|
+0x7ffff74c6fd4	ret    0x8964
+Looking for gadgets at 0x7ffff74c6fd5
+4|r|
+0x7ffff74c6fd5	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fd6
+4|r|
+0x7ffff74c6fd6	mov    DWORD PTR [rcx],edx
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fd7
+9|r|
+0x7ffff74c6fd7	adc    DWORD PTR [rax-0x7d],ecx
+0x7ffff74c6fda	enter  0xebff,0xea
+0x7ffff74c6fde	nop
+0x7ffff74c6fdf	nop
+0x7ffff74c6fe0	mov    eax,0x15
+0x7ffff74c6fe5	syscall
+0x7ffff74c6fe7	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fd8
+3|r|
+0x7ffff74c6fd8	or     rax,0xffffffffffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fd9
+3|r|
+0x7ffff74c6fd9	or     eax,0xffffffff
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fda
+8|r|
+0x7ffff74c6fda	enter  0xebff,0xea
+0x7ffff74c6fde	nop
+0x7ffff74c6fdf	nop
+0x7ffff74c6fe0	mov    eax,0x15
+0x7ffff74c6fe5	syscall
+0x7ffff74c6fe7	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fdb
+Looking for gadgets at 0x7ffff74c6fdc
+2|r|
+0x7ffff74c6fdc	jmp    0x7ffff74c6fc8 <write+72>
+0x7ffff74c6fc8	ret
+Looking for gadgets at 0x7ffff74c6fdd
+Looking for gadgets at 0x7ffff74c6fde
+7|r|
+0x7ffff74c6fde	nop
+0x7ffff74c6fdf	nop
+0x7ffff74c6fe0	mov    eax,0x15
+0x7ffff74c6fe5	syscall
+0x7ffff74c6fe7	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fdf
+6|r|
+0x7ffff74c6fdf	nop
+0x7ffff74c6fe0	mov    eax,0x15
+0x7ffff74c6fe5	syscall
+0x7ffff74c6fe7	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fe0
+5|r|
+0x7ffff74c6fe0	mov    eax,0x15
+0x7ffff74c6fe5	syscall
+0x7ffff74c6fe7	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fe1
+Looking for gadgets at 0x7ffff74c6fe2
+Looking for gadgets at 0x7ffff74c6fe3
+5|r|
+0x7ffff74c6fe3	add    BYTE PTR [rax],al
+0x7ffff74c6fe5	syscall
+0x7ffff74c6fe7	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fe4
+Looking for gadgets at 0x7ffff74c6fe5
+4|r|
+0x7ffff74c6fe5	syscall
+0x7ffff74c6fe7	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fe6
+Looking for gadgets at 0x7ffff74c6fe7
+3|r|
+0x7ffff74c6fe7	cmp    rax,0xfffffffffffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fe8
+3|r|
+0x7ffff74c6fe8	cmp    eax,0xfffff001
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fe9
+Looking for gadgets at 0x7ffff74c6fea
+Looking for gadgets at 0x7ffff74c6feb
+Looking for gadgets at 0x7ffff74c6fec
+2|r|
+0x7ffff74c6fec	push   QWORD PTR [rbx+0x1]
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fed
+2|r|
+0x7ffff74c6fed	jae    0x7ffff74c6ff0 <access+16>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fee
+8|r|
+0x7ffff74c6fee	add    ebx,eax
+0x7ffff74c6ff0	mov    rcx,QWORD PTR [rip+0x2d0e29]        # 0x7ffff7797e20
+0x7ffff74c6ff7	xor    edx,edx
+0x7ffff74c6ff9	sub    rdx,rax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6fef
+1|r|
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ff0
+7|r|
+0x7ffff74c6ff0	mov    rcx,QWORD PTR [rip+0x2d0e29]        # 0x7ffff7797e20
+0x7ffff74c6ff7	xor    edx,edx
+0x7ffff74c6ff9	sub    rdx,rax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ff1
+7|r|
+0x7ffff74c6ff1	mov    ecx,DWORD PTR [rip+0x2d0e29]        # 0x7ffff7797e20
+0x7ffff74c6ff7	xor    edx,edx
+0x7ffff74c6ff9	sub    rdx,rax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ff2
+7|r|
+0x7ffff74c6ff2	or     eax,0x2d0e29
+0x7ffff74c6ff7	xor    edx,edx
+0x7ffff74c6ff9	sub    rdx,rax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ff3
+7|r|
+0x7ffff74c6ff3	sub    DWORD PTR [rsi],ecx
+0x7ffff74c6ff5	sub    eax,0x48d23100
+0x7ffff74c6ffa	sub    edx,eax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ff4
+Looking for gadgets at 0x7ffff74c6ff5
+6|r|
+0x7ffff74c6ff5	sub    eax,0x48d23100
+0x7ffff74c6ffa	sub    edx,eax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ff6
+3|r|
+0x7ffff74c6ff6	add    BYTE PTR [rcx],dh
+0x7ffff74c6ff8	ror    BYTE PTR [rax+0x29],cl
+0x7ffff74c6ffb	ret    0x8964
+Looking for gadgets at 0x7ffff74c6ff7
+6|r|
+0x7ffff74c6ff7	xor    edx,edx
+0x7ffff74c6ff9	sub    rdx,rax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ff8
+2|r|
+0x7ffff74c6ff8	ror    BYTE PTR [rax+0x29],cl
+0x7ffff74c6ffb	ret    0x8964
+Looking for gadgets at 0x7ffff74c6ff9
+5|r|
+0x7ffff74c6ff9	sub    rdx,rax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ffa
+5|r|
+0x7ffff74c6ffa	sub    edx,eax
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ffb
+1|r|
+0x7ffff74c6ffb	ret    0x8964
+Looking for gadgets at 0x7ffff74c6ffc
+4|r|
+0x7ffff74c6ffc	mov    DWORD PTR fs:[rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ffd
+4|r|
+0x7ffff74c6ffd	mov    DWORD PTR [rcx],edx
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret
+Looking for gadgets at 0x7ffff74c6ffe
+Looking for gadgets at 0x7ffff74c6fff
+3|r|
+0x7ffff74c6fff	or     rax,0xffffffffffffffff
+0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+0x7ffff74c6fef	ret

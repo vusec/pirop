@@ -1,0 +1,14 @@
+Dump of assembler code for function ast_http_get_post_vars:
+<...>
+   0x00000000004aca88 <+168>:	movslq %esi,%rax
+   0x00000000004aca8b <+171>:	mov    (%r12),%rdx
+   0x00000000004aca8f <+175>:	add    $0x1e,%rax
+   0x00000000004aca93 <+179>:	and    $0xfffffffffffffff0,%rax
+   0x00000000004aca97 <+183>:	sub    %rax,%rsp
+   0x00000000004aca9a <+186>:	lea    0xf(%rsp),%rbx
+   0x00000000004aca9f <+191>:	and    $0xfffffffffffffff0,%rbx
+   0x00000000004acaa3 <+195>:	mov    %rbx,%rdi
+=> 0x00000000004acaa6 <+198>:	callq  0x41e050 <fgets@plt>
+   0x00000000004acaab <+203>:	test   %rax,%rax
+   0x00000000004acaae <+206>:	je     0x4acb68 <ast_http_get_post_vars+392>
+<...>

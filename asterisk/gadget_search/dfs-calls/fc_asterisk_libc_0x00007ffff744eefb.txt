@@ -1,0 +1,2 @@
+Searching for gadgets with calls into plt 
+Looking for gadgets at 0x7ffff744eefb

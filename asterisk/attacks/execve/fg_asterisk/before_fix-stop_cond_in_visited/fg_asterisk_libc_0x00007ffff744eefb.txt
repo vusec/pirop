@@ -1,0 +1,630 @@
+Searching for gadgets in the range [0x7ffff744ee00 - 0x7ffff744eeff]
+Looking for gadgets at 0x7ffff744ee00
+Looking for gadgets at 0x7ffff744ee01
+Looking for gadgets at 0x7ffff744ee02
+Looking for gadgets at 0x7ffff744ee03
+Looking for gadgets at 0x7ffff744ee04
+Looking for gadgets at 0x7ffff744ee05
+Looking for gadgets at 0x7ffff744ee06
+Looking for gadgets at 0x7ffff744ee07
+Looking for gadgets at 0x7ffff744ee08
+Looking for gadgets at 0x7ffff744ee09
+Looking for gadgets at 0x7ffff744ee0a
+Looking for gadgets at 0x7ffff744ee0b
+Looking for gadgets at 0x7ffff744ee0c
+Looking for gadgets at 0x7ffff744ee0d
+Looking for gadgets at 0x7ffff744ee0e
+Looking for gadgets at 0x7ffff744ee0f
+Looking for gadgets at 0x7ffff744ee10
+Looking for gadgets at 0x7ffff744ee11
+Looking for gadgets at 0x7ffff744ee12
+Looking for gadgets at 0x7ffff744ee13
+Looking for gadgets at 0x7ffff744ee14
+Looking for gadgets at 0x7ffff744ee15
+Looking for gadgets at 0x7ffff744ee16
+Looking for gadgets at 0x7ffff744ee17
+Looking for gadgets at 0x7ffff744ee18
+Looking for gadgets at 0x7ffff744ee19
+Looking for gadgets at 0x7ffff744ee1a
+Looking for gadgets at 0x7ffff744ee1b
+Looking for gadgets at 0x7ffff744ee1c
+Looking for gadgets at 0x7ffff744ee1d
+Looking for gadgets at 0x7ffff744ee1e
+Looking for gadgets at 0x7ffff744ee1f
+Looking for gadgets at 0x7ffff744ee20
+Looking for gadgets at 0x7ffff744ee21
+Looking for gadgets at 0x7ffff744ee22
+Looking for gadgets at 0x7ffff744ee23
+Looking for gadgets at 0x7ffff744ee24
+Looking for gadgets at 0x7ffff744ee25
+Looking for gadgets at 0x7ffff744ee26
+Looking for gadgets at 0x7ffff744ee27
+Looking for gadgets at 0x7ffff744ee28
+Looking for gadgets at 0x7ffff744ee29
+Looking for gadgets at 0x7ffff744ee2a
+Looking for gadgets at 0x7ffff744ee2b
+Looking for gadgets at 0x7ffff744ee2c
+Looking for gadgets at 0x7ffff744ee2d
+Looking for gadgets at 0x7ffff744ee2e
+Looking for gadgets at 0x7ffff744ee2f
+Looking for gadgets at 0x7ffff744ee30
+Looking for gadgets at 0x7ffff744ee31
+Looking for gadgets at 0x7ffff744ee32
+8|r|
+0x7ffff744ee32	or     DWORD PTR [rax],eax
+0x7ffff744ee34	add    rsp,0x80
+0x7ffff744ee3b	jmp    0x7ffff744ed57 <fgetpos64+231>
+0x7ffff744ed57	add    rsp,0x8
+0x7ffff744ed5b	mov    eax,esi
+0x7ffff744ed5d	pop    rbx
+0x7ffff744ed5e	pop    rbp
+0x7ffff744ed5f	ret
+Looking for gadgets at 0x7ffff744ee33
+Looking for gadgets at 0x7ffff744ee34
+7|r|
+0x7ffff744ee34	add    rsp,0x80
+0x7ffff744ee3b	jmp    0x7ffff744ed57 <fgetpos64+231>
+0x7ffff744ed57	add    rsp,0x8
+0x7ffff744ed5b	mov    eax,esi
+0x7ffff744ed5d	pop    rbx
+0x7ffff744ed5e	pop    rbp
+0x7ffff744ed5f	ret
+Looking for gadgets at 0x7ffff744ee35
+7|r|
+0x7ffff744ee35	add    esp,0x80
+0x7ffff744ee3b	jmp    0x7ffff744ed57 <fgetpos64+231>
+0x7ffff744ed57	add    rsp,0x8
+0x7ffff744ed5b	mov    eax,esi
+0x7ffff744ed5d	pop    rbx
+0x7ffff744ed5e	pop    rbp
+0x7ffff744ed5f	ret
+Looking for gadgets at 0x7ffff744ee36
+Looking for gadgets at 0x7ffff744ee37
+Looking for gadgets at 0x7ffff744ee38
+Looking for gadgets at 0x7ffff744ee39
+7|r|
+0x7ffff744ee39	add    BYTE PTR [rax],al
+0x7ffff744ee3b	jmp    0x7ffff744ed57 <fgetpos64+231>
+0x7ffff744ed57	add    rsp,0x8
+0x7ffff744ed5b	mov    eax,esi
+0x7ffff744ed5d	pop    rbx
+0x7ffff744ed5e	pop    rbp
+0x7ffff744ed5f	ret
+Looking for gadgets at 0x7ffff744ee3a
+Looking for gadgets at 0x7ffff744ee3b
+6|r|
+0x7ffff744ee3b	jmp    0x7ffff744ed57 <fgetpos64+231>
+0x7ffff744ed57	add    rsp,0x8
+0x7ffff744ed5b	mov    eax,esi
+0x7ffff744ed5d	pop    rbx
+0x7ffff744ed5e	pop    rbp
+0x7ffff744ed5f	ret
+Looking for gadgets at 0x7ffff744ee3c
+Looking for gadgets at 0x7ffff744ee3d
+Looking for gadgets at 0x7ffff744ee3e
+Looking for gadgets at 0x7ffff744ee3f
+Looking for gadgets at 0x7ffff744ee40
+Looking for gadgets at 0x7ffff744ee41
+Looking for gadgets at 0x7ffff744ee42
+Looking for gadgets at 0x7ffff744ee43
+Looking for gadgets at 0x7ffff744ee44
+Looking for gadgets at 0x7ffff744ee45
+Looking for gadgets at 0x7ffff744ee46
+Looking for gadgets at 0x7ffff744ee47
+Looking for gadgets at 0x7ffff744ee48
+Looking for gadgets at 0x7ffff744ee49
+Looking for gadgets at 0x7ffff744ee4a
+Looking for gadgets at 0x7ffff744ee4b
+Looking for gadgets at 0x7ffff744ee4c
+Looking for gadgets at 0x7ffff744ee4d
+Looking for gadgets at 0x7ffff744ee4e
+Looking for gadgets at 0x7ffff744ee4f
+Looking for gadgets at 0x7ffff744ee50
+Looking for gadgets at 0x7ffff744ee51
+Looking for gadgets at 0x7ffff744ee52
+Looking for gadgets at 0x7ffff744ee53
+Looking for gadgets at 0x7ffff744ee54
+Looking for gadgets at 0x7ffff744ee55
+Looking for gadgets at 0x7ffff744ee56
+Looking for gadgets at 0x7ffff744ee57
+Looking for gadgets at 0x7ffff744ee58
+Looking for gadgets at 0x7ffff744ee59
+Looking for gadgets at 0x7ffff744ee5a
+Looking for gadgets at 0x7ffff744ee5b
+Looking for gadgets at 0x7ffff744ee5c
+Looking for gadgets at 0x7ffff744ee5d
+20|r|
+0x7ffff744ee5d	nop
+0x7ffff744ee5e	nop
+0x7ffff744ee5f	nop
+0x7ffff744ee60	push   r12
+0x7ffff744ee62	test   esi,esi
+0x7ffff744ee64	mov    r8d,esi
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee5e
+19|r|
+0x7ffff744ee5e	nop
+0x7ffff744ee5f	nop
+0x7ffff744ee60	push   r12
+0x7ffff744ee62	test   esi,esi
+0x7ffff744ee64	mov    r8d,esi
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee5f
+18|r|
+0x7ffff744ee5f	nop
+0x7ffff744ee60	push   r12
+0x7ffff744ee62	test   esi,esi
+0x7ffff744ee64	mov    r8d,esi
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee60
+17|r|
+0x7ffff744ee60	push   r12
+0x7ffff744ee62	test   esi,esi
+0x7ffff744ee64	mov    r8d,esi
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee61
+17|r|
+0x7ffff744ee61	push   rsp
+0x7ffff744ee62	test   esi,esi
+0x7ffff744ee64	mov    r8d,esi
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee62
+16|r|
+0x7ffff744ee62	test   esi,esi
+0x7ffff744ee64	mov    r8d,esi
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee63
+15|r|
+0x7ffff744ee63	test   BYTE PTR [rcx-0x77],0xf0
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee64
+15|r|
+0x7ffff744ee64	mov    r8d,esi
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee65
+15|r|
+0x7ffff744ee65	mov    eax,esi
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee66
+14|r|
+0x7ffff744ee66	lock push rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee67
+14|r|
+0x7ffff744ee67	push   rbp
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee68
+13|r|
+0x7ffff744ee68	mov    rbp,rdi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee69
+13|r|
+0x7ffff744ee69	mov    ebp,edi
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee6a
+13|r|
+0x7ffff744ee6a	std
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee6b
+12|r|
+0x7ffff744ee6b	push   rbx
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee6c
+11|r|
+0x7ffff744ee6c	mov    rbx,rdx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee6d
+11|r|
+0x7ffff744ee6d	mov    ebx,edx
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee6e
+Looking for gadgets at 0x7ffff744ee6f
+10|r|
+0x7ffff744ee6f	jle    0x7ffff744ef90 <fgets+304>
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee70
+Looking for gadgets at 0x7ffff744ee71
+11|r|
+0x7ffff744ee71	sbb    eax,DWORD PTR [rcx]
+0x7ffff744ee73	add    BYTE PTR [rax],al
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee72
+Looking for gadgets at 0x7ffff744ee73
+10|r|
+0x7ffff744ee73	add    BYTE PTR [rax],al
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee74
+Looking for gadgets at 0x7ffff744ee75
+9|r|
+0x7ffff744ee75	cmp    esi,0x1
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee76
+9|r|
+0x7ffff744ee76	inc    BYTE PTR [rcx]
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee77
+Looking for gadgets at 0x7ffff744ee78
+8|r|
+0x7ffff744ee78	je     0x7ffff744ef94 <fgets+308>
+0x7ffff744ef94	mov    BYTE PTR [rdi],0x0
+0x7ffff744ef97	jmp    0x7ffff744ef6e <fgets+270>
+0x7ffff744ef6e	pop    rbx
+0x7ffff744ef6f	mov    rax,rbp
+0x7ffff744ef72	pop    rbp
+0x7ffff744ef73	pop    r12
+0x7ffff744ef75	ret
+Looking for gadgets at 0x7ffff744ee79
+Looking for gadgets at 0x7ffff744ee7a
+Looking for gadgets at 0x7ffff744ee7b
+Looking for gadgets at 0x7ffff744ee7c
+Looking for gadgets at 0x7ffff744ee7d
+Looking for gadgets at 0x7ffff744ee7e
+Looking for gadgets at 0x7ffff744ee7f
+Looking for gadgets at 0x7ffff744ee80
+Looking for gadgets at 0x7ffff744ee81
+Looking for gadgets at 0x7ffff744ee82
+Looking for gadgets at 0x7ffff744ee83
+Looking for gadgets at 0x7ffff744ee84
+Looking for gadgets at 0x7ffff744ee85
+Looking for gadgets at 0x7ffff744ee86
+Looking for gadgets at 0x7ffff744ee87
+Looking for gadgets at 0x7ffff744ee88
+Looking for gadgets at 0x7ffff744ee89
+Looking for gadgets at 0x7ffff744ee8a
+Looking for gadgets at 0x7ffff744ee8b
+Looking for gadgets at 0x7ffff744ee8c
+Looking for gadgets at 0x7ffff744ee8d
+Looking for gadgets at 0x7ffff744ee8e
+Looking for gadgets at 0x7ffff744ee8f
+Looking for gadgets at 0x7ffff744ee90
+Looking for gadgets at 0x7ffff744ee91
+Looking for gadgets at 0x7ffff744ee92
+Looking for gadgets at 0x7ffff744ee93
+Looking for gadgets at 0x7ffff744ee94
+Looking for gadgets at 0x7ffff744ee95
+Looking for gadgets at 0x7ffff744ee96
+Looking for gadgets at 0x7ffff744ee97
+Looking for gadgets at 0x7ffff744ee98
+Looking for gadgets at 0x7ffff744ee99
+Looking for gadgets at 0x7ffff744ee9a
+Looking for gadgets at 0x7ffff744ee9b
+Looking for gadgets at 0x7ffff744ee9c
+Looking for gadgets at 0x7ffff744ee9d
+Looking for gadgets at 0x7ffff744ee9e
+Looking for gadgets at 0x7ffff744ee9f
+Looking for gadgets at 0x7ffff744eea0
+Looking for gadgets at 0x7ffff744eea1
+Looking for gadgets at 0x7ffff744eea2
+Looking for gadgets at 0x7ffff744eea3
+Looking for gadgets at 0x7ffff744eea4
+Looking for gadgets at 0x7ffff744eea5
+Looking for gadgets at 0x7ffff744eea6
+Looking for gadgets at 0x7ffff744eea7
+Looking for gadgets at 0x7ffff744eea8
+Looking for gadgets at 0x7ffff744eea9
+Looking for gadgets at 0x7ffff744eeaa
+Looking for gadgets at 0x7ffff744eeab
+Looking for gadgets at 0x7ffff744eeac
+Looking for gadgets at 0x7ffff744eead
+Looking for gadgets at 0x7ffff744eeae
+Looking for gadgets at 0x7ffff744eeaf
+Looking for gadgets at 0x7ffff744eeb0
+Looking for gadgets at 0x7ffff744eeb1
+Looking for gadgets at 0x7ffff744eeb2
+Looking for gadgets at 0x7ffff744eeb3
+Looking for gadgets at 0x7ffff744eeb4
+Looking for gadgets at 0x7ffff744eeb5
+Looking for gadgets at 0x7ffff744eeb6
+Looking for gadgets at 0x7ffff744eeb7
+Looking for gadgets at 0x7ffff744eeb8
+Looking for gadgets at 0x7ffff744eeb9
+Looking for gadgets at 0x7ffff744eeba
+Looking for gadgets at 0x7ffff744eebb
+Looking for gadgets at 0x7ffff744eebc
+Looking for gadgets at 0x7ffff744eebd
+Looking for gadgets at 0x7ffff744eebe
+Looking for gadgets at 0x7ffff744eebf
+Looking for gadgets at 0x7ffff744eec0
+Looking for gadgets at 0x7ffff744eec1
+Looking for gadgets at 0x7ffff744eec2
+Looking for gadgets at 0x7ffff744eec3
+Looking for gadgets at 0x7ffff744eec4
+Looking for gadgets at 0x7ffff744eec5
+Looking for gadgets at 0x7ffff744eec6
+Looking for gadgets at 0x7ffff744eec7
+Looking for gadgets at 0x7ffff744eec8
+Looking for gadgets at 0x7ffff744eec9
+Looking for gadgets at 0x7ffff744eeca
+Looking for gadgets at 0x7ffff744eecb
+Looking for gadgets at 0x7ffff744eecc
+Looking for gadgets at 0x7ffff744eecd
+Looking for gadgets at 0x7ffff744eece
+Looking for gadgets at 0x7ffff744eecf
+Looking for gadgets at 0x7ffff744eed0
+Looking for gadgets at 0x7ffff744eed1
+Looking for gadgets at 0x7ffff744eed2
+Looking for gadgets at 0x7ffff744eed3
+Looking for gadgets at 0x7ffff744eed4
+Looking for gadgets at 0x7ffff744eed5
+Looking for gadgets at 0x7ffff744eed6
+Looking for gadgets at 0x7ffff744eed7
+Looking for gadgets at 0x7ffff744eed8
+Looking for gadgets at 0x7ffff744eed9
+Looking for gadgets at 0x7ffff744eeda
+Looking for gadgets at 0x7ffff744eedb
+Looking for gadgets at 0x7ffff744eedc
+Looking for gadgets at 0x7ffff744eedd
+Looking for gadgets at 0x7ffff744eede
+Looking for gadgets at 0x7ffff744eedf
+Looking for gadgets at 0x7ffff744eee0
+Looking for gadgets at 0x7ffff744eee1
+Looking for gadgets at 0x7ffff744eee2
+Looking for gadgets at 0x7ffff744eee3
+Looking for gadgets at 0x7ffff744eee4
+Looking for gadgets at 0x7ffff744eee5
+Looking for gadgets at 0x7ffff744eee6
+Looking for gadgets at 0x7ffff744eee7
+Looking for gadgets at 0x7ffff744eee8
+Looking for gadgets at 0x7ffff744eee9
+Looking for gadgets at 0x7ffff744eeea
+Looking for gadgets at 0x7ffff744eeeb
+Looking for gadgets at 0x7ffff744eeec
+Looking for gadgets at 0x7ffff744eeed
+Looking for gadgets at 0x7ffff744eeee
+Looking for gadgets at 0x7ffff744eeef
+Looking for gadgets at 0x7ffff744eef0
+Looking for gadgets at 0x7ffff744eef1
+Looking for gadgets at 0x7ffff744eef2
+Looking for gadgets at 0x7ffff744eef3
+Looking for gadgets at 0x7ffff744eef4
+Looking for gadgets at 0x7ffff744eef5
+Looking for gadgets at 0x7ffff744eef6
+Looking for gadgets at 0x7ffff744eef7
+Looking for gadgets at 0x7ffff744eef8
+Looking for gadgets at 0x7ffff744eef9
+Looking for gadgets at 0x7ffff744eefa
+Looking for gadgets at 0x7ffff744eefb
+Looking for gadgets at 0x7ffff744eefc
+Looking for gadgets at 0x7ffff744eefd
+Looking for gadgets at 0x7ffff744eefe
+Looking for gadgets at 0x7ffff744eeff

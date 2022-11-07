@@ -1,0 +1,42 @@
+gdb-peda$ x/40i 0x7ffff7471760
+   0x7ffff7471760:	cmp    rdx,0x20
+   0x7ffff7471764:	mov    rax,rdi
+   0x7ffff7471767:	jae    0x7ffff74717e0
+   0x7ffff7471769:	test   dl,0x1
+   0x7ffff747176c:	je     0x7ffff7471779
+   0x7ffff747176e:	movzx  ecx,BYTE PTR [rsi]
+   0x7ffff7471771:	mov    BYTE PTR [rdi],cl
+   0x7ffff7471773:	inc    rsi
+   0x7ffff7471776:	inc    rdi
+   0x7ffff7471779:	test   dl,0x2
+   0x7ffff747177c:	je     0x7ffff7471790
+   0x7ffff747177e:	movzx  ecx,WORD PTR [rsi]
+   0x7ffff7471781:	mov    WORD PTR [rdi],cx
+   0x7ffff7471784:	add    rsi,0x2
+   0x7ffff7471788:	add    rdi,0x2
+   0x7ffff747178c:	nop    DWORD PTR [rax+0x0]
+   0x7ffff7471790:	test   dl,0x4
+   0x7ffff7471793:	je     0x7ffff74717a1
+   0x7ffff7471795:	mov    ecx,DWORD PTR [rsi]
+   0x7ffff7471797:	mov    DWORD PTR [rdi],ecx
+   0x7ffff7471799:	add    rsi,0x4
+   0x7ffff747179d:	add    rdi,0x4
+   0x7ffff74717a1:	test   dl,0x8
+   0x7ffff74717a4:	je     0x7ffff74717b4
+   0x7ffff74717a6:	mov    rcx,QWORD PTR [rsi]
+   0x7ffff74717a9:	mov    QWORD PTR [rdi],rcx
+   0x7ffff74717ac:	add    rsi,0x8
+   0x7ffff74717b0:	add    rdi,0x8
+   0x7ffff74717b4:	and    edx,0xf0
+   0x7ffff74717ba:	je     0x7ffff74717db
+   0x7ffff74717bc:	nop    DWORD PTR [rax+0x0]
+   0x7ffff74717c0:	mov    rcx,QWORD PTR [rsi]
+   0x7ffff74717c3:	mov    r8,QWORD PTR [rsi+0x8]
+   0x7ffff74717c7:	mov    QWORD PTR [rdi],rcx
+   0x7ffff74717ca:	mov    QWORD PTR [rdi+0x8],r8
+   0x7ffff74717ce:	sub    edx,0x10
+   0x7ffff74717d1:	lea    rsi,[rsi+0x10]
+   0x7ffff74717d5:	lea    rdi,[rdi+0x10]
+   0x7ffff74717d9:	jne    0x7ffff74717c0
+   0x7ffff74717db:	repz ret 
+

@@ -1,0 +1,118 @@
+62|4731be call   0x41daa0 <free@plt>
+  0 - 4ac059	test   rax,rax
+  1 - 4ac05c	je     0x4ac0ca <httpd_helper_thread+506>
+NOT taken
+  2 - 4ac05e	mov    rdx,r12
+  3 - 4ac061	mov    ecx,DWORD PTR [rdx]
+  4 - 4ac063	add    rdx,0x4
+  5 - 4ac067	lea    eax,[rcx-0x1010101]
+  6 - 4ac06d	not    ecx
+  7 - 4ac06f	and    eax,ecx
+  8 - 4ac071	and    eax,0x80808080
+  9 - 4ac076	je     0x4ac061 <httpd_helper_thread+401>
+NOT taken
+ 10 - 4ac078	mov    ecx,eax
+ 11 - 4ac07a	shr    ecx,0x10
+ 12 - 4ac07d	test   eax,0x8080
+ 13 - 4ac082	cmove  eax,ecx
+ 14 - 4ac085	lea    rcx,[rdx+0x2]
+ 15 - 4ac089	cmove  rdx,rcx
+ 16 - 4ac08d	add    al,al
+ 17 - 4ac08f	mov    rax,r12
+ 18 - 4ac092	sbb    rdx,0x3
+ 19 - 4ac096	sub    rdx,r12
+ 20 - 4ac099	dec    rdx
+ 21 - 4ac09c	add    rax,rdx
+ 22 - 4ac09f	jb     0x4ac0c0 <httpd_helper_thread+496>
+Take or Not -> TAKEN when \x00 set by xplt script
+# 23 - 4ac0a1	cmp    BYTE PTR [rsp+rdx*1+0x1040],0x20
+# 24 - 4ac0a9	jbe    0x4ac0b5 <httpd_helper_thread+485>
+#Take or Not
+#-- not taken
+#   0x4ac0a1 <httpd_helper_thread+465>:	cmp    BYTE PTR [rsp+rdx*1+0x1040],0x20
+#=> 0x4ac0a9 <httpd_helper_thread+473>:	jbe    0x4ac0b5 <httpd_helper_thread+485>
+#TAKEN
+#   0x4ac0b5 <httpd_helper_thread+485>:	mov    BYTE PTR [rax],0x0
+#(removed \n)
+#   0x4ac0b8 <httpd_helper_thread+488>:	dec    rax
+#   0x4ac0bb <httpd_helper_thread+491>:	cmp    rax,r12
+#=> 0x4ac0be <httpd_helper_thread+494>:	jae    0x4ac0b0 <httpd_helper_thread+480>
+#TAKEN
+#   0x4ac0b0 <httpd_helper_thread+480>:	cmp    BYTE PTR [rax],0x20
+#=> 0x4ac0b3 <httpd_helper_thread+483>:	ja     0x4ac0c0 <httpd_helper_thread+496>
+#NOT taken
+#   0x4ac0b5 <httpd_helper_thread+485>:	mov    BYTE PTR [rax],0x0
+#(removed \r)
+#   0x4ac0b8 <httpd_helper_thread+488>:	dec    rax
+#   0x4ac0bb <httpd_helper_thread+491>:	cmp    rax,r12
+#=> 0x4ac0be <httpd_helper_thread+494>:	jae    0x4ac0b0 <httpd_helper_thread+480>
+#TAKEN
+#   0x4ac0b0 <httpd_helper_thread+480>:	cmp    BYTE PTR [rax],0x20
+#=> 0x4ac0b3 <httpd_helper_thread+483>:	ja     0x4ac0c0 <httpd_helper_thread+496>
+#TAKEN
+#--
+#X 25 - 4ac0ab	jmp    0x4ac0c0 <httpd_helper_thread+496>
+#--
+ 26 - 4ac0c0	cmp    BYTE PTR [rsp+0x1040],0x0 // TODO we must set 0x0 at this pos 
+** DONE BY USER PROGRAM
+ 27 - 4ac0c8	jne    0x4ac108 <httpd_helper_thread+568>
+NOT taken
+ 28 - 4ac0ca	cmp    BYTE PTR [rbx],0x0 // TODO we must set 0x0 at this pos
+** DONE BY USER PROGRAM
+ 29 - 4ac0cd	jne    0x4ac1e2 <httpd_helper_thread+786>
+NOT taken
+ 30 - 4ac0d3	mov    ecx,0x55e943
+ 31 - 4ac0d8	mov    edx,0x55e953
+ 32 - 4ac0dd	mov    esi,0x190
+ 33 - 4ac0e2	mov    rdi,rbp
+ 34 - 4ac0e5	call   0x4abcf0 <ast_http_error>
+RETURN from call
+ 35 - 4ac0ea	lock dec DWORD PTR [rip+0x31c873]        # 0x7c8964 <session_count>
+ 36 - 4ac0f1	test   r13,r13
+ 37 - 4ac0f4	je     0x4abf10 <httpd_helper_thread+64>
+NOT taken
+ 38 - 4ac0fa	mov    rdi,r13
+ 39 - 4ac0fd	call   0x474870 <ast_variables_destroy>
+ENTER call
+ 40 - 474870	test   rdi,rdi
+ 41 - 474873	push   rbx
+ 42 - 474874	jne    0x47487b <ast_variables_destroy+11>
+TAKEN
+ 43 - 47487b	mov[rbx+0x40]    rbx,QWORD PTR [rdi+0x10]
+ 44 - 47487f	call   0x4731e0 <ast_variable_destroy>
+TAKEN
+ 45 - 4731e0	push   rbx
+ 46 - 4731e1	mov    rbx,rdi
+ 47 - 4731e4	lea    rdi,[rdi+0x30]
+ 48 - 4731e8	call   0x4731a0 <ast_comment_destroy>
+# 49 - 4731ed	lea    rdi,[rbx+0x38]
+# 50 - 4731f1	call   0x4731a0 <ast_comment_destroy>
+# 51 - 4731f6	lea    rdi,[rbx+0x40]
+# 52 - 4731fa	call   0x4731a0 <ast_comment_destroy>
+ 53 - 4731a0	push   rbp
+ 54 - 4731a1	mov    rbp,rdi
+ 55 - 4731a4	push   rbx
+ 56 - 4731a5	sub    rsp,0x8
+ 57 - 4731a9	mov    rdi,QWORD PTR [rdi] // TODO must store a pointer here
+ 58 - 4731ac	test   rdi,rdi
+ 59 - 4731af	jne    0x4731bb <ast_comment_destroy+27>
+TAKEN
+ 60 - 4731bb	mov    rbx,QWORD PTR [rdi]
+ 61 - 4731be	call   0x41daa0 <free@plt>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

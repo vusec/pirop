@@ -1,0 +1,29 @@
+gdb-peda$ disas 0x00007ffff74c6f42
+Dump of assembler code for function read:
+   0x00007ffff74c6f20 <+0>:	cmp    DWORD PTR [rip+0x2d728d],0x0        # 0x7ffff779e1b4
+   0x00007ffff74c6f27 <+7>:	jne    0x7ffff74c6f39 <read+25>
+   0x00007ffff74c6f29 <+9>:	mov    eax,0x0
+   0x00007ffff74c6f2e <+14>:	syscall 
+   0x00007ffff74c6f30 <+16>:	cmp    rax,0xfffffffffffff001
+   0x00007ffff74c6f36 <+22>:	jae    0x7ffff74c6f69 <read+73>
+   0x00007ffff74c6f38 <+24>:	ret    
+   0x00007ffff74c6f39 <+25>:	sub    rsp,0x8
+   0x00007ffff74c6f3d <+29>:	call   0x7ffff74e20a0
+=> 0x00007ffff74c6f42 <+34>:	mov    QWORD PTR [rsp],rax
+   0x00007ffff74c6f46 <+38>:	mov    eax,0x0
+   0x00007ffff74c6f4b <+43>:	syscall 
+   0x00007ffff74c6f4d <+45>:	mov    rdi,QWORD PTR [rsp]
+   0x00007ffff74c6f51 <+49>:	mov    rdx,rax
+   0x00007ffff74c6f54 <+52>:	call   0x7ffff74e2100
+=> 0x00007ffff74c6f59 <+57>:	mov    rax,rdx
+   0x00007ffff74c6f5c <+60>:	add    rsp,0x8
+   0x00007ffff74c6f60 <+64>:	cmp    rax,0xfffffffffffff001
+   0x00007ffff74c6f66 <+70>:	jae    0x7ffff74c6f69 <read+73>
+   0x00007ffff74c6f68 <+72>:	ret    
+   0x00007ffff74c6f69 <+73>:	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+   0x00007ffff74c6f70 <+80>:	xor    edx,edx
+   0x00007ffff74c6f72 <+82>:	sub    rdx,rax
+   0x00007ffff74c6f75 <+85>:	mov    DWORD PTR fs:[rcx],edx
+   0x00007ffff74c6f78 <+88>:	or     rax,0xffffffffffffffff
+   0x00007ffff74c6f7c <+92>:	jmp    0x7ffff74c6f68 <read+72>
+

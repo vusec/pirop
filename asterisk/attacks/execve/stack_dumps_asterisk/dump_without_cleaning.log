@@ -1,0 +1,58 @@
+connected
+rsp = 0x7fff95aa6b70
+dumpmem stackdump_connected 0x00007fff95a2f000 0x00007fff95aa9000
+
+sent header:POST
+rsp = 0x7fff95aa6b70
+dumpmem ..
+
+sent header:Host
+rsp = .. same
+dumpmem ..
+
+sent header:C-length
+rsp = .. same
+dumpmem ..
+
+sent header:<newline>
+rsp = .. same
+dumpmem ..
+
+sent data:A
+rsp = .. same
+dumpmem
+
+sent data: A (2)
+rsp = .. same
+dumpmem
+
+sent data: A (3)
+rsp = .. same
+dumpmem
+
+sent data: A (4)
+rsp = .. same
+dumpmem
+
+** BREAK **
+#7  0x000000000050c5a5 in handle_tcptls_connection (data=0x7fffe4000958) at tcptls.c:246
+246	tcptls.c: No such file or directory.
+gdb-peda$ break *0x000000000050c5a5
+Breakpoint 1 at 0x50c5a5: file tcptls.c, line 249.
+
+sent newline: (did not read data sent by server, did not close the connection yet..)
+rsp = .. same
+dumpmem 
+
+* quit asteriks_probe.py (did not read data or close connection..)
+rsp = 0x7fff95aa8cc0
+dumpmem stackdump_app_quit-stopped_at_break 0x00007fff95a2f000 0x00007fff95aa9000
+
+* continue from breakpoint
+rsp = N/A .. thread has quit
+dumpmem stackdump_app_quit-continue_from_break 0x00007fff95a2f000 0x00007fff95aa9000
+
+
+
+
+

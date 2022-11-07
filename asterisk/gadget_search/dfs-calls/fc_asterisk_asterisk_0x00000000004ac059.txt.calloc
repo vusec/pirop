@@ -1,0 +1,58 @@
+49|4abd28 call   0x41d4c0 <calloc@plt>
+  0 - 4ac059	test   rax,rax
+  1 - 4ac05c	je     0x4ac0ca <httpd_helper_thread+506>
+not taken 
+  2 - 4ac05e	mov    rdx,r12
+  3 - 4ac061	mov    ecx,DWORD PTR [rdx]
+  4 - 4ac063	add    rdx,0x4
+  5 - 4ac067	lea    eax,[rcx-0x1010101]
+  6 - 4ac06d	not    ecx
+  7 - 4ac06f	and    eax,ecx
+  8 - 4ac071	and    eax,0x80808080
+  9 - 4ac076	je     0x4ac061 <httpd_helper_thread+401>
+not taken
+ 10 - 4ac078	mov    ecx,eax
+ 11 - 4ac07a	shr    ecx,0x10
+ 12 - 4ac07d	test   eax,0x8080
+ 13 - 4ac082	cmove  eax,ecx
+ 14 - 4ac085	lea    rcx,[rdx+0x2]
+ 15 - 4ac089	cmove  rdx,rcx
+ 16 - 4ac08d	add    al,al
+ 17 - 4ac08f	mov    rax,r12
+ 18 - 4ac092	sbb    rdx,0x3
+ 19 - 4ac096	sub    rdx,r12
+ 20 - 4ac099	dec    rdx
+ 21 - 4ac09c	add    rax,rdx
+ 22 - 4ac09f	jb     0x4ac0c0 <httpd_helper_thread+496>
+not taken
+ 23 - 4ac0a1	cmp    BYTE PTR [rsp+rdx*1+0x1040],0x20
+ 24 - 4ac0a9	jbe    0x4ac0b5 <httpd_helper_thread+485>
+not taken
+ 25 - 4ac0ab	jmp    0x4ac0c0 <httpd_helper_thread+496>
+taken
+ 26 - 4ac0c0	cmp    BYTE PTR [rsp+0x1040],0x0
+ 27 - 4ac0c8	jne    0x4ac108 <httpd_helper_thread+568>
+not taken
+ 28 - 4ac0ca	cmp    BYTE PTR [rbx],0x0
+ 29 - 4ac0cd	jne    0x4ac1e2 <httpd_helper_thread+786>
+not taken
+ 30 - 4ac0d3	mov    ecx,0x55e943
+ 31 - 4ac0d8	mov    edx,0x55e953
+ 32 - 4ac0dd	mov    esi,0x190
+ 33 - 4ac0e2	mov    rdi,rbp
+ 34 - 4ac0e5	call   0x4abcf0 <ast_http_error>
+enter call
+ 35 - 4abcf0	mov    QWORD PTR [rsp-0x30],rbx
+ 36 - 4abcf5	mov    QWORD PTR [rsp-0x20],r12
+ 37 - 4abcfa	mov    r12,rdx
+ 38 - 4abcfd	mov    QWORD PTR [rsp-0x18],r13
+ 39 - 4abd02	mov    QWORD PTR [rsp-0x10],r14
+ 40 - 4abd07	mov    r13d,esi
+ 41 - 4abd0a	mov    QWORD PTR [rsp-0x8],r15
+ 42 - 4abd0f	mov    QWORD PTR [rsp-0x28],rbp
+ 43 - 4abd14	mov    r15,rdi
+ 44 - 4abd17	sub    rsp,0x58
+ 45 - 4abd1b	mov    esi,0x40
+ 46 - 4abd20	mov    edi,0x1
+ 47 - 4abd25	mov    r14,rcx
+ 48 - 4abd28	call   0x41d4c0 <calloc@plt>

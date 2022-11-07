@@ -1,0 +1,5 @@
+POST /asterisk/manager HTTP/1.0
+Host: localhost
+Content-length: 2048
+
+

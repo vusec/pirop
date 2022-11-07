@@ -1,0 +1,79 @@
+Searching for gadgets with calls into plt 
+Looking for gadgets at 0x7ffff745001a
+64|7ffff745ba0e call   0x7ffff73fff80 <malloc@plt>
+  0 - 7ffff745001a	cmp    eax,0xffffffff
+  1 - 7ffff745001d	je     0x7ffff74500b1 <_IO_getline_info+321>
+* NOT taken
+  2 - 7ffff7450023	cmp    eax,r12d
+  3 - 7ffff7450026	je     0x7ffff74500cd <_IO_getline_info+349>
+* NOT taken
+  4 - 7ffff745002c	sub    rbp,0x1
+  5 - 7ffff7450030	mov    BYTE PTR [r15],al
+  6 - 7ffff7450033	add    r15,0x1
+  7 - 7ffff7450037	test   rbp,rbp
+  8 - 7ffff745003a	jne    0x7ffff7450002 <_IO_getline_info+146>
+** taken
+  9 - 7ffff7450002	mov    r14,QWORD PTR [rbx+0x8]
+ 10 - 7ffff7450006	mov    r13,QWORD PTR [rbx+0x10]
+ 11 - 7ffff745000a	sub    r13,r14
+ 12 - 7ffff745000d	test   r13,r13
+ 13 - 7ffff7450010	jg     0x7ffff744ffc8 <_IO_getline_info+88>
+* NOT taken
+ 14 - 7ffff7450012	mov    rdi,rbx
+ 15 - 7ffff7450015	call   0x7ffff745bd10 <__uflow>
+enter call
+ 16 - 7ffff745bd10	push   rbx
+ 17 - 7ffff745bd11	mov    eax,DWORD PTR [rdi+0xc0]
+ 18 - 7ffff745bd17	mov    rbx,rdi
+ 19 - 7ffff745bd1a	test   eax,eax
+ 20 - 7ffff745bd1c	jne    0x7ffff745bd70 <__uflow+96>
+* NOT taken
+ 21 - 7ffff745bd1e	mov    DWORD PTR [rdi+0xc0],0xffffffff
+ 22 - 7ffff745bd28	mov    eax,DWORD PTR [rbx]
+ 23 - 7ffff745bd2a	test   ah,0x8
+ 24 - 7ffff745bd2d	jne    0x7ffff745bda8 <__uflow+152>
+* NOT taken
+ 25 - 7ffff745bd2f	mov    rdx,QWORD PTR [rbx+0x8]
+ 26 - 7ffff745bd33	mov    rsi,QWORD PTR [rbx+0x10]
+ 27 - 7ffff745bd37	cmp    rdx,rsi
+ 28 - 7ffff745bd3a	jb     0x7ffff745bd98 <__uflow+136>
+* NOT taken
+ 29 - 7ffff745bd3c	mov    eax,DWORD PTR [rbx]
+ 30 - 7ffff745bd3e	test   ah,0x1
+ 31 - 7ffff745bd41	jne    0x7ffff745bd80 <__uflow+112>
+* NOT taken
+ 32 - 7ffff745bd43	cmp    QWORD PTR [rbx+0x60],0x0
+ 33 - 7ffff745bd48	je     0x7ffff745bdc0 <__uflow+176>
+* NOT taken 
+ 34 - 7ffff745bd4a	mov    rdi,rbx
+ 35 - 7ffff745bd4d	call   0x7ffff745b940
+enter call
+ 36 - 7ffff745b940	mov    QWORD PTR [rsp-0x30],rbx
+ 37 - 7ffff745b945	mov    QWORD PTR [rsp-0x28],rbp
+ 38 - 7ffff745b94a	mov    rbx,rdi
+ 39 - 7ffff745b94d	mov    QWORD PTR [rsp-0x20],r12
+ 40 - 7ffff745b952	mov    QWORD PTR [rsp-0x18],r13
+ 41 - 7ffff745b957	mov    r12,rsi
+ 45 - 7ffff745b968	call   0x7ffff745b910
+return from call
+ 46 - 7ffff745b96d	mov    r14,QWORD PTR [rbx+0x18]
+ 47 - 7ffff745b971	mov    rsi,QWORD PTR [rbx+0x58]
+ 48 - 7ffff745b975	mov    r13,r12
+ 49 - 7ffff745b978	mov    rdi,QWORD PTR [rbx+0x48]
+ 50 - 7ffff745b97c	mov    rbp,rax
+ 51 - 7ffff745b97f	sub    r13,r14
+ 52 - 7ffff745b982	mov    r15,rsi
+ 53 - 7ffff745b985	mov    rdx,r13
+ 54 - 7ffff745b988	sub    r15,rdi
+ 55 - 7ffff745b98b	sub    rdx,rax
+ 56 - 7ffff745b98e	cmp    rdx,r15
+ 57 - 7ffff745b991	ja     0x7ffff745b9f8
+** taken
+ 58 - 7ffff745b9f8	lea    rax,[rdx+0x64]
+ 61 - 7ffff745ba06	mov    rdi,rax
+ 63 - 7ffff745ba0e	call   0x7ffff73fff80 <malloc@plt>
+
+
+
+
+

@@ -1,0 +1,123 @@
+gdb-peda$ disas 0x00000000004acaab (sending data .. )
+Dump of assembler code for function ast_http_get_post_vars:
+   0x00000000004ac9e0 <+0>:	push   rbp
+   0x00000000004ac9e1 <+1>:	mov    rbp,rsp
+   0x00000000004ac9e4 <+4>:	push   r15
+   0x00000000004ac9e6 <+6>:	push   r14
+   0x00000000004ac9e8 <+8>:	xor    r14d,r14d
+   0x00000000004ac9eb <+11>:	push   r13
+   0x00000000004ac9ed <+13>:	mov    r13,rsi
+   0x00000000004ac9f0 <+16>:	push   r12
+   0x00000000004ac9f2 <+18>:	mov    r12,rdi
+   0x00000000004ac9f5 <+21>:	push   rbx
+   0x00000000004ac9f6 <+22>:	sub    rsp,0x18
+   0x00000000004ac9fa <+26>:	mov    rax,QWORD PTR fs:0x28
+   0x00000000004aca03 <+35>:	mov    QWORD PTR [rbp-0x38],rax
+   0x00000000004aca07 <+39>:	xor    eax,eax
+   0x00000000004aca09 <+41>:	test   rsi,rsi
+   0x00000000004aca0c <+44>:	je     0x4acb31 <ast_http_get_post_vars+337>
+   0x00000000004aca12 <+50>:	mov    rbx,rsi
+   0x00000000004aca15 <+53>:	jmp    0x4aca21 <ast_http_get_post_vars+65>
+   0x00000000004aca17 <+55>:	nop
+   0x00000000004aca18 <+56>:	mov    rbx,QWORD PTR [rbx+0x10]
+   0x00000000004aca1c <+60>:	test   rbx,rbx
+   0x00000000004aca1f <+63>:	je     0x4aca4b <ast_http_get_post_vars+107>
+   0x00000000004aca21 <+65>:	mov    rdi,QWORD PTR [rbx]
+   0x00000000004aca24 <+68>:	mov    esi,0x55e9a3
+   0x00000000004aca29 <+73>:	call   0x41d950 <strcasecmp@plt>
+   0x00000000004aca2e <+78>:	test   eax,eax
+   0x00000000004aca30 <+80>:	jne    0x4aca18 <ast_http_get_post_vars+56>
+   0x00000000004aca32 <+82>:	mov    rdi,QWORD PTR [rbx+0x8]
+   0x00000000004aca36 <+86>:	mov    esi,0x55ef90
+   0x00000000004aca3b <+91>:	xor    r14d,r14d
+   0x00000000004aca3e <+94>:	call   0x41d950 <strcasecmp@plt>
+   0x00000000004aca43 <+99>:	test   eax,eax
+   0x00000000004aca45 <+101>:	jne    0x4acb31 <ast_http_get_post_vars+337>
+   0x00000000004aca4b <+107>:	mov    rbx,r13
+   0x00000000004aca4e <+110>:	jmp    0x4aca5d <ast_http_get_post_vars+125>
+   0x00000000004aca50 <+112>:	mov    rbx,QWORD PTR [rbx+0x10]
+   0x00000000004aca54 <+116>:	test   rbx,rbx
+   0x00000000004aca57 <+119>:	je     0x4acb68 <ast_http_get_post_vars+392>
+   0x00000000004aca5d <+125>:	mov    rdi,QWORD PTR [rbx]
+   0x00000000004aca60 <+128>:	mov    esi,0x55e9b0
+   0x00000000004aca65 <+133>:	call   0x41d950 <strcasecmp@plt>
+   0x00000000004aca6a <+138>:	test   eax,eax
+   0x00000000004aca6c <+140>:	jne    0x4aca50 <ast_http_get_post_vars+112>
+   0x00000000004aca6e <+142>:	mov    rdi,QWORD PTR [rbx+0x8]
+   0x00000000004aca72 <+146>:	xor    esi,esi
+   0x00000000004aca74 <+148>:	mov    edx,0xa
+   0x00000000004aca79 <+153>:	call   0x41ddd0 <strtol@plt>
+   0x00000000004aca7e <+158>:	mov    esi,eax
+   0x00000000004aca80 <+160>:	inc    esi
+   0x00000000004aca82 <+162>:	je     0x4acb68 <ast_http_get_post_vars+392>
+   0x00000000004aca88 <+168>:	movsxd rax,esi
+   0x00000000004aca8b <+171>:	mov    rdx,QWORD PTR [r12]
+   0x00000000004aca8f <+175>:	add    rax,0x1e
+   0x00000000004aca93 <+179>:	and    rax,0xfffffffffffffff0
+   0x00000000004aca97 <+183>:	sub    rsp,rax
+   0x00000000004aca9a <+186>:	lea    rbx,[rsp+0xf]
+   0x00000000004aca9f <+191>:	and    rbx,0xfffffffffffffff0
+   0x00000000004acaa3 <+195>:	mov    rdi,rbx
+   0x00000000004acaa6 <+198>:	call   0x41e050 <fgets@plt>
+   0x00000000004acaab <+203>:	test   rax,rax
+   0x00000000004acaae <+206>:	je     0x4acb68 <ast_http_get_post_vars+392>
+   0x00000000004acab4 <+212>:	xor    r13d,r13d
+   0x00000000004acab7 <+215>:	xor    r14d,r14d
+   0x00000000004acaba <+218>:	jmp    0x4acb2c <ast_http_get_post_vars+332>
+   0x00000000004acabc <+220>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004acac0 <+224>:	mov    esi,0x26
+   0x00000000004acac5 <+229>:	mov    rdi,rbx
+   0x00000000004acac8 <+232>:	call   0x41d0b0 <strchr@plt>
+   0x00000000004acacd <+237>:	test   rax,rax
+   0x00000000004acad0 <+240>:	mov    r12,rax
+   0x00000000004acad3 <+243>:	je     0x4acadb <ast_http_get_post_vars+251>
+   0x00000000004acad5 <+245>:	mov    BYTE PTR [rax],0x0
+   0x00000000004acad8 <+248>:	inc    r12
+   0x00000000004acadb <+251>:	mov    esi,0x3d
+   0x00000000004acae0 <+256>:	mov    rdi,rbx
+   0x00000000004acae3 <+259>:	call   0x41d0b0 <strchr@plt>
+   0x00000000004acae8 <+264>:	test   rax,rax
+   0x00000000004acaeb <+267>:	je     0x4acb58 <ast_http_get_post_vars+376>
+   0x00000000004acaed <+269>:	mov    r15,rax
+   0x00000000004acaf0 <+272>:	mov    BYTE PTR [rax],0x0
+   0x00000000004acaf3 <+275>:	inc    r15
+   0x00000000004acaf6 <+278>:	je     0x4acb58 <ast_http_get_post_vars+376>
+   0x00000000004acaf8 <+280>:	mov    rdi,r15
+   0x00000000004acafb <+283>:	call   0x4aaa50 <http_decode>
+   0x00000000004acb00 <+288>:	mov    rdi,rbx
+   0x00000000004acb03 <+291>:	call   0x4aaa50 <http_decode>
+   0x00000000004acb08 <+296>:	mov    edx,0x53f3af
+   0x00000000004acb0d <+301>:	mov    rsi,r15
+   0x00000000004acb10 <+304>:	mov    rdi,rbx
+   0x00000000004acb13 <+307>:	call   0x474030 <ast_variable_new>
+   0x00000000004acb18 <+312>:	test   rax,rax
+   0x00000000004acb1b <+315>:	je     0x4acb29 <ast_http_get_post_vars+329>
+   0x00000000004acb1d <+317>:	test   r14,r14
+   0x00000000004acb20 <+320>:	je     0x4acb60 <ast_http_get_post_vars+384>
+   0x00000000004acb22 <+322>:	mov    QWORD PTR [r13+0x10],rax
+   0x00000000004acb26 <+326>:	mov    r13,rax
+   0x00000000004acb29 <+329>:	mov    rbx,r12
+   0x00000000004acb2c <+332>:	test   rbx,rbx
+   0x00000000004acb2f <+335>:	jne    0x4acac0 <ast_http_get_post_vars+224>
+   0x00000000004acb31 <+337>:	mov    rdx,QWORD PTR [rbp-0x38]
+   0x00000000004acb35 <+341>:	xor    rdx,QWORD PTR fs:0x28
+   0x00000000004acb3e <+350>:	mov    rax,r14
+   0x00000000004acb41 <+353>:	jne    0x4acb6d <ast_http_get_post_vars+397>
+   0x00000000004acb43 <+355>:	lea    rsp,[rbp-0x28]
+   0x00000000004acb47 <+359>:	pop    rbx
+   0x00000000004acb48 <+360>:	pop    r12
+   0x00000000004acb4a <+362>:	pop    r13
+   0x00000000004acb4c <+364>:	pop    r14
+   0x00000000004acb4e <+366>:	pop    r15
+   0x00000000004acb50 <+368>:	pop    rbp
+   0x00000000004acb51 <+369>:	ret    
+   0x00000000004acb52 <+370>:	nop    WORD PTR [rax+rax*1+0x0]
+   0x00000000004acb58 <+376>:	mov    r15d,0x53f3af
+   0x00000000004acb5e <+382>:	jmp    0x4acb00 <ast_http_get_post_vars+288>
+   0x00000000004acb60 <+384>:	mov    r13,rax
+   0x00000000004acb63 <+387>:	mov    r14,rax
+   0x00000000004acb66 <+390>:	jmp    0x4acb29 <ast_http_get_post_vars+329>
+   0x00000000004acb68 <+392>:	xor    r14d,r14d
+   0x00000000004acb6b <+395>:	jmp    0x4acb31 <ast_http_get_post_vars+337>
+   0x00000000004acb6d <+397>:	call   0x41d9c0 <__stack_chk_fail@plt>
+

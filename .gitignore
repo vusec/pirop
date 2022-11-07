@@ -1,0 +1,4 @@
+peda*.txt
+.gdb_history
+*.tar.gz
+*.pyc

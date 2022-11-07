@@ -1,0 +1,4 @@
+*.parsed
+*.parsed.*
+*.out
+*.out.*

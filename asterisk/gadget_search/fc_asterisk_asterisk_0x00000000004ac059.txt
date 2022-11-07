@@ -1,0 +1,10 @@
+Searching for gadgets with calls into plt 
+12|4ac207 call   0x41d0b0 <strchr@plt>
+16|4abf19 call   0x41d830 <fclose@plt>
+23|4ac69e call   0x41d9c0 <__stack_chk_fail@plt>
+23|4abd28 call   0x41d4c0 <calloc@plt>
+27|47044a call   0x41d950 <strcasecmp@plt>
+28|4ac110 call   0x41d0b0 <strchr@plt>
+32|4731be call   0x41daa0 <free@plt>
+36|4b5c98 call   0x41e0f0 <gettimeofday@plt>
+63|43c2b8 call   0x41daa0 <free@plt>

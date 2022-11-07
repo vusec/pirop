@@ -1,0 +1,22 @@
+0x00000000004acb18
+- 0x00000000004acb4d U / I : Y / N
+dist = 53 bytes
+0x00007ffff745001a
+- 0x00007ffff7450055 U / I : Y / N (55 -> af, will make all gadgets in same bb with eachother but not .1a)
+- 0x00007ffff7450095 A / I : N(.ffdd?) / N
+- 0x00007ffff74500a2 A / I : N(48) / N
+- 0x00007ffff74500b0 A / I : N(56) / N
+dist = 95 - 1a = 123 bytes
+in the case of the basic block randomization (lhs):
+- could be solved to have the gadgets in the same basic block
+- e.g. 50095 -> ffdd, eax must be != 0.. : for data moving
+0x00007ffff745ae88
+- 0x00007ffff745ae88 A / I / unmodified
+dist = 0 bytes
+0x00007ffff745bece
+- 0x00007ffff745bece A / I / unmodified
+dist = 0 bytes
+0x00007ffff74c6f59
+- 0x00007ffff74c6f4b A / I : Y / Y
+- 0x00007ffff74c6f5c A / I : Y / Y
+dist = 17 bytes

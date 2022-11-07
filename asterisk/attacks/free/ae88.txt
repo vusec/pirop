@@ -1,0 +1,149 @@
+gdb-peda$ disas 0x00007ffff745ae88
+Dump of assembler code for function _IO_file_underflow:
+   0x00007ffff745ad60 <+0>:	push   rbp
+   0x00007ffff745ad61 <+1>:	push   rbx
+   0x00007ffff745ad62 <+2>:	mov    rbx,rdi
+   0x00007ffff745ad65 <+5>:	sub    rsp,0x8
+   0x00007ffff745ad69 <+9>:	mov    eax,DWORD PTR [rdi]
+   0x00007ffff745ad6b <+11>:	test   al,0x4
+   0x00007ffff745ad6d <+13>:	jne    0x7ffff745af30 <_IO_file_underflow+464>
+   0x00007ffff745ad73 <+19>:	mov    rdx,QWORD PTR [rdi+0x8]
+   0x00007ffff745ad77 <+23>:	cmp    rdx,QWORD PTR [rdi+0x10]
+   0x00007ffff745ad7b <+27>:	jb     0x7ffff745aec0 <_IO_file_underflow+352>
+   0x00007ffff745ad81 <+33>:	cmp    QWORD PTR [rdi+0x38],0x0
+   0x00007ffff745ad86 <+38>:	je     0x7ffff745aee8 <_IO_file_underflow+392>
+   0x00007ffff745ad8c <+44>:	test   eax,0x202
+   0x00007ffff745ad91 <+49>:	je     0x7ffff745ae50 <_IO_file_underflow+240>
+   0x00007ffff745ad97 <+55>:	mov    rbp,QWORD PTR [rip+0x33ea92]        # 0x7ffff7799830 <stdout>
+   0x00007ffff745ad9e <+62>:	mov    edx,DWORD PTR [rbp+0x0]
+   0x00007ffff745ada1 <+65>:	mov    rdi,rbp
+   0x00007ffff745ada4 <+68>:	mov    eax,edx
+   0x00007ffff745ada6 <+70>:	and    eax,0x8000
+   0x00007ffff745adab <+75>:	jne    0x7ffff745adfe <_IO_file_underflow+158>
+   0x00007ffff745adad <+77>:	mov    rdx,QWORD PTR [rbp+0x88]
+   0x00007ffff745adb4 <+84>:	mov    r8,QWORD PTR fs:0x10
+   0x00007ffff745adbd <+93>:	cmp    r8,QWORD PTR [rdx+0x8]
+   0x00007ffff745adc1 <+97>:	je     0x7ffff745adf8 <_IO_file_underflow+152>
+   0x00007ffff745adc3 <+99>:	mov    esi,0x1
+   0x00007ffff745adc8 <+104>:	cmp    DWORD PTR [rip+0x3433e5],0x0        # 0x7ffff779e1b4
+   0x00007ffff745adcf <+111>:	je     0x7ffff745addd <_IO_file_underflow+125>
+   0x00007ffff745add1 <+113>:	lock cmpxchg DWORD PTR [rdx],esi
+   0x00007ffff745add5 <+117>:	jne    0x7ffff745b3b9
+   0x00007ffff745addb <+123>:	jmp    0x7ffff745ade6 <_IO_file_underflow+134>
+   0x00007ffff745addd <+125>:	cmpxchg DWORD PTR [rdx],esi
+   0x00007ffff745ade0 <+128>:	jne    0x7ffff745b3b9
+   0x00007ffff745ade6 <+134>:	mov    rdx,QWORD PTR [rbp+0x88]
+   0x00007ffff745aded <+141>:	mov    rdi,QWORD PTR [rip+0x33ea3c]        # 0x7ffff7799830 <stdout>
+   0x00007ffff745adf4 <+148>:	mov    QWORD PTR [rdx+0x8],r8
+   0x00007ffff745adf8 <+152>:	add    DWORD PTR [rdx+0x4],0x1
+   0x00007ffff745adfc <+156>:	mov    edx,DWORD PTR [rdi]
+   0x00007ffff745adfe <+158>:	and    edx,0x288
+   0x00007ffff745ae04 <+164>:	cmp    edx,0x280
+   0x00007ffff745ae0a <+170>:	je     0x7ffff745af18 <_IO_file_underflow+440>
+   0x00007ffff745ae10 <+176>:	mov    eax,DWORD PTR [rbp+0x0]
+   0x00007ffff745ae13 <+179>:	test   ah,0x80
+   0x00007ffff745ae16 <+182>:	jne    0x7ffff745ae50 <_IO_file_underflow+240>
+   0x00007ffff745ae18 <+184>:	mov    rdx,QWORD PTR [rbp+0x88]
+   0x00007ffff745ae1f <+191>:	mov    eax,DWORD PTR [rdx+0x4]
+   0x00007ffff745ae22 <+194>:	sub    eax,0x1
+   0x00007ffff745ae25 <+197>:	test   eax,eax
+   0x00007ffff745ae27 <+199>:	mov    DWORD PTR [rdx+0x4],eax
+   0x00007ffff745ae2a <+202>:	jne    0x7ffff745ae50 <_IO_file_underflow+240>
+   0x00007ffff745ae2c <+204>:	mov    QWORD PTR [rdx+0x8],0x0
+   0x00007ffff745ae34 <+212>:	cmp    DWORD PTR [rip+0x343379],0x0        # 0x7ffff779e1b4
+   0x00007ffff745ae3b <+219>:	je     0x7ffff745ae48 <_IO_file_underflow+232>
+   0x00007ffff745ae3d <+221>:	lock dec DWORD PTR [rdx]
+   0x00007ffff745ae40 <+224>:	jne    0x7ffff745b3d4
+   0x00007ffff745ae46 <+230>:	jmp    0x7ffff745ae50 <_IO_file_underflow+240>
+   0x00007ffff745ae48 <+232>:	dec    DWORD PTR [rdx]
+   0x00007ffff745ae4a <+234>:	jne    0x7ffff745b3d4
+   0x00007ffff745ae50 <+240>:	mov    rdi,rbx
+   0x00007ffff745ae53 <+243>:	call   0x7ffff745bb70 <_IO_switch_to_get_mode>
+   0x00007ffff745ae58 <+248>:	mov    rsi,QWORD PTR [rbx+0x38]
+   0x00007ffff745ae5c <+252>:	mov    rdx,QWORD PTR [rbx+0x40]
+   0x00007ffff745ae60 <+256>:	mov    rdi,rbx
+   0x00007ffff745ae63 <+259>:	mov    rax,QWORD PTR [rbx+0xd8]
+   0x00007ffff745ae6a <+266>:	sub    rdx,rsi
+   0x00007ffff745ae6d <+269>:	mov    QWORD PTR [rbx+0x8],rsi
+   0x00007ffff745ae71 <+273>:	mov    QWORD PTR [rbx+0x18],rsi
+   0x00007ffff745ae75 <+277>:	mov    QWORD PTR [rbx+0x10],rsi
+   0x00007ffff745ae79 <+281>:	mov    QWORD PTR [rbx+0x30],rsi
+   0x00007ffff745ae7d <+285>:	mov    QWORD PTR [rbx+0x28],rsi
+   0x00007ffff745ae81 <+289>:	mov    QWORD PTR [rbx+0x20],rsi
+   0x00007ffff745ae85 <+293>:	call   QWORD PTR [rax+0x70]
+=> 0x00007ffff745ae88 <+296>:	cmp    rax,0x0
+   0x00007ffff745ae8c <+300>:	jle    0x7ffff745aed0 <_IO_file_underflow+368>
+   0x00007ffff745ae8e <+302>:	mov    rdx,QWORD PTR [rbx+0x90]
+   0x00007ffff745ae95 <+309>:	add    QWORD PTR [rbx+0x10],rax
+   0x00007ffff745ae99 <+313>:	cmp    rdx,0xffffffffffffffff
+   0x00007ffff745ae9d <+317>:	je     0x7ffff745aea9 <_IO_file_underflow+329>
+   0x00007ffff745ae9f <+319>:	add    rax,rdx
+   0x00007ffff745aea2 <+322>:	mov    QWORD PTR [rbx+0x90],rax
+   0x00007ffff745aea9 <+329>:	mov    rax,QWORD PTR [rbx+0x8]
+   0x00007ffff745aead <+333>:	movzx  eax,BYTE PTR [rax]
+   0x00007ffff745aeb0 <+336>:	add    rsp,0x8
+   0x00007ffff745aeb4 <+340>:	pop    rbx
+   0x00007ffff745aeb5 <+341>:	pop    rbp
+   0x00007ffff745aeb6 <+342>:	ret    
+   0x00007ffff745aeb7 <+343>:	nop    WORD PTR [rax+rax*1+0x0]
+   0x00007ffff745aec0 <+352>:	movzx  eax,BYTE PTR [rdx]
+   0x00007ffff745aec3 <+355>:	add    rsp,0x8
+   0x00007ffff745aec7 <+359>:	pop    rbx
+   0x00007ffff745aec8 <+360>:	pop    rbp
+   0x00007ffff745aec9 <+361>:	ret    
+   0x00007ffff745aeca <+362>:	nop    WORD PTR [rax+rax*1+0x0]
+   0x00007ffff745aed0 <+368>:	mov    eax,DWORD PTR [rbx]
+   0x00007ffff745aed2 <+370>:	jne    0x7ffff745af10 <_IO_file_underflow+432>
+   0x00007ffff745aed4 <+372>:	or     eax,0x10
+   0x00007ffff745aed7 <+375>:	mov    DWORD PTR [rbx],eax
+   0x00007ffff745aed9 <+377>:	add    rsp,0x8
+   0x00007ffff745aedd <+381>:	mov    eax,0xffffffff
+   0x00007ffff745aee2 <+386>:	pop    rbx
+   0x00007ffff745aee3 <+387>:	pop    rbp
+   0x00007ffff745aee4 <+388>:	ret    
+   0x00007ffff745aee5 <+389>:	nop    DWORD PTR [rax]
+   0x00007ffff745aee8 <+392>:	mov    rdi,QWORD PTR [rdi+0x48]
+   0x00007ffff745aeec <+396>:	test   rdi,rdi
+   0x00007ffff745aeef <+399>:	je     0x7ffff745aefc <_IO_file_underflow+412>
+   0x00007ffff745aef1 <+401>:	call   0x7ffff73fffe0 <free@plt+32>
+   0x00007ffff745aef6 <+406>:	and    DWORD PTR [rbx],0xfffffeff
+   0x00007ffff745aefc <+412>:	mov    rdi,rbx
+   0x00007ffff745aeff <+415>:	call   0x7ffff745be60 <_IO_doallocbuf>
+   0x00007ffff745af04 <+420>:	mov    eax,DWORD PTR [rbx]
+   0x00007ffff745af06 <+422>:	jmp    0x7ffff745ad8c <_IO_file_underflow+44>
+   0x00007ffff745af0b <+427>:	nop    DWORD PTR [rax+rax*1+0x0]
+   0x00007ffff745af10 <+432>:	or     eax,0x20
+   0x00007ffff745af13 <+435>:	jmp    0x7ffff745aed7 <_IO_file_underflow+375>
+   0x00007ffff745af15 <+437>:	nop    DWORD PTR [rax]
+   0x00007ffff745af18 <+440>:	mov    rax,QWORD PTR [rdi+0xd8]
+   0x00007ffff745af1f <+447>:	mov    esi,0xffffffff
+   0x00007ffff745af24 <+452>:	call   QWORD PTR [rax+0x18]
+   0x00007ffff745af27 <+455>:	jmp    0x7ffff745ae10 <_IO_file_underflow+176>
+   0x00007ffff745af2c <+460>:	nop    DWORD PTR [rax+0x0]
+   0x00007ffff745af30 <+464>:	or     eax,0x20
+   0x00007ffff745af33 <+467>:	mov    DWORD PTR [rdi],eax
+   0x00007ffff745af35 <+469>:	mov    rax,QWORD PTR [rip+0x33cee4]        # 0x7ffff7797e20
+   0x00007ffff745af3c <+476>:	mov    DWORD PTR fs:[rax],0x9
+   0x00007ffff745af43 <+483>:	mov    eax,0xffffffff
+   0x00007ffff745af48 <+488>:	jmp    0x7ffff745aeb0 <_IO_file_underflow+336>
+   0x00007ffff745af4d <+493>:	mov    rsi,rax
+   0x00007ffff745af50 <+496>:	mov    eax,DWORD PTR [rbp+0x0]
+   0x00007ffff745af53 <+499>:	test   ah,0x80
+   0x00007ffff745af56 <+502>:	jne    0x7ffff745af90 <_IO_file_underflow+560>
+   0x00007ffff745af58 <+504>:	mov    rdx,QWORD PTR [rbp+0x88]
+   0x00007ffff745af5f <+511>:	mov    eax,DWORD PTR [rdx+0x4]
+   0x00007ffff745af62 <+514>:	sub    eax,0x1
+   0x00007ffff745af65 <+517>:	test   eax,eax
+   0x00007ffff745af67 <+519>:	mov    DWORD PTR [rdx+0x4],eax
+   0x00007ffff745af6a <+522>:	jne    0x7ffff745af90 <_IO_file_underflow+560>
+   0x00007ffff745af6c <+524>:	mov    QWORD PTR [rdx+0x8],0x0
+   0x00007ffff745af74 <+532>:	cmp    DWORD PTR [rip+0x343239],0x0        # 0x7ffff779e1b4
+   0x00007ffff745af7b <+539>:	je     0x7ffff745af88 <_IO_file_underflow+552>
+   0x00007ffff745af7d <+541>:	lock dec DWORD PTR [rdx]
+   0x00007ffff745af80 <+544>:	jne    0x7ffff745b3ef
+   0x00007ffff745af86 <+550>:	jmp    0x7ffff745af90 <_IO_file_underflow+560>
+   0x00007ffff745af88 <+552>:	dec    DWORD PTR [rdx]
+   0x00007ffff745af8a <+554>:	jne    0x7ffff745b3ef
+   0x00007ffff745af90 <+560>:	mov    rdi,rsi
+   0x00007ffff745af93 <+563>:	call   0x7ffff74029b0
+

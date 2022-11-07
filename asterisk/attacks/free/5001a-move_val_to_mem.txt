@@ -1,0 +1,53 @@
+=> 0x00007ffff745001a <+170>:	cmp    eax,0xffffffff
+   0x00007ffff745001d <+173>:	je     0x7ffff74500b1 <_IO_getline_info+321>
+   0x00007ffff7450023 <+179>:	cmp    eax,r12d
+   0x00007ffff7450026 <+182>:	je     0x7ffff74500cd <_IO_getline_info+349>
+   0x00007ffff745002c <+188>:	sub    rbp,0x1
+   0x00007ffff7450030 <+192>:	mov    BYTE PTR [r15],al
+   0x00007ffff7450033 <+195>:	add    r15,0x1
+   0x00007ffff7450037 <+199>:	test   rbp,rbp
+   0x00007ffff745003a <+202>:	jne    0x7ffff7450002 <_IO_getline_info+146>
+
+   0x00007ffff7450002 <+146>:	mov    r14,QWORD PTR [rbx+0x8]
+   0x00007ffff7450006 <+150>:	mov    r13,QWORD PTR [rbx+0x10]
+   0x00007ffff745000a <+154>:	sub    r13,r14
+   0x00007ffff745000d <+157>:	test   r13,r13
+   0x00007ffff7450010 <+160>:	jg     0x7ffff744ffc8 <_IO_getline_info+88>
+Default not taken, should be taken ..
+
+   0x00007ffff744ffc8 <+88>:	cmp    r13,rbp
+   0x00007ffff744ffcb <+91>:	mov    esi,r12d
+   0x00007ffff744ffce <+94>:	mov    rdi,r14
+   0x00007ffff744ffd1 <+97>:	cmovae r13,rbp
+   0x00007ffff744ffd5 <+101>:	mov    rdx,r13
+   0x00007ffff744ffd8 <+104>:	call   0x7ffff746b1d0 <memchr>
+   0x00007ffff744ffdd <+109>:	test   rax,rax
+   0x00007ffff744ffe0 <+112>:	mov    rcx,rax
+   0x00007ffff744ffe3 <+115>:	jne    0x7ffff7450060 <_IO_getline_info+240>
+
+   0x00007ffff7450060 <+240>:	mov    rbp,rax
+   0x00007ffff7450063 <+243>:	mov    eax,DWORD PTR [rsp+0x1c]
+   0x00007ffff7450067 <+247>:	mov    r12,r15
+   0x00007ffff745006a <+250>:	sub    rbp,r14
+   0x00007ffff745006d <+253>:	sub    r12,QWORD PTR [rsp+0x8]
+   0x00007ffff7450072 <+258>:	test   eax,eax
+   0x00007ffff7450074 <+260>:	js     0x7ffff7450083 <_IO_getline_info+275>
+   0x00007ffff7450076 <+262>:	add    rcx,0x1
+   0x00007ffff745007a <+266>:	cmp    DWORD PTR [rsp+0x1c],0x1
+   0x00007ffff745007f <+271>:	sbb    rbp,0xffffffffffffffff
+   0x00007ffff7450083 <+275>:	mov    rdx,rbp
+   0x00007ffff7450086 <+278>:	mov    rsi,r14
+   0x00007ffff7450089 <+281>:	mov    rdi,r15
+   0x00007ffff745008c <+284>:	mov    QWORD PTR [rsp],rcx
+   0x00007ffff7450090 <+288>:	call   0x7ffff7471760
+   0x00007ffff7450095 <+293>:	mov    rcx,QWORD PTR [rsp]
+   0x00007ffff7450099 <+297>:	lea    rax,[rbp+r12*1+0x0]
+   0x00007ffff745009e <+302>:	mov    QWORD PTR [rbx+0x8],rcx  // WRITE !!!
+   0x00007ffff74500a2 <+306>:	add    rsp,0x28
+   0x00007ffff74500a6 <+310>:	pop    rbx
+   0x00007ffff74500a7 <+311>:	pop    rbp
+   0x00007ffff74500a8 <+312>:	pop    r12
+   0x00007ffff74500aa <+314>:	pop    r13
+   0x00007ffff74500ac <+316>:	pop    r14
+   0x00007ffff74500ae <+318>:	pop    r15
+   0x00007ffff74500b0 <+320>:	ret    

@@ -1,0 +1,260 @@
+bb rand: 
+assuming call is also part of bb, as not to add jump instruction in fall through
+assuming cjump is also part of bb, as not to add jump instruction in fall through
+
+
+1x 0x00007ffff74644.aa. I / A ; AA
+no modification
+
+1x 0x00000000004740.de. I / A ; E2
+same bb, same func
+----------
+   0x00000000004740de <+174>: mov    QWORD PTR [rbx+0x8],rax
+   0x00000000004740e2 <+178>: mov    rax,rbx
+   0x00000000004740e5 <+181>: mov    rbp,QWORD PTR [rsp+0x20]
+   0x00000000004740ea <+186>: mov    rbx,QWORD PTR [rsp+0x18]
+   0x00000000004740ef <+191>: mov    r12,QWORD PTR [rsp+0x28]
+   0x00000000004740f4 <+196>: mov    r13,QWORD PTR [rsp+0x30]
+   0x00000000004740f9 <+201>: mov    r14,QWORD PTR [rsp+0x38]
+   0x00000000004740fe <+206>: mov    r15,QWORD PTR [rsp+0x40]
+   0x0000000000474103 <+211>: add    rsp,0x48
+   0x0000000000474107 <+215>: ret 
+----------
+
+1x 0x00000000004acb.18. I / U ; 4D
+same bb, same func
+---------
+   0x00000000004acabc <+220>: nop    DWORD PTR [rax+0x0]
+   0x00000000004acac0 <+224>: mov    esi,0x26
+   0x00000000004acac5 <+229>: mov    rdi,rbx
+   0x00000000004acac8 <+232>: call   0x41d0b0 <strchr@plt>
+   0x00000000004acacd <+237>: test   rax,rax
+   0x00000000004acad0 <+240>: mov    r12,rax
+   0x00000000004acad3 <+243>: je     0x4acadb <ast_http_get_post_vars+251>
+   0x00000000004acad5 <+245>: mov    BYTE PTR [rax],0x0
+   0x00000000004acad8 <+248>: inc    r12
+   0x00000000004acadb <+251>: mov    esi,0x3d
+   0x00000000004acae0 <+256>: mov    rdi,rbx
+   0x00000000004acae3 <+259>: call   0x41d0b0 <strchr@plt>
+   0x00000000004acae8 <+264>: test   rax,rax
+   0x00000000004acaeb <+267>: je     0x4acb58 <ast_http_get_post_vars+376>
+   0x00000000004acaed <+269>: mov    r15,rax
+   0x00000000004acaf0 <+272>: mov    BYTE PTR [rax],0x0
+   0x00000000004acaf3 <+275>: inc    r15
+   0x00000000004acaf6 <+278>: je     0x4acb58 <ast_http_get_post_vars+376>
+   0x00000000004acaf8 <+280>: mov    rdi,r15
+   0x00000000004acafb <+283>: call   0x4aaa50 <http_decode>
+   0x00000000004acb00 <+288>: mov    rdi,rbx
+   0x00000000004acb03 <+291>: call   0x4aaa50 <http_decode>
+   0x00000000004acb08 <+296>: mov    edx,0x53f3af
+   0x00000000004acb0d <+301>: mov    rsi,r15
+   0x00000000004acb10 <+304>: mov    rdi,rbx
+   0x00000000004acb13 <+307>: call   0x474030 <ast_variable_new>
+   0x00000000004acb18 <+312>: test   rax,rax
+   0x00000000004acb1b <+315>: je     0x4acb29 <ast_http_get_post_vars+329>
+   0x00000000004acb1d <+317>: test   r14,r14
+   0x00000000004acb20 <+320>: je     0x4acb60 <ast_http_get_post_vars+384>
+   0x00000000004acb22 <+322>: mov    QWORD PTR [r13+0x10],rax
+   0x00000000004acb26 <+326>: mov    r13,rax
+   0x00000000004acb29 <+329>: mov    rbx,r12
+   0x00000000004acb2c <+332>: test   rbx,rbx
+   0x00000000004acb2f <+335>: jne    0x4acac0 <ast_http_get_post_vars+224>
+   0x00000000004acb31 <+337>: mov    rdx,QWORD PTR [rbp-0x38]
+   0x00000000004acb35 <+341>: xor    rdx,QWORD PTR fs:0x28
+   0x00000000004acb3e <+350>: mov    rax,r14
+   0x00000000004acb41 <+353>: jne    0x4acb6d <ast_http_get_post_vars+397>
+   0x00000000004acb43 <+355>: lea    rsp,[rbp-0x28]
+   0x00000000004acb47 <+359>: pop    rbx
+   0x00000000004acb48 <+360>: pop    r12
+   0x00000000004acb4a <+362>: pop    r13
+   0x00000000004acb4c <+364>: pop    r14
+   0x00000000004acb4e <+366>: pop    r15
+   0x00000000004acb50 <+368>: pop    rbp
+   0x00000000004acb51 <+369>: ret
+---------
+
+5x 0x00007ffff74c6f.42/59. I / A ; 4D, 4B, 5C, 5C, 2E(4B!)
+same bb(2E can be replaced with 4B), same func
+=> replaced 2E with 4B
+------
+   0x00007ffff74c6f39 <+25>:  sub    rsp,0x8
+   0x00007ffff74c6f3d <+29>:  call   0x7ffff74e20a0 <__libc_enable_asynccancel>
+   0x00007ffff74c6f42 <+34>:  mov    QWORD PTR [rsp],rax
+   0x00007ffff74c6f46 <+38>:  mov    eax,0x0
+   0x00007ffff74c6f4b <+43>:  syscall 
+   0x00007ffff74c6f4d <+45>:  mov    rdi,QWORD PTR [rsp]
+   0x00007ffff74c6f51 <+49>:  mov    rdx,rax
+   0x00007ffff74c6f54 <+52>:  call   0x7ffff74e2100 <__libc_disable_asynccancel>
+   0x00007ffff74c6f59 <+57>:  mov    rax,rdx
+   0x00007ffff74c6f5c <+60>:  add    rsp,0x8
+   0x00007ffff74c6f60 <+64>:  cmp    rax,0xfffffffffffff001
+   0x00007ffff74c6f66 <+70>:  jae    0x7ffff74c6f69 <read+73>
+   0x00007ffff74c6f68 <+72>:  ret 
+------
+
+(dropped to 5x)
+6x 0x00007ffff745ae.88. I / A ; all B0
+same bb, same func
+-----
+   0x00007ffff745ae46 <+230>: jmp    0x7ffff745ae50 <_IO_new_file_underflow+240>
+   0x00007ffff745ae48 <+232>: dec    DWORD PTR [rdx]
+   0x00007ffff745ae4a <+234>: jne    0x7ffff745b3d4 <_L_unlock_4094>
+   0x00007ffff745ae50 <+240>: mov    rdi,rbx
+   0x00007ffff745ae53 <+243>: call   0x7ffff745bb70 <_IO_switch_to_get_mode>
+   0x00007ffff745ae58 <+248>: mov    rsi,QWORD PTR [rbx+0x38]
+   0x00007ffff745ae5c <+252>: mov    rdx,QWORD PTR [rbx+0x40]
+   0x00007ffff745ae60 <+256>: mov    rdi,rbx
+   0x00007ffff745ae63 <+259>: mov    rax,QWORD PTR [rbx+0xd8]
+   0x00007ffff745ae6a <+266>: sub    rdx,rsi
+   0x00007ffff745ae6d <+269>: mov    QWORD PTR [rbx+0x8],rsi
+   0x00007ffff745ae71 <+273>: mov    QWORD PTR [rbx+0x18],rsi
+   0x00007ffff745ae75 <+277>: mov    QWORD PTR [rbx+0x10],rsi
+   0x00007ffff745ae79 <+281>: mov    QWORD PTR [rbx+0x30],rsi
+   0x00007ffff745ae7d <+285>: mov    QWORD PTR [rbx+0x28],rsi
+   0x00007ffff745ae81 <+289>: mov    QWORD PTR [rbx+0x20],rsi
+   0x00007ffff745ae85 <+293>: call   QWORD PTR [rax+0x70]
+   0x00007ffff745ae88 <+296>: cmp    rax,0x0
+   0x00007ffff745ae8c <+300>: jle    0x7ffff745aed0 <_IO_new_file_underflow+368>
+   0x00007ffff745ae8e <+302>: mov    rdx,QWORD PTR [rbx+0x90]
+   0x00007ffff745ae95 <+309>: add    QWORD PTR [rbx+0x10],rax
+   0x00007ffff745ae99 <+313>: cmp    rdx,0xffffffffffffffff
+   0x00007ffff745ae9d <+317>: je     0x7ffff745aea9 <_IO_new_file_underflow+329>
+   0x00007ffff745ae9f <+319>: add    rax,rdx
+   0x00007ffff745aea2 <+322>: mov    QWORD PTR [rbx+0x90],rax
+   0x00007ffff745aea9 <+329>: mov    rax,QWORD PTR [rbx+0x8]
+   0x00007ffff745aead <+333>: movzx  eax,BYTE PTR [rax]
+   0x00007ffff745aeb0 <+336>: add    rsp,0x8
+   0x00007ffff745aeb4 <+340>: pop    rbx
+   0x00007ffff745aeb5 <+341>: pop    rbp
+   0x00007ffff745aeb6 <+342>: ret
+-----
+
+(dropped to 5x)
+6x 0x00007ffff745be.ce. E / A => internal .. ; 5x 6B(E2!), 1x 07(??!)
+same bb (6B can be replaced with E2), 
+?? replace 07 with E2 ? yes it looks possible .. !!
+different function 6B ; => replaced 6B with E2
+different function 07 ; => replaced 07 with E2
+-----
+   0x00007ffff745bec0 <+0>: mov    rax,QWORD PTR [rdi+0xd8]
+   0x00007ffff745bec7 <+7>: push   rbx
+   0x00007ffff745bec8 <+8>: mov    rbx,rdi
+   0x00007ffff745becb <+11>:  call   QWORD PTR [rax+0x20]
+   0x00007ffff745bece <+14>:  cmp    eax,0xffffffff
+   0x00007ffff745bed1 <+17>:  je     0x7ffff745bee2 <_IO_default_uflow+34>
+   0x00007ffff745bed3 <+19>:  mov    rdx,QWORD PTR [rbx+0x8]
+   0x00007ffff745bed7 <+23>:  movzx  eax,BYTE PTR [rdx]
+   0x00007ffff745beda <+26>:  add    rdx,0x1
+   0x00007ffff745bede <+30>:  mov    QWORD PTR [rbx+0x8],rdx
+   0x00007ffff745bee2 <+34>:  pop    rbx
+   0x00007ffff745bee3 <+35>:  ret    
+-----
+
+5x 0x00007ffff74500.1a. I / U ; 55, 95(48!), 55, 95(48!), 40
+same func
+95 in different basic block ; => replaced with 48
+55, 40 in same bb
+-----
+   0x00007ffff7450000 <+144>: je     0x7ffff7450040 <_IO_getline_info+208>
+   0x00007ffff7450002 <+146>: mov    r14,QWORD PTR [rbx+0x8]
+   0x00007ffff7450006 <+150>: mov    r13,QWORD PTR [rbx+0x10]
+   0x00007ffff745000a <+154>: sub    r13,r14
+   0x00007ffff745000d <+157>: test   r13,r13
+   0x00007ffff7450010 <+160>: jg     0x7ffff744ffc8 <_IO_getline_info+88>
+   0x00007ffff7450012 <+162>: mov    rdi,rbx
+   0x00007ffff7450015 <+165>: call   0x7ffff745bd10 <__GI___uflow>
+   0x00007ffff745001a <+170>: cmp    eax,0xffffffff
+   0x00007ffff745001d <+173>: je     0x7ffff74500b1 <_IO_getline_info+321>
+   0x00007ffff7450023 <+179>: cmp    eax,r12d
+   0x00007ffff7450026 <+182>: je     0x7ffff74500cd <_IO_getline_info+349>
+   0x00007ffff745002c <+188>: sub    rbp,0x1
+   0x00007ffff7450030 <+192>: mov    BYTE PTR [r15],al
+   0x00007ffff7450033 <+195>: add    r15,0x1
+   0x00007ffff7450037 <+199>: test   rbp,rbp
+   0x00007ffff745003a <+202>: jne    0x7ffff7450002 <_IO_getline_info+146>
+   0x00007ffff745003c <+204>: nop    DWORD PTR [rax+0x0]
+   0x00007ffff7450040 <+208>: mov    rax,r15
+   0x00007ffff7450043 <+211>: sub    rax,QWORD PTR [rsp+0x8]
+   0x00007ffff7450048 <+216>: add    rsp,0x28
+   0x00007ffff745004c <+220>: pop    rbx
+   0x00007ffff745004d <+221>: pop    rbp
+   0x00007ffff745004e <+222>: pop    r12
+   0x00007ffff7450050 <+224>: pop    r13
+   0x00007ffff7450052 <+226>: pop    r14
+   0x00007ffff7450054 <+228>: pop    r15
+   0x00007ffff7450056 <+230>: ret    
+   0x00007ffff7450057 <+231>: nop    WORD PTR [rax+rax*1+0x0]
+   0x00007ffff7450060 <+240>: mov    rbp,rax
+   0x00007ffff7450063 <+243>: mov    eax,DWORD PTR [rsp+0x1c]
+   0x00007ffff7450067 <+247>: mov    r12,r15
+   0x00007ffff745006a <+250>: sub    rbp,r14
+   0x00007ffff745006d <+253>: sub    r12,QWORD PTR [rsp+0x8]
+   0x00007ffff7450072 <+258>: test   eax,eax
+   0x00007ffff7450074 <+260>: js     0x7ffff7450083 <_IO_getline_info+275>
+   0x00007ffff7450076 <+262>: add    rcx,0x1
+   0x00007ffff745007a <+266>: cmp    DWORD PTR [rsp+0x1c],0x1
+   0x00007ffff745007f <+271>: sbb    rbp,0xffffffffffffffff
+   0x00007ffff7450083 <+275>: mov    rdx,rbp
+   0x00007ffff7450086 <+278>: mov    rsi,r14
+   0x00007ffff7450089 <+281>: mov    rdi,r15
+   0x00007ffff745008c <+284>: mov    QWORD PTR [rsp],rcx
+   0x00007ffff7450090 <+288>: call   0x7ffff7471760 <__memcpy_sse2>
+   0x00007ffff7450095 <+293>: mov    rcx,QWORD PTR [rsp]
+   0x00007ffff7450099 <+297>: lea    rax,[rbp+r12*1+0x0]
+   0x00007ffff745009e <+302>: mov    QWORD PTR [rbx+0x8],rcx
+   0x00007ffff74500a2 <+306>: add    rsp,0x28
+   0x00007ffff74500a6 <+310>: pop    rbx
+   0x00007ffff74500a7 <+311>: pop    rbp
+   0x00007ffff74500a8 <+312>: pop    r12
+   0x00007ffff74500aa <+314>: pop    r13
+   0x00007ffff74500ac <+316>: pop    r14
+   0x00007ffff74500ae <+318>: pop    r15
+   0x00007ffff74500b0 <+320>: ret    
+   0x00007ffff74500b1 <+321>: cmp    QWORD PTR [rsp+0x10],0x0
+   0x00007ffff74500b7 <+327>: je     0x7ffff7450040 <_IO_getline_info+208>
+   0x00007ffff74500b9 <+329>: mov    rdx,QWORD PTR [rsp+0x10]
+   0x00007ffff74500be <+334>: mov    DWORD PTR [rdx],eax
+   0x00007ffff74500c0 <+336>: mov    rax,r15
+   0x00007ffff74500c3 <+339>: sub    rax,QWORD PTR [rsp+0x8]
+   0x00007ffff74500c8 <+344>: jmp    0x7ffff7450048 <_IO_getline_info+216>
+   0x00007ffff74500cd <+349>: cmp    DWORD PTR [rsp+0x1c],0x0
+   0x00007ffff74500d2 <+354>: jle    0x7ffff74500e0 <_IO_getline_info+368>
+   0x00007ffff74500d4 <+356>: mov    BYTE PTR [r15],r12b
+   0x00007ffff74500d7 <+359>: add    r15,0x1
+   0x00007ffff74500db <+363>: jmp    0x7ffff7450040 <_IO_getline_info+208>
+   0x00007ffff74500e0 <+368>: je     0x7ffff7450040 <_IO_getline_info+208>
+   0x00007ffff74500e6 <+374>: mov    esi,r12d
+   0x00007ffff74500e9 <+377>: mov    rdi,rbx
+   0x00007ffff74500ec <+380>: call   0x7ffff745c4c0 <_IO_sputbackc>
+   0x00007ffff74500f1 <+385>: jmp    0x7ffff7450040 <_IO_getline_info+208>
+   0x00007ffff74500f6 <+390>: mov    DWORD PTR [rbx+0xc0],0xffffffff
+   0x00007ffff7450100 <+400>: jmp    0x7ffff744ffb0 <_IO_getline_info+64>
+-----
+
+
+==============================================================
+0x00007ffff74644!aa! I / A
+0x00000000004740*E2* I / A
+0x00000000004acb*4D* I / U
+0x00007ffff74c6f*4D* I / A
+0x00007ffff745ae*B0* I / A
+0x00007ffff745be*6B* E / A => internal ..
+0x00007ffff74500*55* I / U
+0x00007ffff74c6f*4B* I / A // syscall
+0x00007ffff745ae*B0* I / A
+0x00007ffff745be*6B* E / A => internal ..
+0x00007ffff74500*95* I / A
+0x00007ffff745ae*B0* I / A
+0x00007ffff745be*6B* E / A => internal ..
+0x00007ffff74500*55* I / U
+0x00007ffff74c6f*5C* I / A
+0x00007ffff745ae*B0* I / A
+0x00007ffff745be*6B* E / A => internal ..
+0x00007ffff74500*95* I / A
+0x00007ffff74c6f*5C* I / A
+0x00007ffff745ae*B0* I / A
+0x00007ffff745be*07* E / A .. rdx <= rax ..
+0x00007ffff745ae*B0* I / A
+0x00007ffff745be*6B* E / A => internal ..
+0x00007ffff74500*40* I / A
+0x00007ffff74c6f*2E* I / A (\x4B kan ook)

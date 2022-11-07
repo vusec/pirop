@@ -1,0 +1,109 @@
+gdb-peda$ disas 0x00007ffff744eefb
+Dump of assembler code for function fgets:
+   0x00007ffff744ee60 <+0>:	push   r12
+   0x00007ffff744ee62 <+2>:	test   esi,esi
+   0x00007ffff744ee64 <+4>:	mov    r8d,esi
+   0x00007ffff744ee67 <+7>:	push   rbp
+   0x00007ffff744ee68 <+8>:	mov    rbp,rdi
+   0x00007ffff744ee6b <+11>:	push   rbx
+   0x00007ffff744ee6c <+12>:	mov    rbx,rdx
+   0x00007ffff744ee6f <+15>:	jle    0x7ffff744ef90 <fgets+304>
+   0x00007ffff744ee75 <+21>:	cmp    esi,0x1
+   0x00007ffff744ee78 <+24>:	je     0x7ffff744ef94 <fgets+308>
+   0x00007ffff744ee7e <+30>:	mov    r12d,DWORD PTR [rdx]
+   0x00007ffff744ee81 <+33>:	mov    eax,r12d
+   0x00007ffff744ee84 <+36>:	and    eax,0x8000
+   0x00007ffff744ee89 <+41>:	jne    0x7ffff744eed6 <fgets+118>
+   0x00007ffff744ee8b <+43>:	mov    rdx,QWORD PTR [rdx+0x88]
+   0x00007ffff744ee92 <+50>:	mov    r9,QWORD PTR fs:0x10
+   0x00007ffff744ee9b <+59>:	cmp    r9,QWORD PTR [rdx+0x8]
+   0x00007ffff744ee9f <+63>:	je     0x7ffff744eed2 <fgets+114>
+   0x00007ffff744eea1 <+65>:	mov    esi,0x1
+   0x00007ffff744eea6 <+70>:	cmp    DWORD PTR [rip+0x34f307],0x0        # 0x7ffff779e1b4
+   0x00007ffff744eead <+77>:	je     0x7ffff744eebb <fgets+91>
+   0x00007ffff744eeaf <+79>:	lock cmpxchg DWORD PTR [rdx],esi
+   0x00007ffff744eeb3 <+83>:	jne    0x7ffff744efdb
+   0x00007ffff744eeb9 <+89>:	jmp    0x7ffff744eec4 <fgets+100>
+   0x00007ffff744eebb <+91>:	cmpxchg DWORD PTR [rdx],esi
+   0x00007ffff744eebe <+94>:	jne    0x7ffff744efdb
+   0x00007ffff744eec4 <+100>:	mov    rdx,QWORD PTR [rbx+0x88]
+   0x00007ffff744eecb <+107>:	mov    r12d,DWORD PTR [rbx]
+   0x00007ffff744eece <+110>:	mov    QWORD PTR [rdx+0x8],r9
+   0x00007ffff744eed2 <+114>:	add    DWORD PTR [rdx+0x4],0x1
+   0x00007ffff744eed6 <+118>:	mov    eax,r12d
+   0x00007ffff744eed9 <+121>:	sub    r8d,0x1
+   0x00007ffff744eedd <+125>:	mov    ecx,0xa
+   0x00007ffff744eee2 <+130>:	and    eax,0xffffffdf
+   0x00007ffff744eee5 <+133>:	movsxd rdx,r8d
+   0x00007ffff744eee8 <+136>:	mov    rsi,rbp
+   0x00007ffff744eeeb <+139>:	mov    DWORD PTR [rbx],eax
+   0x00007ffff744eeed <+141>:	mov    r8d,0x1
+   0x00007ffff744eef3 <+147>:	mov    rdi,rbx
+   0x00007ffff744eef6 <+150>:	call   0x7ffff744ff60 <_IO_getline>
+   0x00007ffff744eefb <+155>:	xor    ecx,ecx
+   0x00007ffff744eefd <+157>:	test   rax,rax
+   0x00007ffff744ef00 <+160>:	mov    edx,DWORD PTR [rbx]
+   0x00007ffff744ef02 <+162>:	je     0x7ffff744ef20 <fgets+192>
+   0x00007ffff744ef04 <+164>:	test   dl,0x20
+   0x00007ffff744ef07 <+167>:	je     0x7ffff744ef80 <fgets+288>
+   0x00007ffff744ef09 <+169>:	mov    rsi,QWORD PTR [rip+0x348f10]        # 0x7ffff7797e20
+   0x00007ffff744ef10 <+176>:	xor    ecx,ecx
+   0x00007ffff744ef12 <+178>:	cmp    DWORD PTR fs:[rsi],0xb
+   0x00007ffff744ef16 <+182>:	je     0x7ffff744ef80 <fgets+288>
+   0x00007ffff744ef18 <+184>:	nop    DWORD PTR [rax+rax*1+0x0]
+   0x00007ffff744ef20 <+192>:	and    r12d,0x20
+   0x00007ffff744ef24 <+196>:	mov    rbp,rcx
+   0x00007ffff744ef27 <+199>:	or     r12d,edx
+   0x00007ffff744ef2a <+202>:	mov    DWORD PTR [rbx],r12d
+   0x00007ffff744ef2d <+205>:	and    r12d,0x8000
+   0x00007ffff744ef34 <+212>:	jne    0x7ffff744ef6e <fgets+270>
+   0x00007ffff744ef36 <+214>:	mov    rdx,QWORD PTR [rbx+0x88]
+   0x00007ffff744ef3d <+221>:	mov    eax,DWORD PTR [rdx+0x4]
+   0x00007ffff744ef40 <+224>:	sub    eax,0x1
+   0x00007ffff744ef43 <+227>:	test   eax,eax
+   0x00007ffff744ef45 <+229>:	mov    DWORD PTR [rdx+0x4],eax
+   0x00007ffff744ef48 <+232>:	jne    0x7ffff744ef6e <fgets+270>
+   0x00007ffff744ef4a <+234>:	mov    QWORD PTR [rdx+0x8],0x0
+   0x00007ffff744ef52 <+242>:	cmp    DWORD PTR [rip+0x34f25b],0x0        # 0x7ffff779e1b4
+   0x00007ffff744ef59 <+249>:	je     0x7ffff744ef66 <fgets+262>
+   0x00007ffff744ef5b <+251>:	lock dec DWORD PTR [rdx]
+   0x00007ffff744ef5e <+254>:	jne    0x7ffff744eff6
+   0x00007ffff744ef64 <+260>:	jmp    0x7ffff744ef6e <fgets+270>
+   0x00007ffff744ef66 <+262>:	dec    DWORD PTR [rdx]
+   0x00007ffff744ef68 <+264>:	jne    0x7ffff744eff6
+   0x00007ffff744ef6e <+270>:	pop    rbx
+   0x00007ffff744ef6f <+271>:	mov    rax,rbp
+   0x00007ffff744ef72 <+274>:	pop    rbp
+   0x00007ffff744ef73 <+275>:	pop    r12
+   0x00007ffff744ef75 <+277>:	ret    
+   0x00007ffff744ef76 <+278>:	nop    WORD PTR cs:[rax+rax*1+0x0]
+   0x00007ffff744ef80 <+288>:	mov    BYTE PTR [rbp+rax*1+0x0],0x0
+   0x00007ffff744ef85 <+293>:	mov    rcx,rbp
+   0x00007ffff744ef88 <+296>:	mov    edx,DWORD PTR [rbx]
+   0x00007ffff744ef8a <+298>:	jmp    0x7ffff744ef20 <fgets+192>
+   0x00007ffff744ef8c <+300>:	nop    DWORD PTR [rax+0x0]
+   0x00007ffff744ef90 <+304>:	xor    ebp,ebp
+   0x00007ffff744ef92 <+306>:	jmp    0x7ffff744ef6e <fgets+270>
+   0x00007ffff744ef94 <+308>:	mov    BYTE PTR [rdi],0x0
+   0x00007ffff744ef97 <+311>:	jmp    0x7ffff744ef6e <fgets+270>
+   0x00007ffff744ef99 <+313>:	mov    rsi,rax
+   0x00007ffff744ef9c <+316>:	mov    eax,DWORD PTR [rbx]
+   0x00007ffff744ef9e <+318>:	test   ah,0x80
+   0x00007ffff744efa1 <+321>:	jne    0x7ffff744efd3 <fgets+371>
+   0x00007ffff744efa3 <+323>:	mov    rdx,QWORD PTR [rbx+0x88]
+   0x00007ffff744efaa <+330>:	mov    eax,DWORD PTR [rdx+0x4]
+   0x00007ffff744efad <+333>:	sub    eax,0x1
+   0x00007ffff744efb0 <+336>:	test   eax,eax
+   0x00007ffff744efb2 <+338>:	mov    DWORD PTR [rdx+0x4],eax
+   0x00007ffff744efb5 <+341>:	jne    0x7ffff744efd3 <fgets+371>
+   0x00007ffff744efb7 <+343>:	mov    QWORD PTR [rdx+0x8],0x0
+   0x00007ffff744efbf <+351>:	cmp    DWORD PTR [rip+0x34f1ee],0x0        # 0x7ffff779e1b4
+   0x00007ffff744efc6 <+358>:	je     0x7ffff744efcf <fgets+367>
+   0x00007ffff744efc8 <+360>:	lock dec DWORD PTR [rdx]
+   0x00007ffff744efcb <+363>:	jne    0x7ffff744f011
+   0x00007ffff744efcd <+365>:	jmp    0x7ffff744efd3 <fgets+371>
+   0x00007ffff744efcf <+367>:	dec    DWORD PTR [rdx]
+   0x00007ffff744efd1 <+369>:	jne    0x7ffff744f011
+   0x00007ffff744efd3 <+371>:	mov    rdi,rsi
+   0x00007ffff744efd6 <+374>:	call   0x7ffff74029b0
+

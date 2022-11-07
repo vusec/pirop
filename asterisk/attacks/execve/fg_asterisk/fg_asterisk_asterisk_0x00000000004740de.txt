@@ -1,0 +1,638 @@
+Searching for gadgets in the range [0x474000 - 0x4740ff]
+Looking for gadgets at 0x474000
+Looking for gadgets at 0x474001
+Looking for gadgets at 0x474002
+Looking for gadgets at 0x474003
+Looking for gadgets at 0x474004
+Looking for gadgets at 0x474005
+Looking for gadgets at 0x474006
+Looking for gadgets at 0x474007
+Looking for gadgets at 0x474008
+Looking for gadgets at 0x474009
+Looking for gadgets at 0x47400a
+Looking for gadgets at 0x47400b
+Looking for gadgets at 0x47400c
+Looking for gadgets at 0x47400d
+Looking for gadgets at 0x47400e
+Looking for gadgets at 0x47400f
+Looking for gadgets at 0x474010
+Looking for gadgets at 0x474011
+Looking for gadgets at 0x474012
+Looking for gadgets at 0x474013
+Looking for gadgets at 0x474014
+Looking for gadgets at 0x474015
+Looking for gadgets at 0x474016
+Looking for gadgets at 0x474017
+Looking for gadgets at 0x474018
+Looking for gadgets at 0x474019
+Looking for gadgets at 0x47401a
+Looking for gadgets at 0x47401b
+Looking for gadgets at 0x47401c
+Looking for gadgets at 0x47401d
+8|r|
+0x47401d	jmp    0x473f3c <set_fn+188>
+0x473f3c	add    rsp,0x28
+0x473f40	mov    rax,rbx
+0x473f43	pop    rbx
+0x473f44	pop    rbp
+0x473f45	pop    r12
+0x473f47	pop    r13
+0x473f49	ret
+Looking for gadgets at 0x47401e
+Looking for gadgets at 0x47401f
+Looking for gadgets at 0x474020
+Looking for gadgets at 0x474021
+1|j|
+0x474021	jmp    QWORD PTR [rsi+0x66]
+Looking for gadgets at 0x474022
+Looking for gadgets at 0x474023
+Looking for gadgets at 0x474024
+Looking for gadgets at 0x474025
+Looking for gadgets at 0x474026
+Looking for gadgets at 0x474027
+Looking for gadgets at 0x474028
+Looking for gadgets at 0x474029
+Looking for gadgets at 0x47402a
+Looking for gadgets at 0x47402b
+Looking for gadgets at 0x47402c
+Looking for gadgets at 0x47402d
+Looking for gadgets at 0x47402e
+Looking for gadgets at 0x47402f
+Looking for gadgets at 0x474030
+Looking for gadgets at 0x474031
+Looking for gadgets at 0x474032
+Looking for gadgets at 0x474033
+Looking for gadgets at 0x474034
+Looking for gadgets at 0x474035
+Looking for gadgets at 0x474036
+Looking for gadgets at 0x474037
+Looking for gadgets at 0x474038
+Looking for gadgets at 0x474039
+Looking for gadgets at 0x47403a
+Looking for gadgets at 0x47403b
+Looking for gadgets at 0x47403c
+Looking for gadgets at 0x47403d
+Looking for gadgets at 0x47403e
+Looking for gadgets at 0x47403f
+Looking for gadgets at 0x474040
+Looking for gadgets at 0x474041
+Looking for gadgets at 0x474042
+Looking for gadgets at 0x474043
+Looking for gadgets at 0x474044
+Looking for gadgets at 0x474045
+Looking for gadgets at 0x474046
+Looking for gadgets at 0x474047
+Looking for gadgets at 0x474048
+Looking for gadgets at 0x474049
+Looking for gadgets at 0x47404a
+Looking for gadgets at 0x47404b
+Looking for gadgets at 0x47404c
+Looking for gadgets at 0x47404d
+Looking for gadgets at 0x47404e
+Looking for gadgets at 0x47404f
+Looking for gadgets at 0x474050
+Looking for gadgets at 0x474051
+Looking for gadgets at 0x474052
+Looking for gadgets at 0x474053
+Looking for gadgets at 0x474054
+Looking for gadgets at 0x474055
+Looking for gadgets at 0x474056
+Looking for gadgets at 0x474057
+Looking for gadgets at 0x474058
+Looking for gadgets at 0x474059
+Looking for gadgets at 0x47405a
+Looking for gadgets at 0x47405b
+Looking for gadgets at 0x47405c
+Looking for gadgets at 0x47405d
+Looking for gadgets at 0x47405e
+Looking for gadgets at 0x47405f
+Looking for gadgets at 0x474060
+Looking for gadgets at 0x474061
+Looking for gadgets at 0x474062
+Looking for gadgets at 0x474063
+Looking for gadgets at 0x474064
+Looking for gadgets at 0x474065
+Looking for gadgets at 0x474066
+Looking for gadgets at 0x474067
+Looking for gadgets at 0x474068
+Looking for gadgets at 0x474069
+Looking for gadgets at 0x47406a
+Looking for gadgets at 0x47406b
+Looking for gadgets at 0x47406c
+Looking for gadgets at 0x47406d
+Looking for gadgets at 0x47406e
+Looking for gadgets at 0x47406f
+Looking for gadgets at 0x474070
+Looking for gadgets at 0x474071
+Looking for gadgets at 0x474072
+Looking for gadgets at 0x474073
+Looking for gadgets at 0x474074
+Looking for gadgets at 0x474075
+Looking for gadgets at 0x474076
+Looking for gadgets at 0x474077
+Looking for gadgets at 0x474078
+Looking for gadgets at 0x474079
+Looking for gadgets at 0x47407a
+Looking for gadgets at 0x47407b
+Looking for gadgets at 0x47407c
+Looking for gadgets at 0x47407d
+Looking for gadgets at 0x47407e
+Looking for gadgets at 0x47407f
+Looking for gadgets at 0x474080
+Looking for gadgets at 0x474081
+Looking for gadgets at 0x474082
+Looking for gadgets at 0x474083
+Looking for gadgets at 0x474084
+Looking for gadgets at 0x474085
+Looking for gadgets at 0x474086
+Looking for gadgets at 0x474087
+Looking for gadgets at 0x474088
+Looking for gadgets at 0x474089
+Looking for gadgets at 0x47408a
+Looking for gadgets at 0x47408b
+Looking for gadgets at 0x47408c
+Looking for gadgets at 0x47408d
+Looking for gadgets at 0x47408e
+Looking for gadgets at 0x47408f
+Looking for gadgets at 0x474090
+Looking for gadgets at 0x474091
+Looking for gadgets at 0x474092
+Looking for gadgets at 0x474093
+Looking for gadgets at 0x474094
+Looking for gadgets at 0x474095
+Looking for gadgets at 0x474096
+Looking for gadgets at 0x474097
+Looking for gadgets at 0x474098
+Looking for gadgets at 0x474099
+Looking for gadgets at 0x47409a
+Looking for gadgets at 0x47409b
+Looking for gadgets at 0x47409c
+Looking for gadgets at 0x47409d
+Looking for gadgets at 0x47409e
+Looking for gadgets at 0x47409f
+Looking for gadgets at 0x4740a0
+Looking for gadgets at 0x4740a1
+Looking for gadgets at 0x4740a2
+Looking for gadgets at 0x4740a3
+Looking for gadgets at 0x4740a4
+Looking for gadgets at 0x4740a5
+1|r|
+0x4740a5	ret
+Looking for gadgets at 0x4740a6
+Looking for gadgets at 0x4740a7
+Looking for gadgets at 0x4740a8
+Looking for gadgets at 0x4740a9
+Looking for gadgets at 0x4740aa
+Looking for gadgets at 0x4740ab
+Looking for gadgets at 0x4740ac
+Looking for gadgets at 0x4740ad
+6|r|
+0x4740ad	js     0x4740f7 <ast_variable_new+199>
+0x4740f7	and    al,0x30
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740ae
+Looking for gadgets at 0x4740af
+Looking for gadgets at 0x4740b0
+Looking for gadgets at 0x4740b1
+Looking for gadgets at 0x4740b2
+Looking for gadgets at 0x4740b3
+Looking for gadgets at 0x4740b4
+Looking for gadgets at 0x4740b5
+Looking for gadgets at 0x4740b6
+Looking for gadgets at 0x4740b7
+Looking for gadgets at 0x4740b8
+Looking for gadgets at 0x4740b9
+Looking for gadgets at 0x4740ba
+Looking for gadgets at 0x4740bb
+Looking for gadgets at 0x4740bc
+Looking for gadgets at 0x4740bd
+Looking for gadgets at 0x4740be
+Looking for gadgets at 0x4740bf
+Looking for gadgets at 0x4740c0
+Looking for gadgets at 0x4740c1
+Looking for gadgets at 0x4740c2
+Looking for gadgets at 0x4740c3
+Looking for gadgets at 0x4740c4
+Looking for gadgets at 0x4740c5
+Looking for gadgets at 0x4740c6
+Looking for gadgets at 0x4740c7
+6|r|
+0x4740c7	rex.XB sbb r8b,bpl
+0x4740ca	repnz xchg esi,eax
+0x4740cc	cli
+0x4740cd	dec    DWORD PTR [rbx-0x73]
+0x4740d0	jl     0x474107 <ast_variable_new+215>
+0x474107	ret
+Looking for gadgets at 0x4740c8
+6|r|
+0x4740c8	sbb    al,ch
+0x4740ca	repnz xchg esi,eax
+0x4740cc	cli
+0x4740cd	dec    DWORD PTR [rbx-0x73]
+0x4740d0	jl     0x474107 <ast_variable_new+215>
+0x474107	ret
+Looking for gadgets at 0x4740c9
+Looking for gadgets at 0x4740ca
+5|r|
+0x4740ca	repnz xchg esi,eax
+0x4740cc	cli
+0x4740cd	dec    DWORD PTR [rbx-0x73]
+0x4740d0	jl     0x474107 <ast_variable_new+215>
+0x474107	ret
+Looking for gadgets at 0x4740cb
+5|r|
+0x4740cb	xchg   esi,eax
+0x4740cc	cli
+0x4740cd	dec    DWORD PTR [rbx-0x73]
+0x4740d0	jl     0x474107 <ast_variable_new+215>
+0x474107	ret
+Looking for gadgets at 0x4740cc
+4|r|
+0x4740cc	cli
+0x4740cd	dec    DWORD PTR [rbx-0x73]
+0x4740d0	jl     0x474107 <ast_variable_new+215>
+0x474107	ret
+Looking for gadgets at 0x4740cd
+3|r|
+0x4740cd	dec    DWORD PTR [rbx-0x73]
+0x4740d0	jl     0x474107 <ast_variable_new+215>
+0x474107	ret
+Looking for gadgets at 0x4740ce
+Looking for gadgets at 0x4740cf
+Looking for gadgets at 0x4740d0
+2|r|
+0x4740d0	jl     0x474107 <ast_variable_new+215>
+0x474107	ret
+Looking for gadgets at 0x4740d1
+Looking for gadgets at 0x4740d2
+Looking for gadgets at 0x4740d3
+Looking for gadgets at 0x4740d4
+Looking for gadgets at 0x4740d5
+Looking for gadgets at 0x4740d6
+Looking for gadgets at 0x4740d7
+Looking for gadgets at 0x4740d8
+Looking for gadgets at 0x4740d9
+Looking for gadgets at 0x4740da
+14|r|
+0x4740da	loop   0x474072 <ast_variable_new+66>
+0x4740dc	cli
+0x4740dd	dec    DWORD PTR [rax-0x77]
+0x4740e0	rex.XB or BYTE PTR [r8-0x77],cl
+0x4740e4	fmul   DWORD PTR [rax-0x75]
+0x4740e7	ins    BYTE PTR es:[rdi],dx
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740db
+14|r|
+0x4740db	xchg   esi,eax
+0x4740dc	cli
+0x4740dd	dec    DWORD PTR [rax-0x77]
+0x4740e0	rex.XB or BYTE PTR [r8-0x77],cl
+0x4740e4	fmul   DWORD PTR [rax-0x75]
+0x4740e7	ins    BYTE PTR es:[rdi],dx
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740dc
+13|r|
+0x4740dc	cli
+0x4740dd	dec    DWORD PTR [rax-0x77]
+0x4740e0	rex.XB or BYTE PTR [r8-0x77],cl
+0x4740e4	fmul   DWORD PTR [rax-0x75]
+0x4740e7	ins    BYTE PTR es:[rdi],dx
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740dd
+12|r|
+0x4740dd	dec    DWORD PTR [rax-0x77]
+0x4740e0	rex.XB or BYTE PTR [r8-0x77],cl
+0x4740e4	fmul   DWORD PTR [rax-0x75]
+0x4740e7	ins    BYTE PTR es:[rdi],dx
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740de
+10|r|
+0x4740de	mov    QWORD PTR [rbx+0x8],rax
+0x4740e2	mov    rax,rbx
+0x4740e5	mov    rbp,QWORD PTR [rsp+0x20]
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740df
+10|r|
+0x4740df	mov    DWORD PTR [rbx+0x8],eax
+0x4740e2	mov    rax,rbx
+0x4740e5	mov    rbp,QWORD PTR [rsp+0x20]
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e0
+11|r|
+0x4740e0	rex.XB or BYTE PTR [r8-0x77],cl
+0x4740e4	fmul   DWORD PTR [rax-0x75]
+0x4740e7	ins    BYTE PTR es:[rdi],dx
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e1
+11|r|
+0x4740e1	or     BYTE PTR [rax-0x77],cl
+0x4740e4	fmul   DWORD PTR [rax-0x75]
+0x4740e7	ins    BYTE PTR es:[rdi],dx
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e2
+9|r|
+0x4740e2	mov    rax,rbx
+0x4740e5	mov    rbp,QWORD PTR [rsp+0x20]
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e3
+9|r|
+0x4740e3	mov    eax,ebx
+0x4740e5	mov    rbp,QWORD PTR [rsp+0x20]
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e4
+10|r|
+0x4740e4	fmul   DWORD PTR [rax-0x75]
+0x4740e7	ins    BYTE PTR es:[rdi],dx
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e5
+8|r|
+0x4740e5	mov    rbp,QWORD PTR [rsp+0x20]
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e6
+8|r|
+0x4740e6	mov    ebp,DWORD PTR [rsp+0x20]
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e7
+9|r|
+0x4740e7	ins    BYTE PTR es:[rdi],dx
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e8
+8|r|
+0x4740e8	and    al,0x20
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740e9
+9|r|
+0x4740e9	and    BYTE PTR [rax-0x75],cl
+0x4740ec	pop    rsp
+0x4740ed	and    al,0x18
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740ea
+7|r|
+0x4740ea	mov    rbx,QWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740eb
+7|r|
+0x4740eb	mov    ebx,DWORD PTR [rsp+0x18]
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740ec
+8|r|
+0x4740ec	pop    rsp
+0x4740ed	and    al,0x18
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740ed
+7|r|
+0x4740ed	and    al,0x18
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740ee
+7|r|
+0x4740ee	sbb    BYTE PTR [rbx+rcx*4+0x64],cl
+0x4740f2	and    al,0x28
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740ef
+6|r|
+0x4740ef	mov    r12,QWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f0
+6|r|
+0x4740f0	mov    esp,DWORD PTR [rsp+0x28]
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f1
+7|r|
+0x4740f1	fs
+0x4740f2	and    al,0x28
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f2
+6|r|
+0x4740f2	and    al,0x28
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f3
+6|r|
+0x4740f3	sub    BYTE PTR [rbx+rcx*4+0x6c],cl
+0x4740f7	and    al,0x30
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f4
+5|r|
+0x4740f4	mov    r13,QWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f5
+5|r|
+0x4740f5	mov    ebp,DWORD PTR [rsp+0x30]
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f6
+6|r|
+0x4740f6	ins    BYTE PTR es:[rdi],dx
+0x4740f7	and    al,0x30
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f7
+5|r|
+0x4740f7	and    al,0x30
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f8
+5|r|
+0x4740f8	xor    BYTE PTR [rbx+rcx*4+0x74],cl
+0x4740fc	and    al,0x38
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740f9
+4|r|
+0x4740f9	mov    r14,QWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740fa
+4|r|
+0x4740fa	mov    esi,DWORD PTR [rsp+0x38]
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740fb
+5|r|
+0x4740fb	je     0x474121 <ast_variable_new+241>
+0x4740fd	cmp    BYTE PTR [rbx+rcx*4+0x7c],cl
+0x474101	and    al,0x40
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740fc
+4|r|
+0x4740fc	and    al,0x38
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740fd
+4|r|
+0x4740fd	cmp    BYTE PTR [rbx+rcx*4+0x7c],cl
+0x474101	and    al,0x40
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740fe
+3|r|
+0x4740fe	mov    r15,QWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret
+Looking for gadgets at 0x4740ff
+3|r|
+0x4740ff	mov    edi,DWORD PTR [rsp+0x40]
+0x474103	add    rsp,0x48
+0x474107	ret

@@ -1,0 +1,19 @@
+(gdb) bt
+#0  0x00007ffff74c6f4d in read () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x00007ffff745ae88 in _IO_file_underflow () from /lib/x86_64-linux-gnu/libc.so.6
+#2  0x00007ffff745bece in _IO_default_uflow () from /lib/x86_64-linux-gnu/libc.so.6
+#3  0x00007ffff745001a in _IO_getline_info () from /lib/x86_64-linux-gnu/libc.so.6
+#4  0x00007ffff744eefb in fgets () from /lib/x86_64-linux-gnu/libc.so.6
+#5  0x00000000004acaab in fgets (__stream=<optimized out>, __n=<optimized out>, __s=0x7fff99f095f0 "\\") at /usr/include/x86_64-linux-gnu/bits/stdio2.h:255
+#6  ast_http_get_post_vars (ser=0x7fffe0000958, headers=0x7fffd8000b60) at http.c:646
+#7  0x00000000004bfd6d in generic_http_callback (ser=0x7fffe0000958, method=AST_HTTP_POST, format=FORMAT_HTML, remote_address=<optimized out>, get_params=0x0, 
+    headers=0x7fffd8000b60, uri=<optimized out>) at manager.c:5780
+#8  0x00000000004c00b4 in manager_http_callback (ser=0x7fffe0000958, urih=<optimized out>, uri=<optimized out>, method=AST_HTTP_POST, get_params=0x0, 
+    headers=<optimized out>) at manager.c:6227
+#9  0x00000000004ac65d in handle_uri (headers=0x7fffd8000b60, method=AST_HTTP_POST, uri=0x7fff99f09c86 "", ser=0x7fffe0000958) at http.c:748
+#10 httpd_helper_thread (data=0x7fffe0000958) at http.c:936
+#11 0x000000000050c5a5 in handle_tcptls_connection (data=0x7fffe0000958) at tcptls.c:246
+#12 0x0000000000516b57 in dummy_start (data=<optimized out>) at utils.c:1004
+#13 0x00007ffff6a66e9a in start_thread () from /lib/x86_64-linux-gnu/libpthread.so.0
+#14 0x00007ffff74d436d in clone () from /lib/x86_64-linux-gnu/libc.so.6
+#15 0x0000000000000000 in ?? ()
